@@ -11,6 +11,7 @@ USAGE: %(program)s input_code_file output_dir
 import logging
 import os
 import sys
+import re
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -22,6 +23,18 @@ def get_code(inp):
     input_data = os.popen(command)
     data = input_data.read()
     return data
+
+
+def get_author(inp, outp):
+    author_list = list()
+    command = "git log --pretty=format:'author: %aN' " + inp
+    input_data = os.popen(command)
+    lines = input_data.readlines()
+    regex = re.compile("author:\s(.*)?\n?")
+    for line in lines:
+        author = regex.findall(line)[0]
+        author_list.append(author)
+    return author_list
 
 if __name__ == '__main__':
     program = os.path.basename(sys.argv[0])
@@ -44,5 +57,7 @@ if __name__ == '__main__':
 
     commit_history = get_code(input_file)
     print(commit_history)
+    commit_author = get_author(input_file, output_dir)
+    print(commit_author)
 
 
