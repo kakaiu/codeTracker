@@ -22,4 +22,4 @@ f_new.close()
 '''
 command = 'clang -Xclang -ast-dump -fsyntax-only ' + path_new
 F = os.popen(command)
-print F.read()
+print (F.read())
