@@ -6,5 +6,5 @@ Author: ch-chiu
 cd a folder which is a git repository, then run like this:
 
 ```
-%(program)s input_code_file/folder output_dir
+python your_dir_of_main.py input_code_file/folder output_dir
 ```
