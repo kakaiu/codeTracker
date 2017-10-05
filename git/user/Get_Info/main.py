@@ -5,23 +5,30 @@ import time
 import json
 import types
 
-# git_api = 'https://api.github.com/repos/sindresorhus/awesome/commits'
-# # git_api = 'https://api.github.com/repos/tensorflow/tensorflow/commits'
-# git_info = gt.get_info(git_api)
+git_api = 'https://api.github.com/repos/sindresorhus/awesome/commits'
+# git_api = 'https://api.github.com/repos/tensorflow/tensorflow/commits'
+git_info = gt.get_info(git_api)
 info_file = '/home/ace/zsj/Get_Info/Info/git_info_awesome.json'
-# cTime = time.time()
-# print("Dumping the info...")
-# with open(info_file, 'w') as ctfile:
-#     json.dump(git_info, ctfile, indent=3)
-# print(time.time() - cTime)
+cTime = time.time()
+print("Dumping the info...")
+with open(info_file, 'w') as ctfile:
+    json.dump(git_info, ctfile, indent=3)
+print(time.time() - cTime)
 
 f = open(info_file,encoding='utf-8')
 git_info = json.load(f)
 stk_count = total_count = 0
 
+cTime = time.time()
+print("Matching developers between Github and Stack Overflow...")
 new_info = st.match_info(git_info)
+print(time.time() - cTime)
+
+print("Saving the results of matching...")
+cTime = time.time()
 with open(info_file, 'w') as ctfile:
     json.dump(new_info, ctfile, indent=3)
+print(time.time() - cTime)
 
 for item in new_info:
     if not item["stackoverflow_login"] == "null":

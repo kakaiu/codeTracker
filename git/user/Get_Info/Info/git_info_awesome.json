@@ -1,570 +1,570 @@
 [
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Lukas Michelbacher",
-      "login": "lmichelbacher",
       "email": null,
-      "location": "Edinburgh"
+      "name": "Tarang Shah",
+      "company": "BITS Pilani",
+      "login": "t27",
+      "location": "India",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@avajs @chalk @yeoman",
-      "stackoverflow_login": "null",
-      "name": "Sindre Sorhus",
-      "login": "sindresorhus",
       "email": "sindresorhus@gmail.com",
-      "location": "\u00b0 \u263e \u2606 \u00b8. \u00b8\u3000\u2605  :.\u3000 . \u2022 \u25cb \u00b0 \u2605"
+      "name": "Sindre Sorhus",
+      "company": "@avajs @chalk @yeoman",
+      "login": "sindresorhus",
+      "location": "\u00b0 \u263e \u2606 \u00b8. \u00b8\u3000\u2605  :.\u3000 . \u2022 \u25cb \u00b0 \u2605",
+      "stackoverflow_login": "null"
    },
    {
+      "email": null,
+      "name": "Lukas Michelbacher",
       "company": null,
-      "stackoverflow_login": "null",
-      "name": "Kazhnuz",
-      "login": "Kazhnuz",
+      "login": "lmichelbacher",
+      "location": "Edinburgh",
+      "stackoverflow_login": "null"
+   },
+   {
       "email": "kazhnuz@openmailbox.org",
-      "location": null
+      "name": "Kazhnuz",
+      "company": null,
+      "login": "Kazhnuz",
+      "location": null,
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Aleksandar Todorovi\u0107 (r3bl)",
-      "login": "aleksandar-todorovic",
       "email": "aleksandar@r3bl.me",
-      "location": "Br\u010dko, Bosnia & Herzegovina"
+      "name": "Aleksandar Todorovi\u0107 (r3bl)",
+      "company": null,
+      "login": "aleksandar-todorovic",
+      "location": "Br\u010dko, Bosnia & Herzegovina",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Kedan Li",
+      "company": null,
       "login": "likedan",
-      "email": null,
-      "location": null
+      "location": null,
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "GitHub Web Flow",
+      "company": null,
       "login": "web-flow",
-      "email": null,
-      "location": null
+      "location": null,
+      "stackoverflow_login": "null"
    },
    {
-      "company": "Heroku",
-      "stackoverflow_login": "null",
-      "name": "Kenneth Reitz",
-      "login": "kennethreitz",
       "email": "me@kennethreitz.org",
-      "location": "Winchester, VA"
+      "name": "Kenneth Reitz",
+      "company": "Heroku",
+      "login": "kennethreitz",
+      "location": "Winchester, VA",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "John Jago",
+      "company": null,
       "login": "johnjago",
-      "email": null,
-      "location": "United States"
+      "location": "United States",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Stefanus",
+      "company": null,
       "login": "sfischer13",
-      "email": null,
-      "location": "Germany"
+      "location": "Germany",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@machinomy ",
-      "stackoverflow_login": "null",
-      "name": "Sergey Ukustov",
-      "login": "ukstv",
       "email": "sergey@ukstv.me",
-      "location": "Volgograd, Russia"
+      "name": "Sergey Ukustov",
+      "company": "@machinomy ",
+      "login": "ukstv",
+      "location": "Volgograd, Russia",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Selwyn",
+      "company": null,
       "login": "Siilwyn",
-      "email": null,
-      "location": null
+      "location": null,
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Sebastian Raff",
-      "login": "hobbyquaker",
       "email": "hq@ccu.io",
-      "location": "Stuttgart, Germany"
+      "name": "Sebastian Raff",
+      "company": null,
+      "login": "hobbyquaker",
+      "location": "Stuttgart, Germany",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": null,
+      "company": null,
       "login": "stetso",
-      "email": null,
-      "location": null
+      "location": null,
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@Warpnet",
-      "stackoverflow_login": "null",
-      "name": "Roald Nefs",
-      "login": "roaldnefs",
       "email": "info@roaldnefs.com",
-      "location": "The Netherlands"
+      "name": "Roald Nefs",
+      "company": "@Warpnet",
+      "login": "roaldnefs",
+      "location": "The Netherlands",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Chase Giunta",
+      "company": null,
       "login": "chasegiunta",
-      "email": null,
-      "location": "Dallas, TX"
+      "location": "Dallas, TX",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "Zalando",
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Lauri Apple",
+      "company": "Zalando",
       "login": "LappleApple",
-      "email": null,
-      "location": "Berlin; Twitter @lauritaapplez"
+      "location": "Berlin; Twitter @lauritaapplez",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "Code signing GPG key: C42F 2F04 C42D 489E 23DD  71CE 07EF AA28 AB94 BC85",
-      "stackoverflow_login": "null",
-      "name": "Meitar M.",
-      "login": "meitar",
       "email": "meitarm+github@gmail.com",
-      "location": "https://cyberbusking.org/"
+      "name": "Meitar M.",
+      "company": "Code signing GPG key: C42F 2F04 C42D 489E 23DD  71CE 07EF AA28 AB94 BC85",
+      "login": "meitar",
+      "location": "https://cyberbusking.org/",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "angrykoala",
-      "name": "Andr\u00e9s",
-      "login": "angrykoala",
       "email": "angrykoala@outlook.es",
-      "location": "Madrid & Granada, Spain"
+      "name": "Andr\u00e9s",
+      "company": null,
+      "login": "angrykoala",
+      "location": "Madrid & Granada, Spain",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Ademola Adegbuyi",
-      "login": "ooade",
       "email": "ooade96@gmail.com",
-      "location": "Lagos, Nigeria"
+      "name": "Ademola Adegbuyi",
+      "company": null,
+      "login": "ooade",
+      "location": "Lagos, Nigeria",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Joan Boixad\u00f3s",
-      "login": "mezod",
       "email": "mezood@gmail.com",
-      "location": "Barcelona, Catalonia"
+      "name": "Joan Boixad\u00f3s",
+      "company": null,
+      "login": "mezod",
+      "location": "Barcelona, Catalonia",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@PrincetonUniversity",
-      "stackoverflow_login": "null",
-      "name": "Sheon Han",
-      "login": "sheonhan",
       "email": "sheon.han@gmail.com",
-      "location": null
+      "name": "Sheon Han",
+      "company": "@PrincetonUniversity",
+      "login": "sheonhan",
+      "location": null,
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@UnMarkDocs || @DependenCI || @OrgManager || Miguel Piedrafita",
-      "stackoverflow_login": "null",
-      "name": "Miguel Piedrafita",
-      "login": "m1guelpf",
       "email": "github@miguelpiedrafita.com",
-      "location": "Spain"
+      "name": "Miguel Piedrafita",
+      "company": "@UnMarkDocs || @DependenCI || @OrgManager || Miguel Piedrafita",
+      "login": "m1guelpf",
+      "location": "Spain",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Craig Davison",
-      "login": "davisonio",
       "email": "craig@davison.io",
-      "location": "Hampshire, UK"
+      "name": "Craig Davison",
+      "company": null,
+      "login": "davisonio",
+      "location": "Hampshire, UK",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "Yandex",
-      "stackoverflow_login": "vitalets",
-      "name": "Vitaliy Potapov",
-      "login": "vitalets",
       "email": "noginsk@rambler.ru",
-      "location": "Moscow"
+      "name": "Vitaliy Potapov",
+      "company": "Yandex",
+      "login": "vitalets",
+      "location": "Moscow",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "Lingewoud B.V.",
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Pim Snel",
+      "company": "Lingewoud B.V.",
       "login": "mipmip",
-      "email": null,
-      "location": null
+      "location": null,
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "arbox",
-      "name": "Andrei Beliankou",
-      "login": "arbox",
       "email": "arbox@yandex.com",
-      "location": "Germany"
+      "name": "Andrei Beliankou",
+      "company": null,
+      "login": "arbox",
+      "location": "Germany",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "k4m4",
+      "email": null,
       "name": "Nikolaos Kamarinakis",
+      "company": null,
       "login": "k4m4",
-      "email": null,
-      "location": "Athens, Greece"
+      "location": "Athens, Greece",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@socialcopsdev",
-      "stackoverflow_login": "null",
-      "name": "Akash Tandon",
-      "login": "analyticalmonk",
       "email": "akashtndn.acm@gmail.com",
-      "location": "India"
+      "name": "Akash Tandon",
+      "company": "@socialcopsdev",
+      "login": "analyticalmonk",
+      "location": "India",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Fabian-Robert St\u00f6ter",
+      "company": null,
       "login": "faroit",
-      "email": null,
-      "location": "Europe"
+      "location": "Europe",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@ExodusMovement ",
-      "stackoverflow_login": "RyanZim",
+      "email": null,
       "name": "Ryan Zimmerman",
+      "company": "@ExodusMovement ",
       "login": "RyanZim",
-      "email": null,
-      "location": "East Earl, PA"
+      "location": "East Earl, PA",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@mntnr ",
-      "stackoverflow_login": "null",
-      "name": "Richard Littauer",
-      "login": "RichardLitt",
       "email": "richard.littauer@gmail.com",
-      "location": "Montr\u00e9al"
+      "name": "Richard Littauer",
+      "company": "@mntnr ",
+      "login": "RichardLitt",
+      "location": "Montr\u00e9al",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@liferay ",
-      "stackoverflow_login": "null",
-      "name": "Victor Laerte Oliveira",
-      "login": "victorlaerte",
       "email": "victorlaertedoliveira@gmail.com",
-      "location": "Recife, Pernambuco - Brazil"
+      "name": "Victor Laerte Oliveira",
+      "company": "@liferay ",
+      "login": "victorlaerte",
+      "location": "Recife, Pernambuco - Brazil",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Xiao Hanyu",
-      "login": "xiaohanyu",
       "email": "xiaohanyu1988@gmail.com",
-      "location": "Singapore"
+      "name": "Xiao Hanyu",
+      "company": null,
+      "login": "xiaohanyu",
+      "location": "Singapore",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@AOEpeople ",
-      "stackoverflow_login": "null",
-      "name": "DavidLamabuer",
-      "login": "DavidLambauer",
       "email": "mail@davidlambauer.de",
-      "location": "Germany"
+      "name": "DavidLamabuer",
+      "company": "@AOEpeople ",
+      "login": "DavidLambauer",
+      "location": "Germany",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@imagemin @yeoman",
-      "stackoverflow_login": "null",
-      "name": "Kevin M\u00e5rtensson",
-      "login": "kevva",
       "email": "kevinmartensson@gmail.com",
-      "location": "Sweden"
+      "name": "Kevin M\u00e5rtensson",
+      "company": "@imagemin @yeoman",
+      "login": "kevva",
+      "location": "Sweden",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Matthew Vita",
-      "login": "MatthewVita",
       "email": "matthewvita@live.com",
-      "location": "Los Angeles, US"
+      "name": "Matthew Vita",
+      "company": null,
+      "login": "MatthewVita",
+      "location": "Los Angeles, US",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": null,
+      "company": null,
       "login": "kud1ing",
-      "email": null,
-      "location": "Germany, pretty central"
+      "location": "Germany, pretty central",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "De Voorhoede",
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Jasper Moelker",
+      "company": "De Voorhoede",
       "login": "jbmoelker",
-      "email": null,
-      "location": null
+      "location": null,
+      "stackoverflow_login": "null"
    },
    {
-      "company": "Awkward",
-      "stackoverflow_login": "null",
-      "name": "David van Leeuwen",
-      "login": "davidvanleeuwen",
       "email": "david@madeawkward.com",
-      "location": "The Netherlands"
+      "name": "David van Leeuwen",
+      "company": "Awkward",
+      "login": "davidvanleeuwen",
+      "location": "The Netherlands",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Boik",
-      "login": "qazbnm456",
       "email": "boik@tdohacker.org",
-      "location": "Taiwan"
+      "name": "Boik",
+      "company": null,
+      "login": "qazbnm456",
+      "location": "Taiwan",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Quentin Goinaud",
+      "company": null,
       "login": "armaldio",
-      "email": null,
-      "location": "France"
+      "location": "France",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Mislav Cimper\u0161ak",
+      "company": null,
       "login": "mislavcimpersak",
-      "email": null,
-      "location": "Zagreb, Croatia"
+      "location": "Zagreb, Croatia",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Spencer",
-      "login": "sjfricke",
       "email": "sjfricke@wisc.edu",
-      "location": null
+      "name": "Spencer",
+      "company": null,
+      "login": "sjfricke",
+      "location": null,
+      "stackoverflow_login": "null"
    },
    {
-      "company": "Absent Software",
-      "stackoverflow_login": "quangv",
-      "name": "Quang Van",
-      "login": "quangv",
       "email": "quang@absentsoft.com",
-      "location": "Central Mass."
+      "name": "Quang Van",
+      "company": "Absent Software",
+      "login": "quangv",
+      "location": "Central Mass.",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Grzesiek W",
-      "login": "kminek",
       "email": "kontakt@kminek.pl",
-      "location": null
+      "name": "Grzesiek W",
+      "company": null,
+      "login": "kminek",
+      "location": null,
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Peter Matseykanets",
+      "company": null,
       "login": "pmatseykanets",
-      "email": null,
-      "location": "Columbia, MD"
+      "location": "Columbia, MD",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@TipeIO",
-      "stackoverflow_login": "gdi2290",
-      "name": "PatrickJS [tipe.io]",
-      "login": "gdi2290",
       "email": "github@gdi2290.com",
-      "location": "San Francisco, CA"
+      "name": "PatrickJS [tipe.io]",
+      "company": "@TipeIO",
+      "login": "gdi2290",
+      "location": "San Francisco, CA",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Adrian Baran",
-      "login": "bouzlibop",
       "email": "bouzlibop@gmail.com",
-      "location": "Krak\u00f3w"
+      "name": "Adrian Baran",
+      "company": null,
+      "login": "bouzlibop",
+      "location": "Krak\u00f3w",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Joaqu\u00edn Serna",
+      "company": null,
       "login": "BubuAnabelas",
-      "email": null,
-      "location": null
+      "location": null,
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Giedrius Jaloveckas",
-      "login": "podo",
       "email": "g.jaloveckas@gmail.com",
-      "location": "Vilnius, Lithuania"
+      "name": "Giedrius Jaloveckas",
+      "company": null,
+      "login": "podo",
+      "location": "Vilnius, Lithuania",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "University of Waterloo",
-      "stackoverflow_login": "null",
-      "name": "Terry Taewoong Um",
-      "login": "terryum",
       "email": "terry.t.um@gmail.com",
-      "location": "Waterloo, ON, Canada"
+      "name": "Terry Taewoong Um",
+      "company": "University of Waterloo",
+      "login": "terryum",
+      "location": "Waterloo, ON, Canada",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@Integration-Alpha",
-      "stackoverflow_login": "null",
-      "name": "Lucas Bassetti",
-      "login": "LucasBassetti",
       "email": "lucasbr.dafonseca@gmail.com",
-      "location": "Vit\u00f3ria - ES"
+      "name": "Lucas Bassetti",
+      "company": "@Integration-Alpha",
+      "login": "LucasBassetti",
+      "location": "Vit\u00f3ria - ES",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "James Osborn",
-      "login": "TheJambo",
       "email": "james@james.am",
-      "location": "Cambridge, United Kingdom"
+      "name": "James Osborn",
+      "company": null,
+      "login": "TheJambo",
+      "location": "Cambridge, United Kingdom",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Darshak Parikh",
+      "company": null,
       "login": "dar5hak",
-      "email": null,
-      "location": "Pune, India"
+      "location": "Pune, India",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@iiitv @fossasia @appbaseio",
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Avi Aryan",
+      "company": "@iiitv @fossasia @appbaseio",
       "login": "aviaryan",
-      "email": null,
-      "location": "Gandhinagar, India"
+      "location": "Gandhinagar, India",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@php-earth ",
-      "stackoverflow_login": "null",
-      "name": "Peter Kokot",
-      "login": "petk",
       "email": "peterkokot@gmail.com",
-      "location": "Area 51"
+      "name": "Peter Kokot",
+      "company": "@php-earth ",
+      "login": "petk",
+      "location": "Area 51",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "d3viant0ne",
-      "name": "Joshua Wiens",
-      "login": "d3viant0ne",
       "email": "wiens.joshua@gmail.com",
-      "location": "Twitter - @d3viant0ne "
+      "name": "Joshua Wiens",
+      "company": null,
+      "login": "d3viant0ne",
+      "location": "Twitter - @d3viant0ne ",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@activetheory",
-      "stackoverflow_login": "null",
-      "name": "Terkel",
-      "login": "terkelg",
       "email": "terkel@terkel.com",
-      "location": "Los Angeles, CA"
+      "name": "Terkel",
+      "company": "@activetheory",
+      "login": "terkelg",
+      "location": "Los Angeles, CA",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "Micromata GmbH",
-      "stackoverflow_login": "null",
-      "name": "Michael K\u00fchnel",
-      "login": "mischah",
       "email": "mail@michael-kuehnel.de",
-      "location": "Kassel, Germany"
+      "name": "Michael K\u00fchnel",
+      "company": "Micromata GmbH",
+      "login": "mischah",
+      "location": "Kassel, Germany",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Kaspar Emanuel",
-      "login": "kasbah",
       "email": "kaspar.emanuel@gmail.com",
-      "location": null
+      "name": "Kaspar Emanuel",
+      "company": null,
+      "login": "kasbah",
+      "location": null,
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "JesseTG",
-      "name": "Jesse Talavera-Greenberg",
-      "login": "JesseTG",
       "email": "jessetalavera@aol.com",
-      "location": "New York, NY"
+      "name": "Jesse Talavera-Greenberg",
+      "company": null,
+      "login": "JesseTG",
+      "location": "New York, NY",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "Binary Level",
-      "stackoverflow_login": "null",
-      "name": "Spiros Gerokostas",
-      "login": "sger",
       "email": "spiros.gerokostas@gmail.com",
-      "location": "Athens"
+      "name": "Spiros Gerokostas",
+      "company": "Binary Level",
+      "login": "sger",
+      "location": "Athens",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Timo Furrer",
-      "login": "timofurrer",
       "email": "tuxtimo@gmail.com",
-      "location": "__switzerland__"
+      "name": "Timo Furrer",
+      "company": null,
+      "login": "timofurrer",
+      "location": "__switzerland__",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "University of Texas at Austin",
-      "stackoverflow_login": "harpribot",
-      "name": "Harshal Priyadarshi",
-      "login": "harpribot",
       "email": "harshal.priyadarshi@utexas.edu",
-      "location": "Austin, TX"
+      "name": "Harshal Priyadarshi",
+      "company": "University of Texas at Austin",
+      "login": "harpribot",
+      "location": "Austin, TX",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
+      "email": null,
       "name": "Aliaksandr Belik",
+      "company": null,
       "login": "aliesbelik",
-      "email": null,
-      "location": "Belarus"
+      "location": "Belarus",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@wearespindle ",
-      "stackoverflow_login": "null",
-      "name": "Henk",
-      "login": "hbokh",
       "email": "hbokhoven@gmail.com",
-      "location": "Groningen, the Netherlands"
+      "name": "Henk",
+      "company": "@wearespindle ",
+      "login": "hbokh",
+      "location": "Groningen, the Netherlands",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "Web Semantics, Inc.",
-      "stackoverflow_login": "null",
-      "name": "Adnan M.Sagar, PhD",
-      "login": "websemantics",
       "email": "adnan@websemantics.ca",
-      "location": "Toronto, Canada"
+      "name": "Adnan M.Sagar, PhD",
+      "company": "Web Semantics, Inc.",
+      "login": "websemantics",
+      "location": "Toronto, Canada",
+      "stackoverflow_login": "null"
    },
    {
-      "company": "@Dropbox",
-      "stackoverflow_login": "null",
-      "name": "Sergei Vorobev",
-      "login": "vors",
       "email": null,
-      "location": "Seattle, WA"
+      "name": "Sergei Vorobev",
+      "company": "@Dropbox",
+      "login": "vors",
+      "location": "Seattle, WA",
+      "stackoverflow_login": "null"
    },
    {
-      "company": null,
-      "stackoverflow_login": "null",
-      "name": "Nicole Saidy",
-      "login": "nicolesaidy",
       "email": "nicolesaidy@gmail.com",
-      "location": null
-   },
-   {
-      "company": "@Famolus ",
-      "stackoverflow_login": "tandavas",
-      "name": "Thanakron Tandavas",
-      "login": "tandavas",
-      "email": "tandavas@famolus.com",
-      "location": "Bangkok, Thailand"
-   },
-   {
+      "name": "Nicole Saidy",
       "company": null,
-      "stackoverflow_login": "null",
-      "name": "Nir Galon",
-      "login": "nirgn975",
-      "email": "nir@galon.io",
-      "location": "Israel"
+      "login": "nicolesaidy",
+      "location": null,
+      "stackoverflow_login": "null"
+   },
+   {
+      "email": "tandavas@famolus.com",
+      "name": "Thanakron Tandavas",
+      "company": "@Famolus ",
+      "login": "tandavas",
+      "location": "Bangkok, Thailand",
+      "stackoverflow_login": "null"
    }
 ]

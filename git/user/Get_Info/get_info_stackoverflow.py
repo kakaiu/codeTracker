@@ -23,11 +23,11 @@ def InfoByName(name):
     default_info = {"display_name":"","location":"","user_id":0}
     user_api = 'https://api.stackexchange.com/2.2/users' \
                '?pagesize=10&order=asc&min={}&sort=name&inname={}' \
-               '&site=stackoverflow&key=ZEaUTt2btGSROV8q3NeOQg(('.format(name,name)
+               '&site=stackoverflow'.format(name,name)
     app_key = '&key=ZEaUTt2btGSROV8q3NeOQg(('
     #try:
     info = request_api(user_api + app_key)
-    print(user_api)
+    print("Getting possible Stack Overflow user info from api: {}".format(user_api))
     user_info = info["items"]
     if not user_info == None:
         for item in user_info:
@@ -47,7 +47,7 @@ def GetGitAccount(user_id):
         user_source = request_source(stk_url)
         # user_source = request_url(stk_url)
         user_href = re.findall(r"<a.*?href=.*?<\/a>", user_source, re.I | re.S | re.M)
-        # find it directly?
+        # find it directly
         git_account = None
         for href in user_href:
             if 'https://github.com/' in href:
@@ -65,12 +65,14 @@ def match_info(git_info):
     default_info = []
     new_info = []
     for git_developer in git_info:
-        possible_name = nf.name_form(git_developer["name"], git_developer["login"])
+        print("finding Github user {} on Stack Overflow...".format(git_developer["name"]))
+        possible_name = nf.possible_names(git_developer["name"], git_developer["login"])
+        print("possible name:{}".format(possible_name))
         for name in possible_name:
             # the info of developers with the same name but different info
             stk_info = InfoByName(name)
-            print(stk_info)
             if not stk_info == default_info:
+                print("The possible info of Stack Overflow user {} is {}".format(name, stk_info))
                 for stk_developer in stk_info:
                     user_id = stk_developer['user_id']
                     git_account = GetGitAccount(user_id)
@@ -80,7 +82,7 @@ def match_info(git_info):
                 if not git_developer["stackoverflow_login"] == "null":
                     break
             else:
-                break
+                print("The Stack Overflow info of possible username {} for github user {} can not be found".format(name,git_developer["name"]))
 
         if not git_developer["stackoverflow_login"] == "null":
             print("The Stack Overflow display_name for github user {} is {}".format(git_developer["name"],git_developer['stackoverflow_login']))
