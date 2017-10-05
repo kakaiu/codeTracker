@@ -6,6 +6,6 @@ Clang is a useful tool to show complete information of the syntax tree of a prog
 First install Clang and pycparser with: 
 
     $ sudo apt-get install clang
-    $ sudo apt-get install pycparser
+    $ pip install pycparser
 
     
