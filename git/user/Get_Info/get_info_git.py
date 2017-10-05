@@ -14,6 +14,7 @@ def request_url(url):
     app = '?per_page=100&client_id=8c3d71c8826d42e7cdf6' \
           '&client_secret=ae3a7ca2c74dffbf9558fff3b367e32e22140547'
     res = requests.get(url+app)
+    res.encoding = 'utf-8'
     info = res.json()
     return info
 
@@ -30,17 +31,20 @@ def get_info(commit_api):
     cTime = time.time()
     print("Getting info of users in the commit history...")
     for item in developer_info:
-        author_api = item["author"]["url"]
-        committer_api = item["committer"]["url"]
+        print(item)
+        author_api = (item["author"]["url"] if not item["author"] == None else "null")
+        committer_api = (item["committer"]["url"] if not item["committer"] == None else "null")
 
-        author_info = request_url(author_api)
-        author_info = extract_dict(author_info)
+        if not author_api == "null":
+            author_info = request_url(author_api)
+            author_info = extract_dict(author_info)
+            Info.append(author_info)
 
-        committer_info = request_url(committer_api)
-        committer_info = extract_dict(committer_info)
+        if not committer_api == "null":
+            committer_info = request_url(committer_api)
+            committer_info = extract_dict(committer_info)
+            Info.append(committer_info)
 
-        Info.append(author_info)
-        Info.append(committer_info)
     print(time.time() - cTime)
     Info = delete_duplicate(Info)
     return Info

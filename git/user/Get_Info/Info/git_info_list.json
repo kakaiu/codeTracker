@@ -1,0 +1,362 @@
+[
+   {
+      "location": "Pittsburgh, PA",
+      "company": null,
+      "email": null,
+      "login": "flacjacket",
+      "stackoverflow_login": "null",
+      "name": "Sean Vig"
+   },
+   {
+      "location": "Mountain View, CA",
+      "company": "@google @tensorflow ",
+      "email": null,
+      "login": "frankchn",
+      "stackoverflow_login": "null",
+      "name": "Frank Chen"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": null,
+      "login": "web-flow",
+      "stackoverflow_login": "null",
+      "name": "GitHub Web Flow"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": "pavelchristof@gmail.com",
+      "login": "pavelchristof",
+      "stackoverflow_login": "null",
+      "name": "Pavel Christof"
+   },
+   {
+      "location": "South Korea",
+      "company": "Seoul National University",
+      "email": "me@taehoonlee.com",
+      "login": "taehoonlee",
+      "stackoverflow_login": "null",
+      "name": "Taehoon Lee"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": null,
+      "login": "tensorflower-gardener",
+      "stackoverflow_login": "null",
+      "name": "TensorFlower Gardener"
+   },
+   {
+      "location": "Sunnyvale, CA",
+      "company": "Azul Systems",
+      "email": "sanjoy@playingwithpointers.com",
+      "login": "sanjoy",
+      "stackoverflow_login": "null",
+      "name": "Sanjoy Das"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": null,
+      "login": "case540",
+      "stackoverflow_login": "null",
+      "name": "Michael Case"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": null,
+      "login": "wujingyue",
+      "stackoverflow_login": "null",
+      "name": null
+   },
+   {
+      "location": "San Francisco, CA",
+      "company": null,
+      "email": "derek.murray@gmail.com",
+      "login": "mrry",
+      "stackoverflow_login": "mrry",
+      "name": "Derek Murray"
+   },
+   {
+      "location": "New York City",
+      "company": "Google",
+      "email": null,
+      "login": "langmore",
+      "stackoverflow_login": "null",
+      "name": "Ian Langmore"
+   },
+   {
+      "location": "Laniakea Supercluster",
+      "company": "Google",
+      "email": null,
+      "login": "caisq",
+      "stackoverflow_login": "null",
+      "name": "Shanqing Cai"
+   },
+   {
+      "location": "San Francisco",
+      "company": null,
+      "email": null,
+      "login": "martinwicke",
+      "stackoverflow_login": "null",
+      "name": "Martin Wicke"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": null,
+      "login": "ispirmustafa",
+      "stackoverflow_login": "null",
+      "name": null
+   },
+   {
+      "location": "San Francisco",
+      "company": "@google ",
+      "email": "rohan100jain@gmail.com",
+      "login": "rohan100jain",
+      "stackoverflow_login": "null",
+      "name": "Rohan Jain"
+   },
+   {
+      "location": "Mountain View",
+      "company": null,
+      "email": null,
+      "login": "sb2nov",
+      "stackoverflow_login": "null",
+      "name": "Sourabh Bajaj"
+   },
+   {
+      "location": "New Mexico",
+      "company": null,
+      "email": null,
+      "login": "jimpallomeni",
+      "stackoverflow_login": "null",
+      "name": "John Impallomeni"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": null,
+      "login": "gunan",
+      "stackoverflow_login": "gunan",
+      "name": null
+   },
+   {
+      "location": "Munich, Germany",
+      "company": "Google",
+      "email": null,
+      "login": "vladmos",
+      "stackoverflow_login": "null",
+      "name": "Vladimir Moskva"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": null,
+      "login": "hawkinsp",
+      "stackoverflow_login": "null",
+      "name": "Peter Hawkins"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": null,
+      "login": "jpienaar",
+      "stackoverflow_login": "null",
+      "name": null
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": "chris@ckennelly.com",
+      "login": "ckennelly",
+      "stackoverflow_login": "null",
+      "name": "Chris Kennelly"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": null,
+      "login": "asimshankar",
+      "stackoverflow_login": "null",
+      "name": "Asim Shankar"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": null,
+      "login": "allenlavoie",
+      "stackoverflow_login": "null",
+      "name": "Allen Lavoie"
+   },
+   {
+      "location": "Mountain View, CA",
+      "company": null,
+      "email": null,
+      "login": "rryan",
+      "stackoverflow_login": "null",
+      "name": "RJ Skerry-Ryan"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": "xiejw0217@gmail.com",
+      "login": "xiejw",
+      "stackoverflow_login": "null",
+      "name": "xiejw"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": null,
+      "login": "annarev",
+      "stackoverflow_login": "null",
+      "name": null
+   },
+   {
+      "location": "New York",
+      "company": null,
+      "email": "chris1tava@gmail.com",
+      "login": "ctava",
+      "stackoverflow_login": "null",
+      "name": "Chris Tava"
+   },
+   {
+      "location": "San Diego, CA",
+      "company": "UCSD",
+      "email": null,
+      "login": "chrisdonahue",
+      "stackoverflow_login": "null",
+      "name": "Chris Donahue"
+   },
+   {
+      "location": "Chicago, IL, US",
+      "company": null,
+      "email": null,
+      "login": "terrytangyuan",
+      "stackoverflow_login": "null",
+      "name": "Yuan (Terry) Tang"
+   },
+   {
+      "location": "San Francisco, CA",
+      "company": "@tensorflow @google",
+      "email": "vomjom@vomjom.net",
+      "login": "jhseu",
+      "stackoverflow_login": "null",
+      "name": "Jonathan Hseu"
+   },
+   {
+      "location": null,
+      "company": "@google ",
+      "email": null,
+      "login": "ebrevdo",
+      "stackoverflow_login": "null",
+      "name": null
+   },
+   {
+      "location": "Mountain View",
+      "company": null,
+      "email": null,
+      "login": "isaprykin",
+      "stackoverflow_login": "null",
+      "name": "Igor"
+   },
+   {
+      "location": "Mountain View, CA",
+      "company": "Google",
+      "email": null,
+      "login": "jlebar",
+      "stackoverflow_login": "null",
+      "name": "Justin Lebar"
+   },
+   {
+      "location": "United States",
+      "company": "Google",
+      "email": null,
+      "login": "sguada",
+      "stackoverflow_login": "null",
+      "name": "Sergio Guadarrama"
+   },
+   {
+      "location": "London, UK",
+      "company": null,
+      "email": null,
+      "login": "anight",
+      "stackoverflow_login": "null",
+      "name": "Andrei Nigmatulin"
+   },
+   {
+      "location": "Ithaca, NY, USA",
+      "company": "Cornell University",
+      "email": "andru@cs.cornell.edu",
+      "login": "andrewcmyers",
+      "stackoverflow_login": "null",
+      "name": "Andrew Myers"
+   },
+   {
+      "location": "San Francisco, CA",
+      "company": ".",
+      "email": "yaroslavvb@gmail.com",
+      "login": "yaroslavvb",
+      "stackoverflow_login": "null",
+      "name": "Yaroslav Bulatov"
+   },
+   {
+      "location": "Beijing, China.",
+      "company": "weibo, sina.",
+      "email": null,
+      "login": "facaiy",
+      "stackoverflow_login": "null",
+      "name": "Yan Facai (\u989c\u53d1\u624d)"
+   },
+   {
+      "location": null,
+      "company": "@tensorflow ",
+      "email": "akshayka@cs.stanford.edu",
+      "login": "akshayka",
+      "stackoverflow_login": "null",
+      "name": "Akshay Agrawal"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": null,
+      "login": "saeta",
+      "stackoverflow_login": "null",
+      "name": "Brennan Saeta"
+   },
+   {
+      "location": "Mountain View, CA, USA",
+      "company": "Google",
+      "email": null,
+      "login": "aselle",
+      "stackoverflow_login": "null",
+      "name": "Andrew Selle"
+   },
+   {
+      "location": null,
+      "company": "@google ",
+      "email": null,
+      "login": "learyg",
+      "stackoverflow_login": "null",
+      "name": "Chris Leary"
+   },
+   {
+      "location": "Mountain View, CA",
+      "company": null,
+      "email": null,
+      "login": "yifeif",
+      "stackoverflow_login": "yifeif",
+      "name": "Yifei Feng"
+   },
+   {
+      "location": null,
+      "company": null,
+      "email": "dev@davidsoergel.com",
+      "login": "davidsoergel",
+      "stackoverflow_login": "null",
+      "name": "David Soergel"
+   }
+]
