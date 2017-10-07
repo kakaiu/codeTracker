@@ -24,12 +24,18 @@ def get_email(line):
     return email
 
 
+def get_file_name(line):
+    regex = re.compile("\+{3}\sb/(.*)$")
+    file_name = regex.findall(line)
+    return file_name
+
+
 def get_code_snippet(lines):
     snippet_list = list()
     snippet = list()
     regex_plus = re.compile("^\+(?!\+\+)(.*)$")
     regex_minus = re.compile("^-(?!--)(.*)$")
-    regex_remain = re.compile("^\s+(.*)")
+    regex_remain = re.compile("^\s(.*)")
     regex_pause = re.compile("^(@@|hash)")
     for line in lines:
         snippet_plus = regex_plus.findall(line)
@@ -38,7 +44,8 @@ def get_code_snippet(lines):
         if len(snippet_plus):
             snippet = snippet_plus
         elif len(snippet_minus):
-            snippet = snippet_minus
+            snippet = str()
+            # snippet = snippet_minus
         elif len(snippet_remain):
             snippet = snippet_remain
         if regex_pause.findall(line):
@@ -52,6 +59,15 @@ def get_change_section(line):
     regex = re.compile("^@@")
     if regex.findall(line):
         return 1
+    else:
+        return 0
+
+
+def get_change_file(line):
+    regex = re.compile("diff\s--git\sa/.*\sb/(.*)$")
+    file_name = regex.findall(line)
+    if file_name:
+        return file_name
     else:
         return 0
 
