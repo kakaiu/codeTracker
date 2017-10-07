@@ -38,24 +38,32 @@ if __name__ == '__main__':
             raise SystemExit("Error: Could not create the output dir.")
 
     if func_argv == "--mapping":
-        commit_history = mapping.get_code(input_file)
+        if not os.path.exists(input_file):
+            print("{}: No such file or directory".format(input_file))
+        else:
+            commit_history = mapping.get_code(input_file)
+            mapping.print_code_list(commit_history)
+            history_file = os.path.join(dir_path, output_dir, 'commit_history.json')
+            with open(history_file, 'w') as f:
+                json.dump(commit_history, f, indent=3)
+    elif func_argv == "--fsearch":
+        commit_history = mapping.get_code(dir_path)
         history_file = os.path.join(dir_path, output_dir, 'commit_history.json')
         with open(history_file, 'w') as f:
             json.dump(commit_history, f, indent=3)
-    elif func_argv == "--search":
-        if not os.path.exists(os.path.join(output_dir, 'commit_history.json')):
-            try:
-                commit_history = mapping.get_code(input_file)
-                history_file = os.path.join(dir_path, output_dir, 'commit_history.json')
-                with open(history_file, 'w') as f:
-                    json.dump(commit_history, f, indent=3)
-            except OSError as exception:
-                raise SystemExit("Error: Search failed")
         input_code = search_commit_history.get_input_code(input_file)
         search_result = search_commit_history.search_in_history(input_code, output_dir)
         search_commit_history.print_match_result(search_result)
+    elif func_argv == "--search":
+        commit_history = mapping.get_code(dir_path)
+        history_file = os.path.join(dir_path, output_dir, 'commit_history.json')
+        with open(history_file, 'w') as f:
+            json.dump(commit_history, f, indent=3)
+        input_code = input_file
+        search_result = search_commit_history.search_in_history(input_code, output_dir)
+        search_commit_history.print_match_result(search_result)
     else:
-        print("Lack of argument")
+        print("Wrong argument!")
         print("Usage: python main.py input_code_file output_dir <--search|--mapping>")
 
 

@@ -26,10 +26,7 @@ def search_in_history(input_code, output_dir):
         if input_code in code['code_snippet']:
             match_data = code
             match_data_list.append(match_data)
-    if len(match_data_list):
-        return match_data_list
-    else:
-        return "Error! No data in this git repository match with input code."
+    return match_data_list
 
 
 def print_match_result(data_list):

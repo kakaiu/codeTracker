@@ -47,6 +47,10 @@ def get_code(inp):
             code_snippet = get_info.get_code_snippet(lines[(index + 1):len(lines)])
             code_dict['code_snippet'] = "\n".join(code_snippet)
             code_list.append(code_dict)
+    return code_list
+
+
+def print_code_list(code_list):
     for code in code_list:
         print('\033[1;31m')
         print('*' * 150)
@@ -71,4 +75,3 @@ def get_code(inp):
         # for line in snippet:
         #     print(line)
         print(code["code_snippet"])
-    return code_list
