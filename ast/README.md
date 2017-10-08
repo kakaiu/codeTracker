@@ -1,11 +1,39 @@
-# Use abstract syntax tree for code similarity detection
+# Use abstract syntax tree for code plagiarism detection
 Author: king-jojo
+e-mail: kimwhu@outlook.com
 
-Clang is a useful tool to show complete information of the syntax tree of a program. However, in order to find the same pattern of the syntax tree of two different programs, we should tailor the syntax tree to preserve the information we really need. We apply pycparser to generate the shrinked syntax tree and save it in the json format. Next, we will use the json file to work out the hash table of the tree. 
+Clang is a useful tool to show complete information of the syntax tree of a program. This project intends to apply Clang to generating syntax tree of programs. By comparing different syntax trees, we can find the same nodes and parts of two programs so that we can detect which program is suspected of plagiarising. The same parts two syntax trees share will be distinguished by red nodes shown in graph. However, this project has just started for a short time and some functions haven't realized yet. 
 
-First install Clang and pycparser with: 
+## Usage
+First install Clang and Graphviz with: 
 
     $ sudo apt-get install clang
-    $ pip install pycparser
+    $ sudo pip install graphviz
 
-    
+## Write into json
+This project can convert syntax tree into json format, like this: 
+![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast2json.png)
+
+## Generate AST with Graphviz
+The first AST is shown in the pdf format
+![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast1.png)
+
+The second is shown below 
+![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast2.png)
+
+The same part of two trees is labeled in red. 
+
+## In future 
+There are so many things to do to complete this project in a perfect version. 
+### Extract the subtrees two programs share
+This function can help programmer understand some program fast. By extracting the same subtree, we can know the same function of two programs. 
+### Establish a code dictionary
+We will establish a dictionary, which contains the syntax tree of many classical programs. Just compare the syntax tree of the program and the dictionary, we can find some classical algorithm used in the program so that it is easy to understand it. Further more, we can let the computer to program just by importing the function you want and the computer will combine the syntax trees of classical algorithm to generate the final code of the program with the help of AI or other things. 
+### Plagiarism detection
+There are several strategies for us to detect plagiarism by comparing syntax trees
+#### Syntax tree transform
+We will apply some code plagiarism strategies to transform the syntax tree into standard shape. For example, normalize all the syntax trees of if...else... into switch... and all the while circulation into for circulation. 
+#### Map into Hash table
+We transform syntax tree into arraylist and assign value to the specific node and finally mapping into the Hash table
+#### Top Down Unordered Maximum Common Subtree Isomorphism(TDUMCSI)
+Ligaarden(2007) process an AST based approach to detect plagiarism in JAVA source code. AST is generated for each of the source code files and a preorder traversal is done through the ASTs to be compared as done to generate node sequences. TDUMCSI algorithm along with sequence matching algorithms - NW algorithm and LCS algorithm, are then used to compare the node sequences and find matches. 

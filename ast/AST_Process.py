@@ -10,7 +10,7 @@ RE_LINE = re.compile(r'<(\w.*?)>')
 
 
 def AST_preprocess(code_path):
-    """Preprocess of the code. Remove the header files and standard libraries"""
+    """Preprocess of the code. Remove the head files and standard libraries"""
     path_new = './example/test_new.c'
     with open(code_path , 'r') as f:
         lines = f.readlines()
@@ -35,8 +35,9 @@ def AST_generate(code_path, preprocess):
         F = os.popen(command)
     return F
 
-def Node_extract(AST):
+def Node_extract(code_path, preprocess):
     """Extract the nodes"""
+    AST = AST_generate(code_path, preprocess)
     node_list = []
     for lines in AST:
         Node_dict = dict()
