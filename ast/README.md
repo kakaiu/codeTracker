@@ -18,7 +18,7 @@ This project can convert syntax tree into json format, like this:
 The first AST is shown in the pdf format
 ![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast1.png)
 
-The second is shown below 
+The second AST is also shown in the pdf format as follows
 ![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast2.png)
 
 The same part of two trees is labeled in red. 
