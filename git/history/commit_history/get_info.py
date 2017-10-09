@@ -43,16 +43,23 @@ def get_code_snippet(lines):
         snippet_remain = regex_remain.findall(line)
         if len(snippet_plus):
             snippet = snippet_plus
-        elif len(snippet_minus):
-            snippet = str()
+        # elif len(snippet_minus):
             # snippet = snippet_minus
         elif len(snippet_remain):
             snippet = snippet_remain
+        else:
+            snippet = str()
         if regex_pause.findall(line):
             break
         if len(snippet):
             snippet_list.append(snippet[0])
     return snippet_list
+
+
+def get_date(line):
+    regex = re.compile("date:\s([0-9\-:+\s]*)\sauthor:")
+    date = regex.findall(line)
+    return date
 
 
 def get_change_section(line):
@@ -71,23 +78,24 @@ def get_change_file(line):
     else:
         return 0
 
-# def get_line_index(inp):
-#     a_start_line_list = list()
-#     a_total_line_list = list()
-#     b_start_line_list = list()
-#     b_total_line_list = list()
-#     lines = inp.split("\n")
-#     regex_a_start = re.compile("@@\s-(\d+),\d+\s")
-#     regex_a_total = re.compile("@@\s-\d+,(\d+)\s")
-#     regex_b_start = re.compile("\+(\d+),\d+\s@@")
-#     regex_b_total = re.compile("\+\d+,(\d+)\s@@")
-#     for line in lines:
-#         a_start_line = regex_a_start.findall(line)
-#         a_total_line = regex_a_total.findall(line)
-#         b_start_line = regex_b_start.findall(line)
-#         b_total_line = regex_b_total.findall(line)
-#         a_start_line_list.extend(a_start_line)
-#         a_total_line_list.extend(a_total_line)
-#         b_start_line_list.extend(b_start_line)
-#         b_total_line_list.extend(b_total_line)
-#     return a_start_line_list, a_total_line_list, b_start_line_list, b_total_line_list
+
+def get_line_index(inp):
+    a_start_line_list = list()
+    a_total_line_list = list()
+    b_start_line_list = list()
+    b_total_line_list = list()
+    lines = inp.split("\n")
+    regex_a_start = re.compile("@@\s-(\d+),\d+\s")
+    regex_a_total = re.compile("@@\s-\d+,(\d+)\s")
+    regex_b_start = re.compile("\+(\d+),\d+\s@@")
+    regex_b_total = re.compile("\+\d+,(\d+)\s@@")
+    for line in lines:
+        a_start_line = regex_a_start.findall(line)
+        a_total_line = regex_a_total.findall(line)
+        b_start_line = regex_b_start.findall(line)
+        b_total_line = regex_b_total.findall(line)
+        a_start_line_list.extend(a_start_line)
+        a_total_line_list.extend(a_total_line)
+        b_start_line_list.extend(b_start_line)
+        b_total_line_list.extend(b_total_line)
+    return a_start_line_list, a_total_line_list, b_start_line_list, b_total_line_list

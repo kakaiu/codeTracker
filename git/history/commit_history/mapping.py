@@ -19,7 +19,6 @@ def get_code(inp):
               # + " > " + outp + "/log.txt"
     input_data = os.popen(command)
     data = input_data.read()
-    # print(data)
     lines = data.split("\n")
     for index, line in enumerate(lines):
         code_dict = dict()
@@ -28,21 +27,19 @@ def get_code(inp):
             email = get_info.get_email(line)
             if len(email):
                 commit_author = author[0]
-                # code_dict['author'] = commit_author
-                # print(commit_author)
                 commit_email = email[0]
-                # code_dict['email'] = commit_email
-                # print(commit_email)
-                # code_snippet = get_info.get_code_snippet(lines[(index + 1):len(lines)])
-                # code_dict['code_snippet'] = code_snippet
+                commit_date = get_info.get_date(line)
+                if len(commit_date):
+                    commit_date = commit_date[0]
         elif get_info.get_change_file(line):
             commit_file = get_info.get_change_file(line)
-            code_dict['file'] = commit_file[0]
+            # code_dict['file'] = commit_file[0]
         elif get_info.get_change_section(line):
             code_dict['file'] = commit_file[0]
             code_dict['author'] = commit_author
             # print(commit_author)
             code_dict['email'] = commit_email
+            code_dict['commit_date'] = commit_date
             # print(commit_email)
             code_snippet = get_info.get_code_snippet(lines[(index + 1):len(lines)])
             code_dict['code_snippet'] = "\n".join(code_snippet)
@@ -69,9 +66,10 @@ def print_code_list(code_list):
         print("")
         print("")
         print("")
+        print("Commit Date: {}".format(code['commit_date']))
+        print("")
+        print("")
+        print("")
         print('*' * 150)
         print('\033[0m')
-        # snippet = code["code_snippet"]
-        # for line in snippet:
-        #     print(line)
         print(code["code_snippet"])

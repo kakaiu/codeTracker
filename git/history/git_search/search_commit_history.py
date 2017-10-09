@@ -30,6 +30,7 @@ def search_in_history(input_code, output_dir):
 
 
 def print_match_result(data_list):
+    print('\033[1;34m')
     print("Found {} match result".format(len(data_list)))
     for data in data_list:
         print('\033[1;31m')
@@ -46,6 +47,10 @@ def print_match_result(data_list):
         print("")
         print("")
         print("File Name: {}".format(data['file']))
+        print("")
+        print("")
+        print("")
+        print("Commit Date: {}".format(data['commit_date']))
         print("")
         print("")
         print("")
