@@ -5,7 +5,7 @@
 # Licensed under the GNU LGPL v2.1 - http://www.gnu.org/licenses/lgpl.html
 
 """
-USAGE: %(program)s input_code_file output_dir <--search|--mapping>
+USAGE: %(program)s input_code_file output_dir <--fsearch|--search|--mapping>
 """
 
 import json
@@ -29,7 +29,7 @@ if __name__ == '__main__':
     # check and process input arguments
     if len(sys.argv) != 4:
         print(len(sys.argv))
-        raise SystemExit("Usage: python main.py input_code_file output_dir <--search|--mapping>")
+        raise SystemExit("Usage: python main.py input_code_file output_dir <--fsearch|--search|--mapping>")
     input_file, output_dir, func_argv = sys.argv[1:4]
     if not os.path.exists(output_dir):
         try:
@@ -64,7 +64,7 @@ if __name__ == '__main__':
         search_commit_history.print_match_result(search_result)
     else:
         print("Wrong argument!")
-        print("Usage: python main.py input_code_file output_dir <--search|--mapping>")
+        print("Usage: python main.py input_code_file output_dir <--fsearch|--search|--mapping>")
 
 
 
