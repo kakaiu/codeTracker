@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-#__author__ :king-jojo
+
+__author__  = 'king-jojo'
 
 import json
 import re
@@ -18,7 +19,11 @@ def to_dict(node_list):
     for x in range(1, len(node_list_cp)):
         num = node_list_cp[x]['_nodetype'].find('-')
         cp_list.append(num)
-        node_list_cp[x]['_nodetype'] = re.findall(RE_AZ, node_list_cp[x]['_nodetype'])[0]
+        cut = re.findall(RE_AZ, node_list_cp[x]['_nodetype'])
+        if len(cut) > 0:
+            node_list_cp[x]['_nodetype'] = cut[0]
+        else:
+            node_list_cp[x]['_nodetype'] = ''
     num_list = cp_list[:]
     for y in range(max(num_list) - 2, 0, -2):
         for x in range(len(num_list) - 1, -1, -1):

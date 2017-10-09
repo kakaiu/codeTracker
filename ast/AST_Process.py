@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-#__author__ :king-jojo
+
+__author__  = 'king-jojo'
 
 import os
 import re
@@ -28,17 +29,20 @@ def AST_generate(code_path, preprocess):
     """Print AST based on command line"""
     if preprocess == True:
         code_path = AST_preprocess(code_path)
-        command = 'clang -Xclang -ast-dump -fsyntax-only ' + code_path
+        command = 'clang-check -ast-dump ' + code_path + ' --extra-arg="-fno-color-diagnostics" --'
         F = os.popen(command)
+        # (status, output) = commands.getstatusoutput('clang -Xclang -ast-dump -fsyntax-only ' + code_path)
     else:
-        command = 'clang -Xclang -ast-dump -fsyntax-only ' + code_path
+        command = 'clang-check -ast-dump ' + code_path + ' --extra-arg="-fno-color-diagnostics" --'
         F = os.popen(command)
+        # (status, output) = commands.getstatusoutput('clang -Xclang -ast-dump -fsyntax-only ' + code_path)
     return F
 
 def Node_extract(code_path, preprocess):
     """Extract the nodes"""
     AST = AST_generate(code_path, preprocess)
     node_list = []
+    new_line = ''
     for lines in AST:
         Node_dict = dict()
         if len(re.findall(RE_NODE, lines)) > 0:

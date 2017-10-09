@@ -1,10 +1,10 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-#__author__ :king-jojo
+
+__author__  = 'king-jojo'
 
 from graphviz import Digraph
 from AST_Process import Node_extract
-from AST_Compare import Seqlist_compare
 import re
 
 RE_AZ = re.compile(r'-(.*?) ')
@@ -18,7 +18,11 @@ def node_graph(code_path, preprocess, same_list):
     for x in range(1, len(node_list)):
         num = node_list[x]['_nodetype'].find('-')
         num_list.append(num)
-        node_list[x]['_nodetype'] = re.findall(RE_AZ, node_list[x]['_nodetype'])[0]
+        cut = re.findall(RE_AZ, node_list[x]['_nodetype'])
+        if len(cut) > 0:
+            node_list[x]['_nodetype'] = cut[0]
+        else:
+            node_list[x]['_nodetype'] = ''
     num_list.insert(0,0)
     if same_list == None:
         num_cp = num_list

@@ -11,14 +11,25 @@ First install Clang and Graphviz with:
     $ sudo pip install graphviz
 
 ## Write into json
-This project can convert syntax tree into json format, like this: 
+This project can convert syntax tree into json format
+
+    $ python main.py --tojson c_file_dir
+
 ![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast2json.png)
 
-## Generate AST with Graphviz
+## Generate AST graph with Graphviz
+
+    $ python main.py --view c_file_dir
+
+![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast3.png)
+## Compare two ASTs
+
+    $ python main.py --compare c_file_dir1 c_file_dir2
+
 The first AST is shown in the pdf format
 ![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast1.png)
 
-The second AST is also shown in the pdf format as follows
+The second is shown below 
 ![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast2.png)
 
 The same part of two trees is labeled in red. 

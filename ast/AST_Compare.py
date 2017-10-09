@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-#__author__ :king-jojo
+
+__author__  = 'king-jojo'
 
 from AST2JSON import to_dict
 from AST_Process import Node_extract
@@ -89,7 +90,7 @@ def Seqlist_compare(seq_list1, seq_list2):
                     list2.append(index2)
     return [set1, set2]
 
-def seq_process(code_path, json_path, preprocess):
+def seq_process(code_path, preprocess):
     nodes = Node_extract(code_path, preprocess)
     dd = to_dict(nodes)
     num_list = dd[1]
