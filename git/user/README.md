@@ -53,8 +53,11 @@ For the comparison of tags, the tag score is used. By finding the number of tags
 * #### Threshold<br>
 The incomplete synonymous tag list and the different naming pattern of tags makes the matching of tags difficult. So there should be different weights of the two scores. The final score is the sum of the location score and twice of the tags score, and an appropriate threshold should be set to improve the matching rate.<br><br>
 Considering that there are developers who use the same username and location on both communities, but few tags are matched. The threshold has been set as 0.7 and 1.0.<br><br>
-Still use the developers in commit history of [awesome](https://github.com/sindresorhus/awesome), for threshold 0.7, the matching rate is 81.43% (57/70), and for threshold 1.0, the matching rate is 71.43% (50/70). <br><br>
-For the developers selected by the threshold, their user id and score are recorded as "userid_score" in a list for further verification. The reason for not using the form "username_score" is that there are developers with same username but different user ids on Stack Overflow. **(ﾟДﾟ*)ﾉ**
+Still use the developers in commit history of [awesome](https://github.com/sindresorhus/awesome):<br> 
+For threshold 0.7, the matching rate is 81.43% (57/70);<br>
+For threshold 1.0, the matching rate is 71.43% (50/70); <br>
+For threshold 1.5, the matching rate is 52.86% (37/70).<br><br>
+For the developers selected by the threshold, their user id and score are recorded as "userid_score" in a list for further verification. The reason for not using the form "username_score" is that there are developers with same username but different user ids on Stack Overflow.
 
 ## Future Work
 The next step is to find more synonymous tags, set an appropriate threshold and verify the linkage between the users matched by the score.
