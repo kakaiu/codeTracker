@@ -26,10 +26,10 @@ This project can convert syntax tree into json format
 
     $ python main.py --compare c_file_dir1 c_file_dir2
 
-The first AST is shown in the pdf format
+The first AST is shown in pdf format:
 ![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast1.png)
 
-The second is shown below 
+The second AST is also shown in pdf format as follows:
 ![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast2.png)
 
 The same part of two trees is labeled in red. 
