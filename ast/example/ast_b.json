@@ -1,0 +1,158 @@
+{
+    "coord": "invalid sloc", 
+    "_nodetype": "TranslationUnitDecl ", 
+    "_subnode": [
+        {
+            "coord": "invalid sloc", 
+            "_nodetype": "TypedefDecl", 
+            "_subnode": [
+                {
+                    "coord": "null", 
+                    "_nodetype": "BuiltinType", 
+                    "_subnode": []
+                }
+            ]
+        }, 
+        {
+            "coord": "invalid sloc", 
+            "_nodetype": "TypedefDecl", 
+            "_subnode": [
+                {
+                    "coord": "null", 
+                    "_nodetype": "BuiltinType", 
+                    "_subnode": []
+                }
+            ]
+        }, 
+        {
+            "coord": "invalid sloc", 
+            "_nodetype": "TypedefDecl", 
+            "_subnode": [
+                {
+                    "coord": "null", 
+                    "_nodetype": "PointerType", 
+                    "_subnode": [
+                        {
+                            "coord": "null", 
+                            "_nodetype": "BuiltinType", 
+                            "_subnode": []
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "coord": "invalid sloc", 
+            "_nodetype": "TypedefDecl", 
+            "_subnode": [
+                {
+                    "coord": "null", 
+                    "_nodetype": "ConstantArrayType", 
+                    "_subnode": [
+                        {
+                            "coord": "null", 
+                            "_nodetype": "RecordType", 
+                            "_subnode": [
+                                {
+                                    "coord": "null", 
+                                    "_nodetype": "Record", 
+                                    "_subnode": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "coord": "null", 
+            "_nodetype": "FunctionDecl", 
+            "_subnode": [
+                {
+                    "coord": "col:13, line:4:1", 
+                    "_nodetype": "CompoundStmt", 
+                    "_subnode": [
+                        {
+                            "coord": "line:3:3, col:10", 
+                            "_nodetype": "ReturnStmt", 
+                            "_subnode": [
+                                {
+                                    "coord": "col:10", 
+                                    "_nodetype": "ImplicitCastExpr", 
+                                    "_subnode": [
+                                        {
+                                            "coord": "col:10", 
+                                            "_nodetype": "DeclRefExpr", 
+                                            "_subnode": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "coord": "line:2:3, col:30", 
+                            "_nodetype": "DeclStmt", 
+                            "_subnode": [
+                                {
+                                    "coord": "col:3, col:29", 
+                                    "_nodetype": "VarDecl", 
+                                    "_subnode": [
+                                        {
+                                            "coord": "col:16, col:29", 
+                                            "_nodetype": "ParenExpr", 
+                                            "_subnode": [
+                                                {
+                                                    "coord": "col:17, col:27", 
+                                                    "_nodetype": "BinaryOperator", 
+                                                    "_subnode": [
+                                                        {
+                                                            "coord": "col:27", 
+                                                            "_nodetype": "IntegerLiteral", 
+                                                            "_subnode": []
+                                                        }, 
+                                                        {
+                                                            "coord": "col:17, col:23", 
+                                                            "_nodetype": "ParenExpr", 
+                                                            "_subnode": [
+                                                                {
+                                                                    "coord": "col:18, col:22", 
+                                                                    "_nodetype": "BinaryOperator", 
+                                                                    "_subnode": [
+                                                                        {
+                                                                            "coord": "col:22", 
+                                                                            "_nodetype": "IntegerLiteral", 
+                                                                            "_subnode": []
+                                                                        }, 
+                                                                        {
+                                                                            "coord": "col:18", 
+                                                                            "_nodetype": "ImplicitCastExpr", 
+                                                                            "_subnode": [
+                                                                                {
+                                                                                    "coord": "col:18", 
+                                                                                    "_nodetype": "DeclRefExpr"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "coord": "col:7, col:11", 
+                    "_nodetype": "ParmVarDecl", 
+                    "_subnode": []
+                }
+            ]
+        }
+    ]
+}
