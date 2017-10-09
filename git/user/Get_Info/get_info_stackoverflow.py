@@ -32,7 +32,6 @@ def InfoByName(name):
                '&site=stackoverflow'.format(name,name)
     info = request_api(user_api)
 
-    print("Getting possible Stack Overflow user info from api: {}".format(user_api))
     user_info = info["items"]
     if not user_info == None:
         for item in user_info:
@@ -57,7 +56,6 @@ def GetGitAccount(user_id):
             if 'https://github.com/' in href:
                 git_account = re.findall('href\=\"https\:\/\/github\.com\/(.*?)\"', href, re.S)
                 git_account = git_account[0]
-                print("The linked github account: {}".format(git_account))
         if not git_account == None:
             return git_account
         else:
@@ -101,10 +99,9 @@ def match_info(git_developer,stk_developer,syn_list):
 
     tags_git = git_developer["github_tags"]
     tags_stk = stk_developer["tags"]
-    print(syn_list)
+
     match_count = git_count = 0
-    if not tags_stk == "null":
-        print("Tags: {}".format(tags_stk))
+    if not tags_stk == [] and not tags_git == "null":
         for tag in tags_git:
             git_count = git_count + 1
             if tag in syn_list:
@@ -113,16 +110,18 @@ def match_info(git_developer,stk_developer,syn_list):
                     if stk_tags in tags_stk:
                         match_count = match_count + 1
                         break
+
+            elif tag in tags_stk:
+                match_count = match_count + 1
     else:
         match_count = 0
+        git_count = 1
 
     tag_score = match_count / git_count * 2
-    final_score = location_score + tag_score
-    print("Tag score for {} is {}".format(stk_developer["display_name"],tag_score))
-    print("Final score for {} is {}".format(stk_developer["display_name"],final_score))
+    final_score = round(location_score + tag_score, 2)
 
     if final_score >= 0.7:
-        match_name = stk_developer["display_name"] + "_" + str(final_score)
+        match_name = str(stk_developer["user_id"]) + "_" + str(final_score)
         return match_name
     else:
         return []
@@ -144,6 +143,7 @@ def match_account(git_info,syn_list):
 
             if not stk_info == default_info:
                 print("The possible info of Stack Overflow user {} is {}".format(name, stk_info))
+                cTime = time.time()
 
                 for stk_developer in stk_info:
                     user_id = stk_developer['user_id']
@@ -151,31 +151,34 @@ def match_account(git_info,syn_list):
 
                     if git_account == git_developer["github_login"]:
                         git_developer["stackoverflow_login"] = stk_developer["display_name"]
+                        print(time.time() - cTime)
                         break
 
-                if git_developer["stackoverflow_login"] == "null":
+                # Continue to establish mapping if the possible match has been found?
+                if git_developer["stackoverflow_login"] == "null" or git_developer["stackoverflow_login"] == []:
+                    git_developer["stackoverflow_login"] = []
                     print("Mapping the users with tags and location...")
-                    cTime = time.time()
-                    possible_match = []
 
-                    print("STK_INFO :{}".format(stk_info))
+                    cTime = time.time()
                     for stk_developer in stk_info:
                         developer_tags = get_tags(stk_developer)
-                        print("the tags of Stack Overflow user {} are {}".format(stk_developer["display_name"],developer_tags))
                         stk_developer["tags"] = developer_tags
                         match_name = match_info(git_developer,stk_developer,syn_list)
-                        possible_match.extend(match_name)
-                    git_developer["stackoverflow_login"] = (match_name if not match_name == [] else "null")
+                        if not match_name == []:
+                            git_developer["stackoverflow_login"].append(match_name)
                     print(time.time() - cTime)
                 else:
                     break
 
-            else:
-                print("The Stack Overflow info of possible username {} for github user {} can not be found".format(name,git_developer["name"]))
+            # else:
+            #     print("The Stack Overflow info of possible username {} for github user {} can not be found".format(name,git_developer["name"]))
 
-        if not git_developer["stackoverflow_login"] == "null":
-            print("The Stack Overflow display_name for github user {} is {}".format(git_developer["name"],git_developer['stackoverflow_login']))
+
+
+        if not git_developer["stackoverflow_login"] == "null" and not git_developer["stackoverflow_login"] == []:
+            print("The Stack Overflow display_name for github user {}: {}".format(git_developer["name"],git_developer['stackoverflow_login']))
         else:
+            git_developer["stackoverflow_login"] = "null"
             print("The Stack Overflow display_name for github user {} not found".format(git_developer["name"]))
 
         new_info.append(git_developer)

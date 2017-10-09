@@ -1,5 +1,10 @@
 [
    {
+      "email": "sindresorhus@gmail.com",
+      "name": "Sindre Sorhus",
+      "company": "@avajs @chalk @yeoman",
+      "github_login": "sindresorhus",
+      "location": "\u00b0 \u263e \u2606 \u00b8. \u00b8\u3000\u2605  :.\u3000 . \u2022 \u25cb \u00b0 \u2605",
       "github_language": [
          "JavaScript",
          "Objective-C",
@@ -9,11 +14,6 @@
          "HTML",
          "Swift"
       ],
-      "name": "Sindre Sorhus",
-      "company": "@avajs @chalk @yeoman",
-      "github_login": "sindresorhus",
-      "location": "\u00b0 \u263e \u2606 \u00b8. \u00b8\u3000\u2605  :.\u3000 . \u2022 \u25cb \u00b0 \u2605",
-      "email": "sindresorhus@gmail.com",
       "github_tags": [
          "alfred",
          "alfred-workflow",
@@ -62,18 +62,23 @@
       "stackoverflow_login": "Sindre Sorhus"
    },
    {
+      "email": null,
+      "name": "Tarang Shah",
+      "company": "BITS Pilani",
+      "github_login": "t27",
+      "location": "India",
       "github_language": [
+         "CSS",
+         "PHP",
          "HTML",
          "JavaScript",
-         "PHP",
-         "CSS",
+         "Jupyter Notebook",
          "Python",
          "Shell",
-         "Jupyter Notebook",
          "C++",
          "IDL",
-         "Arduino",
          "Java",
+         "Arduino",
          "Processing",
          "C",
          "Batchfile",
@@ -86,53 +91,50 @@
          "C#",
          "QMake"
       ],
-      "name": "Tarang Shah",
-      "company": "BITS Pilani",
-      "github_login": "t27",
-      "location": "India",
-      "email": null,
       "github_tags": "null",
       "stackoverflow_login": "Tarang Shah"
    },
    {
-      "github_language": [
-         "Emacs Lisp",
-         "Shell",
-         "JavaScript",
-         "Python",
-         "PHP",
-         "CSS",
-         "PowerShell",
-         "C++",
-         "C",
-         "Makefile"
-      ],
+      "email": null,
       "name": "Lukas Michelbacher",
       "company": null,
       "github_login": "lmichelbacher",
       "location": "Edinburgh",
-      "email": null,
-      "github_tags": "null",
-      "stackoverflow_login": "lmichelbacher_1.0"
-   },
-   {
       "github_language": [
-         "M4",
+         "Emacs Lisp",
+         "PHP",
          "Shell",
          "JavaScript",
-         "Makefile",
+         "Python",
          "CSS",
+         "C++",
+         "PowerShell",
+         "C",
+         "Makefile"
+      ],
+      "github_tags": "null",
+      "stackoverflow_login": [
+         "355274_1.0"
+      ]
+   },
+   {
+      "email": "kazhnuz@openmailbox.org",
+      "name": "Kazhnuz",
+      "company": null,
+      "github_login": "Kazhnuz",
+      "location": null,
+      "github_language": [
+         "CSS",
+         "Shell",
+         "Makefile",
+         "M4",
+         "JavaScript",
          "HTML",
          "Java",
          "Ruby",
          "PHP",
          "Python"
       ],
-      "name": "Kazhnuz",
-      "company": null,
-      "github_login": "Kazhnuz",
-      "location": null,
-      "email": "kazhnuz@openmailbox.org",
       "github_tags": [
          "awesome",
          "awesome-list",
@@ -158,6 +160,11 @@
       "stackoverflow_login": "null"
    },
    {
+      "email": "aleksandar@r3bl.me",
+      "name": "Aleksandar Todorovi\u0107 (r3bl)",
+      "company": null,
+      "github_login": "aleksandar-todorovic",
+      "location": "Br\u010dko, Bosnia & Herzegovina",
       "github_language": [
          "CoffeeScript",
          "CSS",
@@ -167,11 +174,6 @@
          "JavaScript",
          "Ruby"
       ],
-      "name": "Aleksandar Todorovi\u0107 (r3bl)",
-      "company": null,
-      "github_login": "aleksandar-todorovic",
-      "location": "Br\u010dko, Bosnia & Herzegovina",
-      "email": "aleksandar@r3bl.me",
       "github_tags": [
          "automation",
          "home-automation",
@@ -185,28 +187,32 @@
          "desktop-environment",
          "x-window-manager"
       ],
-      "stackoverflow_login": "null"
+      "stackoverflow_login": [
+         "8766_0.74",
+         "120206_0.78",
+         "3666431_0.93"
+      ]
    },
    {
-      "github_language": [
-         "Python",
-         "HTML",
-         "Objective-C",
-         "Shell",
-         "Makefile",
-         "Ruby",
-         "Swift",
-         "JavaScript",
-         "C",
-         "CSS",
-         "C++",
-         "Erlang"
-      ],
+      "email": null,
       "name": "Kedan Li",
       "company": null,
       "github_login": "likedan",
       "location": null,
-      "email": null,
+      "github_language": [
+         "Python",
+         "HTML",
+         "Objective-C",
+         "Makefile",
+         "Shell",
+         "Ruby",
+         "Swift",
+         "CSS",
+         "JavaScript",
+         "C",
+         "C++",
+         "Erlang"
+      ],
       "github_tags": [
          "coreml",
          "coreml-model",

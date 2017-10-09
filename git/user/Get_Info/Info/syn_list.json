@@ -1,22 +1,76 @@
 {
-   "R": [
+   "dojo": [
+      "dojo-store",
+      "dojo-layer",
+      "dojo.stateful",
+      "dojo-require",
+      "dojo.data",
+      "dijit",
+      "dojox",
+      "dojo"
+   ],
+   "security": [
+      "web-security",
+      "vulnerabilities",
+      "vulnerability",
+      "secure",
+      "security"
+   ],
+   "shell": [
+      "shellscript",
+      "shell-commands",
+      "shell-command",
+      "shell-scripting",
+      "shell-script",
+      "shell"
+   ],
+   "module": [
+      "modules",
+      "module"
+   ],
+   "C#": [
+      ".cs-file",
+      "csharp",
+      "visual-c#",
+      "c#-language",
+      "c#.net",
+      "c-sharp",
+      "C#"
+   ],
+   "aws-lambda": [
+      "amazon-lambda",
+      "aws-lambda"
+   ],
+   "XSLT": [
+      "xml-transform",
+      "xslt-2.0-processors",
+      "xsltprocessor",
+      "xsltproc",
+      "xsltransform",
+      "xsl",
+      "XSLT"
+   ],
+   "translation": [
+      "t9n",
+      "translation"
+   ],
+   "java-8": [
+      "jdk1.8",
+      "jdk8",
+      "java-8"
+   ],
+   "Matlab": [
+      "m-file",
+      "mlint",
+      "matlab-toolbox",
+      "matlab-ide",
+      "matlab-path",
+      "Matlab"
+   ],
+   "r": [
       "r-language",
-      "rstats"
-   ],
-   "filter": [
-      "filters"
-   ],
-   "hash": [
-      "hashes",
-      "hashing"
-   ],
-   "penetration-testing": [
-      "pen-testing"
-   ],
-   "Racket": [
-      "drracket",
-      "plt-scheme",
-      "drscheme"
+      "rstats",
+      "r"
    ],
    "JavaScript": [
       "javascript-module",
@@ -30,261 +84,149 @@
       "javascript-execution",
       ".js",
       "ecmascript",
-      "js"
+      "js",
+      "JavaScript"
    ],
-   "Matlab": [
+   "csv": [
+      "tsv",
+      "comma-separated",
+      ".csv",
+      "csv"
+   ],
+   "filter": [
+      "filters",
+      "filter"
+   ],
+   "nlp": [
+      "language-processing",
+      "computational-linguistics",
+      "natural-language",
+      "natural-language-process",
+      "nlp"
+   ],
+   "tags": [
+      "tag",
+      "tags"
+   ],
+   "Python": [
+      "python-shell",
+      "python-interpreter",
+      "pythonic",
+      "Python"
+   ],
+   "api": [
+      "apis",
+      "api"
+   ],
+   "resources": [
+      "resource",
+      "resources"
+   ],
+   "reddit": [
+      "reddit-api",
+      "reddit"
+   ],
+   "textures": [
+      "texture",
+      "textures"
+   ],
+   "bots": [
+      "bot",
+      "bots"
+   ],
+   "cuda": [
+      "cudamalloc",
+      "cuda-kernel",
+      "cuda"
+   ],
+   "jmeter": [
+      "apache-jmeter",
+      "jmeter"
+   ],
+   "css3": [
+      "css-text-shadow",
+      "css-text-overflow",
+      "css-box-shadow",
+      "css-border-radius",
+      "css-border-image",
+      "css3"
+   ],
+   "go": [
+      "golang",
+      "go-language",
+      "go"
+   ],
+   "build": [
+      "builds",
+      "build"
+   ],
+   "learning": [
+      "learn",
+      "learning"
+   ],
+   "Processing": [
+      "processing.org",
+      "Processing"
+   ],
+   "Shell": [
+      "shellscript",
+      "shell-commands",
+      "shell-command",
+      "shell-scripting",
+      "shell-script",
+      "Shell"
+   ],
+   "penetration-testing": [
+      "pen-testing",
+      "penetration-testing"
+   ],
+   "audio": [
+      "sounds",
+      "sound-api",
+      "sound",
+      "audio"
+   ],
+   "questions": [
+      "question",
+      "questions"
+   ],
+   "matlab": [
       "m-file",
       "mlint",
       "matlab-toolbox",
       "matlab-ide",
-      "matlab-path"
+      "matlab-path",
+      "matlab"
    ],
-   "svg": [
-      "svg-path",
-      "svgz"
-   ],
-   "XSLT": [
-      "xml-transform",
-      "xslt-2.0-processors",
-      "xsltprocessor",
-      "xsltproc",
-      "xsltransform",
-      "xsl"
-   ],
-   "HTML": [
-      "span",
-      "html-comments",
-      "div-layouts",
-      "nested-divs",
-      "divs",
-      "div",
-      "html-attributes",
-      "html-tag"
+   "generator": [
+      "generators",
+      "generator"
    ],
    "bookmarks": [
-      "bookmark"
+      "bookmark",
+      "bookmarks"
    ],
-   "html": [
-      "span",
-      "html-comments",
-      "div-layouts",
-      "nested-divs",
-      "divs",
-      "div",
-      "html-attributes",
-      "html-tag"
-   ],
-   "prototype": [
-      "prototypes"
-   ],
-   "jobs": [
-      "job"
-   ],
-   "Go": [
-      "golang",
-      "go-language"
-   ],
-   "stream": [
-      "streams"
-   ],
-   "PHP": [
-      "php-include",
-      "phtml",
-      "php-fpm",
-      "php-session",
-      "php-readfile",
-      "php-functions",
-      "php-cgi",
-      "php-mail",
-      "php-errors",
-      "php-cli",
-      "php.ini",
-      "hypertext-preprocessor",
-      "php-frameworks",
-      "php5",
-      "php-date",
-      "php-oop"
+   "testing": [
+      "test",
+      "tests",
+      "software-testing",
+      "testing"
    ],
    "database": [
       "dbms",
       "database-structure",
       "db",
-      "databases"
+      "databases",
+      "database"
    ],
-   "textures": [
-      "texture"
-   ],
-   "Elixir": [
-      "elixir-lang"
-   ],
-   "ansible": [
-      "ansible-playbook"
-   ],
-   "challenge": [
-      "code-challenge"
-   ],
-   "aws-lambda": [
-      "amazon-lambda"
-   ],
-   "go": [
-      "golang",
-      "go-language"
-   ],
-   "javascript": [
-      "javascript-module",
-      "vanilla-javascript",
-      "javascript-runtime",
-      "javascript-library",
-      "javascript-disabled",
-      "javascript-dom",
-      "javascript-alert",
-      "classic-javascript",
-      "javascript-execution",
-      ".js",
-      "ecmascript",
-      "js"
-   ],
-   "build": [
-      "builds"
-   ],
-   "Processing": [
-      "processing.org"
-   ],
-   "python": [
-      "python-shell",
-      "python-interpreter",
-      "pythonic"
-   ],
-   "Clojure": [
-      "cljx",
-      "cljc",
-      "clj"
-   ],
-   "java": [
-      "oraclejdk",
-      "java-libraries",
-      "jre",
-      "jdk",
-      "core-java",
-      "j2se",
-      ".java",
-      "java-se"
-   ],
-   "events": [
-      "event"
-   ],
-   "keyboard": [
-      "keyboards"
-   ],
-   "api": [
-      "apis"
-   ],
-   "ios": [
-      "ios-sdk",
-      "apple-ios",
-      "iphone-os"
-   ],
-   "shell": [
-      "shellscript",
-      "shell-commands",
-      "shell-command",
-      "shell-scripting",
-      "shell-script"
-   ],
-   "visualization": [
-      "visualisation"
-   ],
-   "C++": [
-      "cpp"
-   ],
-   "cuda": [
+   "Cuda": [
       "cudamalloc",
-      "cuda-kernel"
+      "cuda-kernel",
+      "Cuda"
    ],
-   "vim": [
-      "viml",
-      "vimscript",
-      "gvim",
-      "gvimrc",
-      "vimrc"
-   ],
-   "io": [
-      "input-output"
-   ],
-   "CSS": [
-      "css-font-weight",
-      "dynamic-css",
-      "css-borders",
-      "css-reset",
-      "css-menu",
-      "font-weight",
-      "css-box-model",
-      "inline-block",
-      "alternate-stylesheets",
-      "css-overflow",
-      "css-line-height",
-      "css-display",
-      "css-validation",
-      "style.css-template-file",
-      "box-model",
-      "max-width",
-      "max-height",
-      "min-width",
-      "min-height",
-      "css-centering",
-      "css-inheritance",
-      "css-columns",
-      "css2",
-      "css-height",
-      "css-classes",
-      "css-attributes",
-      "css-background-image",
-      "css-layout",
-      "cascading-style-sheet"
-   ],
-   "import": [
-      "imports",
-      "importing"
-   ],
-   "redirect": [
-      "redirecting",
-      "redirection",
-      "redirects"
-   ],
-   "java-8": [
-      "jdk1.8",
-      "jdk8"
-   ],
-   "bash": [
-      "bash-function",
-      ".bash-profile",
-      "bash-variables",
-      "bash-alias",
-      ".bashrc",
-      "bashrc",
-      "bash-script"
-   ],
-   "r": [
-      "r-language",
-      "rstats"
-   ],
-   "resources": [
-      "resource"
-   ],
-   "ant": [
-      "apache-ant"
-   ],
-   "html5": [
-      "time-tag",
-      "xhtml5"
-   ],
-   "csv": [
-      "tsv",
-      "comma-separated",
-      ".csv"
-   ],
-   "usb": [
-      "usbdevice"
+   "audio-player": [
+      "audio-playing",
+      "audio-player"
    ],
    "css": [
       "css-font-weight",
@@ -315,13 +257,66 @@
       "css-attributes",
       "css-background-image",
       "css-layout",
-      "cascading-style-sheet"
+      "cascading-style-sheet",
+      "css"
    ],
-   "math": [
-      "arithmetic",
-      "mathematical",
-      "maths",
-      "mathematics"
+   "deployment": [
+      "deploy",
+      "deployment"
+   ],
+   "web-scraping": [
+      "webpagescraping",
+      "web-scraping"
+   ],
+   "slice": [
+      "string-slice",
+      "array-slice",
+      "slices",
+      "slicing",
+      "slice"
+   ],
+   "vim": [
+      "viml",
+      "vimscript",
+      "gvim",
+      "gvimrc",
+      "vimrc",
+      "vim"
+   ],
+   "string": [
+      "empty-string",
+      "str",
+      "string-manipulation",
+      "strings",
+      "string"
+   ],
+   "HTML": [
+      "span",
+      "html-comments",
+      "div-layouts",
+      "nested-divs",
+      "divs",
+      "div",
+      "html-attributes",
+      "html-tag",
+      "HTML"
+   ],
+   "minify": [
+      "minification",
+      "minifier",
+      "minify"
+   ],
+   "python": [
+      "python-shell",
+      "python-interpreter",
+      "pythonic",
+      "python"
+   ],
+   "Racket": [
+      "drracket",
+      "plt-scheme",
+      "drscheme",
+      "Racket"
    ],
    "jquery": [
       "jquery-css",
@@ -335,48 +330,183 @@
       "toggleclass",
       "addclass",
       "jquery-live",
-      "jquery-core"
-   ],
-   "full-text-search": [
-      "fulltext",
-      "fts",
-      "fulltext-searching"
-   ],
-   "tags": [
-      "tag"
-   ],
-   "deprecated": [
-      "deprecation"
-   ],
-   "list": [
-      "ilist",
-      "lists"
-   ],
-   "spring": [
-      "spring-framework"
-   ],
-   "load-testing": [
-      "loadtest"
-   ],
-   "bots": [
-      "bot"
-   ],
-   "jni": [
-      "java-native-interface"
+      "jquery-core",
+      "jquery"
    ],
    "website": [
-      "websites"
+      "websites",
+      "website"
    ],
-   "string": [
-      "empty-string",
-      "str",
-      "string-manipulation",
-      "strings"
+   "dsl": [
+      "domain-specific-languages",
+      "dsl"
+   ],
+   "documentation": [
+      "docs",
+      "documentation"
+   ],
+   "prototype": [
+      "prototypes",
+      "prototype"
+   ],
+   "ansible": [
+      "ansible-playbook",
+      "ansible"
+   ],
+   "io": [
+      "input-output",
+      "io"
+   ],
+   "challenge": [
+      "code-challenge",
+      "challenge"
+   ],
+   "jobs": [
+      "job",
+      "jobs"
+   ],
+   "usb": [
+      "usbdevice",
+      "usb"
+   ],
+   "windows": [
+      "windows-application",
+      "windows-programming",
+      "windows"
+   ],
+   "math": [
+      "arithmetic",
+      "mathematical",
+      "maths",
+      "mathematics",
+      "math"
    ],
    "ubuntu": [
       "lubuntu",
       "kubuntu",
-      "xubuntu"
+      "xubuntu",
+      "ubuntu"
+   ],
+   "C++": [
+      "cpp",
+      "C++"
+   ],
+   "graphics": [
+      "computer-graphics",
+      "graphics"
+   ],
+   "angular": [
+      "angular4.x",
+      "angular4",
+      "angular2",
+      "angular"
+   ],
+   "html5": [
+      "time-tag",
+      "xhtml5",
+      "html5"
+   ],
+   "fun": [
+      "humour",
+      "humor",
+      "fun"
+   ],
+   "keyboard": [
+      "keyboards",
+      "keyboard"
+   ],
+   "load-testing": [
+      "loadtest",
+      "load-testing"
+   ],
+   "list": [
+      "ilist",
+      "lists",
+      "list"
+   ],
+   "dictionary": [
+      "map",
+      "dictionaries",
+      "dict",
+      "dictionary"
+   ],
+   "PowerShell": [
+      "windows-powershell",
+      "PowerShell"
+   ],
+   "Java": [
+      "oraclejdk",
+      "java-libraries",
+      "jre",
+      "jdk",
+      "core-java",
+      "j2se",
+      ".java",
+      "java-se",
+      "Java"
+   ],
+   "terminal": [
+      "terminals",
+      "terminal"
+   ],
+   "data-structures": [
+      "data-structure",
+      "data-structures"
+   ],
+   "binary": [
+      "binary-system",
+      "binary-number",
+      "binary"
+   ],
+   "html": [
+      "span",
+      "html-comments",
+      "div-layouts",
+      "nested-divs",
+      "divs",
+      "div",
+      "html-attributes",
+      "html-tag",
+      "html"
+   ],
+   "import": [
+      "imports",
+      "importing",
+      "import"
+   ],
+   "icons": [
+      "icon",
+      "icons"
+   ],
+   "spring": [
+      "spring-framework",
+      "spring"
+   ],
+   "hash": [
+      "hashes",
+      "hashing",
+      "hash"
+   ],
+   "javascript": [
+      "javascript-module",
+      "vanilla-javascript",
+      "javascript-runtime",
+      "javascript-library",
+      "javascript-disabled",
+      "javascript-dom",
+      "javascript-alert",
+      "classic-javascript",
+      "javascript-execution",
+      ".js",
+      "ecmascript",
+      "js",
+      "javascript"
+   ],
+   "ios": [
+      "ios-sdk",
+      "apple-ios",
+      "iphone-os",
+      "ios"
    ],
    "mysql": [
       "mysqldump",
@@ -385,90 +515,229 @@
       "mysql-table",
       "mysql-server",
       "mysql-query",
-      "my-sql"
+      "my-sql",
+      "mysql"
    ],
-   "angular": [
-      "angular4.x",
-      "angular4",
-      "angular2"
+   "svg": [
+      "svg-path",
+      "svgz",
+      "svg"
    ],
-   "learning": [
-      "learn"
+   "PHP": [
+      "php-include",
+      "phtml",
+      "php-fpm",
+      "php-session",
+      "php-readfile",
+      "php-functions",
+      "php-cgi",
+      "php-mail",
+      "php-errors",
+      "php-cli",
+      "php.ini",
+      "hypertext-preprocessor",
+      "php-frameworks",
+      "php5",
+      "php-date",
+      "php-oop",
+      "PHP"
    ],
-   "nlp": [
-      "language-processing",
-      "computational-linguistics",
-      "natural-language",
-      "natural-language-process"
+   "full-text-search": [
+      "fulltext",
+      "fts",
+      "fulltext-searching",
+      "full-text-search"
+   ],
+   "postgresql": [
+      "sql-postgres",
+      "pgsql",
+      "postgres",
+      "postgresql"
+   ],
+   "stream": [
+      "streams",
+      "stream"
+   ],
+   "events": [
+      "event",
+      "events"
+   ],
+   "web": [
+      "www",
+      "web"
+   ],
+   "less": [
+      "lesscss",
+      "less"
    ],
    "colors": [
       "colours",
       "colour",
-      "color"
+      "color",
+      "colors"
    ],
-   "Python": [
-      "python-shell",
-      "python-interpreter",
-      "pythonic"
+   "Clojure": [
+      "cljx",
+      "cljc",
+      "clj",
+      "Clojure"
    ],
-   "web-crawler": [
-      "spider",
-      "crawl",
-      "crawling",
-      "crawler",
-      "webcrawling",
-      "web-spider",
-      "webspiders"
+   "search": [
+      "searching",
+      "search"
    ],
-   "questions": [
-      "question"
+   "Go": [
+      "golang",
+      "go-language",
+      "Go"
+   ],
+   "Swift": [
+      "swift1.2",
+      "swift-ios",
+      "swift-language",
+      "Swift"
+   ],
+   "p2p": [
+      "peer-to-peer",
+      "p2p"
+   ],
+   "jni": [
+      "java-native-interface",
+      "jni"
+   ],
+   "elixir": [
+      "elixir-lang",
+      "elixir"
+   ],
+   "Makefile": [
+      "make",
+      "makefiles",
+      "Makefile"
    ],
    "swift3": [
       "swift3.1",
       "swift3.0.2",
       "swift3.0.1",
-      "swift3.0"
+      "swift3.0",
+      "swift3"
    ],
-   "documentation": [
-      "docs"
-   ],
-   "matlab": [
-      "m-file",
-      "mlint",
-      "matlab-toolbox",
-      "matlab-ide",
-      "matlab-path"
-   ],
-   "fun": [
-      "humour",
-      "humor"
-   ],
-   "Makefile": [
-      "make",
-      "makefiles"
-   ],
-   "binary": [
-      "binary-system",
-      "binary-number"
-   ],
-   "elixir": [
-      "elixir-lang"
+   "shader": [
+      "shaders",
+      "shader"
    ],
    "CoffeeScript": [
-      "coffee"
+      "coffee",
+      "CoffeeScript"
    ],
-   "audio": [
-      "sounds",
-      "sound-api",
-      "sound"
+   "animation": [
+      "scaleanimation",
+      "rotateanimation",
+      "animated",
+      "animations",
+      "animation"
    ],
-   "postgresql": [
-      "sql-postgres",
-      "pgsql",
-      "postgres"
+   "redirect": [
+      "redirecting",
+      "redirection",
+      "redirects",
+      "redirect"
    ],
-   "terminal": [
-      "terminals"
+   "F#": [
+      "fsharp",
+      "F#"
+   ],
+   "bash": [
+      "bash-function",
+      ".bash-profile",
+      "bash-variables",
+      "bash-alias",
+      ".bashrc",
+      "bashrc",
+      "bash-script",
+      "bash"
+   ],
+   "networking": [
+      "networks",
+      "network",
+      "networking"
+   ],
+   "twitter": [
+      "twitter-api",
+      "twitter"
+   ],
+   "java": [
+      "oraclejdk",
+      "java-libraries",
+      "jre",
+      "jdk",
+      "core-java",
+      "j2se",
+      ".java",
+      "java-se",
+      "java"
+   ],
+   "pipe": [
+      "pipes",
+      "pipe"
+   ],
+   "levenshtein-distance": [
+      "levenstein",
+      "levenshtein",
+      "levenshtein-distance"
+   ],
+   "Assembly": [
+      "assembly-language",
+      "assembler",
+      "asm",
+      "Assembly"
+   ],
+   "Elixir": [
+      "elixir-lang",
+      "Elixir"
+   ],
+   "CSS": [
+      "css-font-weight",
+      "dynamic-css",
+      "css-borders",
+      "css-reset",
+      "css-menu",
+      "font-weight",
+      "css-box-model",
+      "inline-block",
+      "alternate-stylesheets",
+      "css-overflow",
+      "css-line-height",
+      "css-display",
+      "css-validation",
+      "style.css-template-file",
+      "box-model",
+      "max-width",
+      "max-height",
+      "min-width",
+      "min-height",
+      "css-centering",
+      "css-inheritance",
+      "css-columns",
+      "css2",
+      "css-height",
+      "css-classes",
+      "css-attributes",
+      "css-background-image",
+      "css-layout",
+      "cascading-style-sheet",
+      "CSS"
+   ],
+   "deprecated": [
+      "deprecation",
+      "deprecated"
+   ],
+   "visualization": [
+      "visualisation",
+      "visualization"
+   ],
+   "github-pages": [
+      "gh-pages",
+      "github-pages"
    ],
    "php": [
       "php-include",
@@ -486,13 +755,26 @@
       "php-frameworks",
       "php5",
       "php-date",
-      "php-oop"
+      "php-oop",
+      "php"
    ],
-   "animation": [
-      "scaleanimation",
-      "rotateanimation",
-      "animated",
-      "animations"
+   "web-crawler": [
+      "spider",
+      "crawl",
+      "crawling",
+      "crawler",
+      "webcrawling",
+      "web-spider",
+      "webspiders",
+      "web-crawler"
+   ],
+   "Objective-C": [
+      "objc",
+      "Objective-C"
+   ],
+   "ant": [
+      "apache-ant",
+      "ant"
    ],
    "android": [
       "android-framework",
@@ -501,168 +783,12 @@
       "android-device",
       "android-api",
       "android-sdk",
-      "android-mobile"
+      "android-mobile",
+      "android"
    ],
-   "Cuda": [
-      "cudamalloc",
-      "cuda-kernel"
-   ],
-   "pipe": [
-      "pipes"
-   ],
-   "dsl": [
-      "domain-specific-languages"
-   ],
-   "levenshtein-distance": [
-      "levenstein",
-      "levenshtein"
-   ],
-   "graphics": [
-      "computer-graphics"
-   ],
-   "icons": [
-      "icon"
-   ],
-   "security": [
-      "web-security",
-      "vulnerabilities",
-      "vulnerability",
-      "secure"
-   ],
-   "reddit": [
-      "reddit-api"
-   ],
-   "Assembly": [
-      "assembly-language",
-      "assembler",
-      "asm"
-   ],
-   "generator": [
-      "generators"
-   ],
-   "p2p": [
-      "peer-to-peer"
-   ],
-   "shader": [
-      "shaders"
-   ],
-   "testing": [
-      "test",
-      "tests",
-      "software-testing"
-   ],
-   "less": [
-      "lesscss"
-   ],
-   "Swift": [
-      "swift1.2",
-      "swift-ios",
-      "swift-language"
-   ],
-   "dictionary": [
-      "map",
-      "dictionaries",
-      "dict"
-   ],
-   "networking": [
-      "networks",
-      "network"
-   ],
-   "Objective-C": [
-      "objc"
-   ],
-   "Java": [
-      "oraclejdk",
-      "java-libraries",
-      "jre",
-      "jdk",
-      "core-java",
-      "j2se",
-      ".java",
-      "java-se"
-   ],
-   "deployment": [
-      "deploy"
-   ],
-   "slice": [
-      "string-slice",
-      "array-slice",
-      "slices",
-      "slicing"
-   ],
-   "module": [
-      "modules"
-   ],
-   "github-pages": [
-      "gh-pages"
-   ],
-   "Shell": [
-      "shellscript",
-      "shell-commands",
-      "shell-command",
-      "shell-scripting",
-      "shell-script"
-   ],
-   "twitter": [
-      "twitter-api"
-   ],
-   "audio-player": [
-      "audio-playing"
-   ],
-   "css3": [
-      "css-text-shadow",
-      "css-text-overflow",
-      "css-box-shadow",
-      "css-border-radius",
-      "css-border-image"
-   ],
-   "web-scraping": [
-      "webpagescraping"
-   ],
-   "jmeter": [
-      "apache-jmeter"
-   ],
-   "search": [
-      "searching"
-   ],
-   "translation": [
-      "t9n"
-   ],
-   "PowerShell": [
-      "windows-powershell"
-   ],
-   "data-structures": [
-      "data-structure"
-   ],
-   "minify": [
-      "minification",
-      "minifier"
-   ],
-   "web": [
-      "www"
-   ],
-   "windows": [
-      "windows-application",
-      "windows-programming"
-   ],
-   "dojo": [
-      "dojo-store",
-      "dojo-layer",
-      "dojo.stateful",
-      "dojo-require",
-      "dojo.data",
-      "dijit",
-      "dojox"
-   ],
-   "C#":[
-      ".cs-file",
-      "csharp",
-      "visual-c#",
-      "c#-language",
-      "c#.net",
-      "c-sharp"
-   ],
-   "F#":[
-      "fsharp"
+   "R": [
+      "r-language",
+      "rstats",
+      "R"
    ]
 }

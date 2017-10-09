@@ -4,12 +4,23 @@ import Get_Info.name_form as nf
 import time
 import json
 import types
+import sys
+import os
 
-git_api = 'https://api.github.com/repos/sindresorhus/awesome/commits'
-# git_api = 'https://api.github.com/repos/tensorflow/tensorflow/commits'
-git_info = gt.get_info(git_api)
-info_file = '/home/ace/zsj/Get_Info/Info/awesome_test.json'
-syn_file = '/home/ace/zsj/Get_Info/Info/syn_list.json'
+Info_path = sys.path[0] + "/Info"
+if not os.path.exists(Info_path):
+    os.mkdir(Info_path)
+
+name_file = Info_path + '/login_list.json'
+name_list = open(name_file,encoding='utf-8')
+name_list = json.load(name_list)
+git_info = gt.search_info(name_list)
+
+git_api = 'https://api.github.com/repos/{}/commits'.format('sindresorhus/awesome')
+# git_info = gt.get_info(git_api)
+
+info_file = Info_path + '/awesome_match_5.json'
+syn_file = Info_path + '/syn_list.json'
 cTime = time.time()
 print("Dumping the info...")
 with open(info_file, 'w') as ctfile:
@@ -27,22 +38,17 @@ print("Matching developers between Github and Stack Overflow...")
 match_info = st.match_account(git_info,syn_list)
 print(time.time() - cTime)
 
-cTime = time.time()
-# new_info = []
 for item in match_info:
     if not item["stackoverflow_login"] == "null":
         stk_count = stk_count + 1
-    # new_info.append(item)
     total_count = total_count +1
-print(time.time() - cTime)
 
-print("The number of developers with Stack Overflow account is {}".format(stk_count))
+print("\n The number of developers with Stack Overflow account is {}".format(stk_count))
 print("The number of developers is {}".format(total_count))
-print("Ratio:{}".format(float(stk_count/total_count)))
+print("Ratio:{}".format(round(stk_count/total_count,4)))
 
 print("Saving the results of matching...")
 cTime = time.time()
-file = '/home/ace/zsj/Get_Info/Info/awesome_match.json'
-with open(file, 'w') as ctfile:
+with open(info_file, 'w') as ctfile:
     json.dump(match_info, ctfile, indent=3)
 print(time.time() - cTime)

@@ -28,14 +28,12 @@ def extract_dict(res):
 def get_langtags(user):
     language = []
     tags = []
-    print("Finding languages used of github user: {}".format(user["github_login"]))
+    print("Finding languages and tags used of github user: {}".format(user["github_login"]))
     repo_api = 'https://api.github.com/users/{}/repos'.format(user["github_login"])
     repos = request_url(repo_api,30)
-    print("The repo API is {}".format(repo_api))
 
     for item in repos:
-        print(item)
-        #can be  parallel tags&language
+        #can be  parallel tags & language
         repo_name = item["name"]
         repo_tags = requests.get('https://api.github.com/repos/{}/{}/topics?'
                                  'per_page=10&client_id=ff50be78bda6f9fd0f2f'
@@ -68,7 +66,6 @@ def get_info(commit_api):
     cTime = time.time()
     print("Getting info of users in the commit history...")
     for item in developer_info:
-        print(item)
         ### For a list of developers, find their url
         author_api = (item["author"]["url"] if not item["author"] == None else "null")
         committer_api = (item["committer"]["url"] if not item["committer"] == None else "null")
@@ -96,14 +93,22 @@ def get_info(commit_api):
 
 def search_info(developer_login):
     Info = []
+    print("Getting info of users in the name list...")
+    cTime = time.time()
     for login in developer_login:
         api = 'https://api.github.com/users/{}'.format(login)
         developer_info = request_url(api,100)
         developer_info = extract_dict(developer_info)
+        Info.append(developer_info)
+    print(time.time() - cTime)
 
-
-
-
+    git_info = []
+    cTime = time.time()
+    for git_developer in Info:
+        git_developer = get_langtags(git_developer)
+        git_info.append(git_developer)
+    print(time.time() - cTime)
+    return git_info
 
 
 
