@@ -52,7 +52,7 @@ Although the Stack overflow API can be applied to find the synonymous tags of a 
 For the comparison of tags, the tag score is used. By finding the number of tags which are related according to the synonymous tags list, the tags_score can be obtained by the ratio of matched_count to total_count, where the total_count is the number of github users' tags.
 * #### Threshold<br>
 The incomplete synonymous tag list and the different naming pattern of tags makes the matching of tags difficult. So there should be different weights of the two scores. The final score is the sum of the location score and twice of the tags score, and an appropriate threshold should be set to improve the matching rate.<br><br>
-Considering that there are developers who use the same username and location on both communities, but few tags are matched. The threshold has been set as 0.7 and 1.0.<br><br>
+Considering that there are developers who use the same username and location on both communities, but few tags are matched. The threshold has been set as 0.7, 1.0 and 1.5.<br><br>
 Still use the developers in commit history of [awesome](https://github.com/sindresorhus/awesome):<br> 
 For threshold 0.7, the matching rate is 81.43% (57/70);<br>
 For threshold 1.0, the matching rate is 71.43% (50/70); <br>
