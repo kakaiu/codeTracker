@@ -8,7 +8,7 @@ from AST_Process import Node_extract
 import re
 
 RE_AZ = re.compile(r'-(.*?) ')
-RE_C = re.compile(r'/(.*?).c')
+RE_C = re.compile(r'/(.*).c')
 
 def node_graph(code_path, preprocess, same_list):
     """Show the syntax tree and display the same part of tow trees"""
