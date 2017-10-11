@@ -1,77 +1,352 @@
 {
-   "dojo": [
-      "dojo-store",
-      "dojo-layer",
-      "dojo.stateful",
-      "dojo-require",
-      "dojo.data",
-      "dijit",
-      "dojox",
-      "dojo"
+   "os": "os",
+   "construct2": "construct2",
+   "Prolog": "prolog",
+   "uncopyright": "uncopyright",
+   "opengl": "opengl",
+   "coreml-models": "coreml-models",
+   "app": "app",
+   "awesome-jmeter": "awesome-jmeter",
+   "pyrocms": "pyrocms",
+   "Awk": "awk",
+   "access-land": "access-land",
+   "search-engine": "search-engine",
+   "brain": "brain",
+   "alfred": "alfred",
+   "node-module": "node-module",
+   "web-scraping": [
+      "webpagescraping",
+      "web-scraping"
    ],
-   "security": [
-      "web-security",
-      "vulnerabilities",
-      "vulnerability",
-      "secure",
-      "security"
+   "Pascal": "pascal",
+   "services": "services",
+   "zsh": "zsh",
+   "arcticfox": "arcticfox",
+   "nodemcu": "nodemcu",
+   "life": "life",
+   "chai": "chai",
+   "php": [
+      "php-include",
+      "phtml",
+      "php-fpm",
+      "php-session",
+      "php-readfile",
+      "php-functions",
+      "php-cgi",
+      "php-mail",
+      "php-errors",
+      "php-cli",
+      "php.ini",
+      "hypertext-preprocessor",
+      "php-frameworks",
+      "php5",
+      "php-date",
+      "php-oop",
+      "php"
    ],
-   "shell": [
-      "shellscript",
-      "shell-commands",
-      "shell-command",
-      "shell-scripting",
-      "shell-script",
-      "shell"
+   "typography": "typography",
+   "lm": "lm",
+   "meta": "meta",
+   "eta": "eta",
+   "poc": "poc",
+   "excuses": "excuses",
+   "Smarty": "smarty",
+   "pwa": "pwa",
+   "presentation": "presentation",
+   "pubsub": "pubsub",
+   "animation": [
+      "scaleanimation",
+      "rotateanimation",
+      "animated",
+      "animations",
+      "animation"
    ],
-   "module": [
-      "modules",
-      "module"
+   "sublime-text": "sublime-text",
+   "ui-design": "ui-design",
+   "vagrant": "vagrant",
+   "pandas": "pandas",
+   "smarthome": "smarthome",
+   "twitter-bot": "twitter-bot",
+   "ssr": "ssr",
+   "background-jobs": "background-jobs",
+   "portableapps": "portableapps",
+   "craft-plugin": "craft-plugin",
+   "apple-tv": "apple-tv",
+   "coreml": "coreml",
+   "Vim script": "vim script",
+   "PLpgSQL": "plpgsql",
+   "devops-services": "devops-services",
+   "webrtc": "webrtc",
+   "linux": "linux",
+   "applescript": "applescript",
+   "apple": "apple",
+   "print": "print",
+   "homematic": "homematic",
+   "clipboard": "clipboard",
+   "laravel-package": "laravel-package",
+   "devops-tools": "devops-tools",
+   "article": "article",
+   "groups": "groups",
+   "decode": "decode",
+   "desktop-environment": "desktop-environment",
+   "talk": "talk",
+   "datascience": "datascience",
+   "philanthropy": "philanthropy",
+   "alfred-theme": "alfred-theme",
+   "DTrace": "dtrace",
+   "docker": "docker",
+   "blaze": "blaze",
+   "p2p": [
+      "peer-to-peer",
+      "p2p"
    ],
-   "C#": [
-      ".cs-file",
-      "csharp",
-      "visual-c#",
-      "c#-language",
-      "c#.net",
-      "c-sharp",
-      "C#"
+   "gnome": "gnome",
+   "synonyms": "synonyms",
+   "event-emitter": "event-emitter",
+   "SaltStack": "saltstack",
+   "msr": "msr",
+   "alfy": "alfy",
+   "GLSL": "glsl",
+   "linux-distribution": "linux-distribution",
+   "tasks": "tasks",
+   "buddypress": "buddypress",
+   "eloquent": "eloquent",
+   "OpenSCAD": "openscad",
+   "coremltools": "coremltools",
+   "launchpad": "launchpad",
+   "rust": "rust",
+   "tester": "tester",
+   "github": "github",
+   "qt-framework": "qt-framework",
+   "natural-language-processing": "natural-language-processing",
+   "mods": "mods",
+   "crabgrass": "crabgrass",
+   "craig-server-game": "craig-server-game",
+   "github-io": "github-io",
+   "github-page": "github-page",
+   "webgl-tutorials": "webgl-tutorials",
+   "type-safety": "type-safety",
+   "math-library": "math-library",
+   "swift3": [
+      "swift3.1",
+      "swift3.0.2",
+      "swift3.0.1",
+      "swift3.0",
+      "swift3"
    ],
-   "aws-lambda": [
-      "amazon-lambda",
-      "aws-lambda"
+   "loaders": "loaders",
+   "android-seed": "android-seed",
+   "https": "https",
+   "purge": "purge",
+   "clear": "clear",
+   "eventemitter": "eventemitter",
+   "github-bot": "github-bot",
+   "davisonio": "davisonio",
+   "0xacab": "0xacab",
+   "slides": "slides",
+   "Standard ML": "standard ml",
+   "nlp": [
+      "language-processing",
+      "computational-linguistics",
+      "natural-language",
+      "natural-language-process",
+      "nlp"
    ],
-   "XSLT": [
-      "xml-transform",
-      "xslt-2.0-processors",
-      "xsltprocessor",
-      "xsltproc",
-      "xsltransform",
-      "xsl",
-      "XSLT"
+   "Java": [
+      "oraclejdk",
+      "java-libraries",
+      "jre",
+      "jdk",
+      "core-java",
+      "j2se",
+      ".java",
+      "java-se",
+      "java"
    ],
-   "translation": [
-      "t9n",
-      "translation"
+   "land": "land",
+   "Perl": "perl",
+   "budget-manager": "budget-manager",
+   "benchmark": "benchmark",
+   "financial-independence": "financial-independence",
+   "code": "code",
+   "less": [
+      "lesscss",
+      "less"
    ],
-   "java-8": [
-      "jdk1.8",
-      "jdk8",
-      "java-8"
+   "elixir-school": "elixir-school",
+   "jekyll": "jekyll",
+   "linux-kernel": "linux-kernel",
+   "fsf": "fsf",
+   "buzzer": "buzzer",
+   "TypeScript": "typescript",
+   "awesomeness": "awesomeness",
+   "educational": "educational",
+   "numerical-calculations": "numerical-calculations",
+   "OpenEdge ABL": "openedge abl",
+   "gbm": "gbm",
+   "making-games": "making-games",
+   "dsl": [
+      "domain-specific-languages",
+      "dsl"
    ],
-   "Matlab": [
-      "m-file",
-      "mlint",
-      "matlab-toolbox",
-      "matlab-ide",
-      "matlab-path",
-      "Matlab"
+   "questions-and-answers": "questions-and-answers",
+   "Meson": "meson",
+   "models": "models",
+   "Scheme": "scheme",
+   "dumb": "dumb",
+   "Protocol Buffer": "protocol buffer",
+   "macosx": "macosx",
+   "lecture": "lecture",
+   "audio": [
+      "sounds",
+      "sound-api",
+      "sound",
+      "audio"
    ],
-   "r": [
-      "r-language",
-      "rstats",
-      "r"
+   "dropbox-v2": "dropbox-v2",
+   "learn": "learn",
+   "data-science-competition": "data-science-competition",
+   "screen-brightness": "screen-brightness",
+   "torrent": "torrent",
+   "stringtools": "stringtools",
+   "software-freedom": "software-freedom",
+   "fault-tolerance": "fault-tolerance",
+   "log": "log",
+   "webpack": "webpack",
+   "readme": "readme",
+   "ansible-tips": "ansible-tips",
+   "unit": "unit",
+   "Mako": "mako",
+   "apns2": "apns2",
+   "machine-learning": "machine-learning",
+   "minimalist": "minimalist",
+   "codeforces": "codeforces",
+   "trump": "trump",
+   "application": "application",
+   "data-mining": "data-mining",
+   "gtk-theme": "gtk-theme",
+   "alfred-3": "alfred-3",
+   "pixel-art": "pixel-art",
+   "curl": "curl",
+   "PigLatin": "piglatin",
+   "Jupyter Notebook": "jupyter notebook",
+   "events": [
+      "event",
+      "events"
    ],
+   "webgl-spec-sheet": "webgl-spec-sheet",
+   "html": [
+      "span",
+      "html-comments",
+      "div-layouts",
+      "nested-divs",
+      "divs",
+      "div",
+      "html-attributes",
+      "html-tag",
+      "html"
+   ],
+   "cache": "cache",
+   "www": "www",
+   "effective-altruism": "effective-altruism",
+   "haskell": "haskell",
+   "btc": "btc",
+   "ibge": "ibge",
+   "home-automation": "home-automation",
+   "Cucumber": "cucumber",
+   "platform-game": "platform-game",
+   "Batchfile": "batchfile",
+   "ui": "ui",
+   "tutorial": "tutorial",
+   "beautify": "beautify",
+   "wikipedia": "wikipedia",
+   "chatbot": "chatbot",
+   "LLVM": "llvm",
+   "programming-elixir": "programming-elixir",
+   "tags": [
+      "tag",
+      "tags"
+   ],
+   "github-api": "github-api",
+   "string-manipulation": "string-manipulation",
+   "coroutines": "coroutines",
+   "buddhism": "buddhism",
+   "emoji": "emoji",
+   "dictionary": [
+      "map",
+      "dictionaries",
+      "dict",
+      "dictionary"
+   ],
+   "physical-security": "physical-security",
+   "darkage-mod": "darkage-mod",
+   "education": "education",
+   "vim": [
+      "viml",
+      "vimscript",
+      "gvim",
+      "gvimrc",
+      "vimrc",
+      "vim"
+   ],
+   "Mercury": "mercury",
+   "deployment": [
+      "deploy",
+      "deployment"
+   ],
+   "M4": "m4",
+   "dna-chipsets": "dna-chipsets",
+   "chromecast": "chromecast",
+   "framework": "framework",
+   "promises": "promises",
+   "Haxe": "haxe",
+   "search": [
+      "searching",
+      "search"
+   ],
+   "elixir-dropbox": "elixir-dropbox",
+   "contest": "contest",
+   "engineering-managers": "engineering-managers",
+   "channels": "channels",
+   "python3": "python3",
+   "html5-filesystem-api": "html5-filesystem-api",
+   "electron-app": "electron-app",
+   "XQuery": "xquery",
+   "interaction-design": "interaction-design",
+   "twitter": [
+      "twitter-api",
+      "twitter"
+   ],
+   "music": "music",
+   "ApacheConf": "apacheconf",
+   "csv2json": "csv2json",
+   "documentation": [
+      "docs",
+      "documentation"
+   ],
+   "slice": [
+      "string-slice",
+      "array-slice",
+      "slices",
+      "slicing",
+      "slice"
+   ],
+   "framerjs": "framerjs",
+   "minify": [
+      "minification",
+      "minifier",
+      "minify"
+   ],
+   "GCC Machine Description": "gcc machine description",
+   "ColdFusion": "coldfusion",
+   "ramme": "ramme",
+   "apc": "apc",
+   "imgur": "imgur",
+   "framer-resources": "framer-resources",
+   "ppa": "ppa",
+   "jokes": "jokes",
+   "picking-locks": "picking-locks",
+   "dilmes-ipsum": "dilmes-ipsum",
    "JavaScript": [
       "javascript-module",
       "vanilla-javascript",
@@ -85,111 +360,222 @@
       ".js",
       "ecmascript",
       "js",
-      "JavaScript"
+      "javascript"
    ],
-   "csv": [
-      "tsv",
-      "comma-separated",
-      ".csv",
-      "csv"
+   "conversational-ui": "conversational-ui",
+   "joke": "joke",
+   "data-structures": [
+      "data-structure",
+      "data-structures"
    ],
-   "filter": [
-      "filters",
-      "filter"
+   "mooc": "mooc",
+   "math-snippets": "math-snippets",
+   "learning-webgl": "learning-webgl",
+   "type-token-ratio": "type-token-ratio",
+   "lua": "lua",
+   "OCaml": "ocaml",
+   "bear": "bear",
+   "cpu": "cpu",
+   "ios-animation": "ios-animation",
+   "brute-force": "brute-force",
+   "react-native": "react-native",
+   "PureBasic": "purebasic",
+   "Clojure": [
+      "cljx",
+      "cljc",
+      "clj",
+      "clojure"
    ],
-   "nlp": [
-      "language-processing",
-      "computational-linguistics",
-      "natural-language",
-      "natural-language-process",
-      "nlp"
+   "rubyml": "rubyml",
+   "kennethreitz": "kennethreitz",
+   "mobile": "mobile",
+   "camo": "camo",
+   "deep-learning": "deep-learning",
+   "bricks": "bricks",
+   "trump-ipsum": "trump-ipsum",
+   "laravel-scout": "laravel-scout",
+   "webtorrent": "webtorrent",
+   "imgur-uploader": "imgur-uploader",
+   "trivia": "trivia",
+   "dark-mode": "dark-mode",
+   "snakemake": "snakemake",
+   "uncss": "uncss",
+   "c": "c",
+   "GAP": "gap",
+   "counter-strike": "counter-strike",
+   "Forth": "forth",
+   "generator": [
+      "generators",
+      "generator"
    ],
-   "tags": [
-      "tag",
-      "tags"
+   "modular": "modular",
+   "circleci": "circleci",
+   "transliteration": "transliteration",
+   "configuration-management": "configuration-management",
+   "cc0": "cc0",
+   "testing": [
+      "test",
+      "tests",
+      "software-testing",
+      "testing"
    ],
-   "Python": [
-      "python-shell",
-      "python-interpreter",
-      "pythonic",
-      "Python"
+   "free-software": "free-software",
+   "process-manager": "process-manager",
+   "xib": "xib",
+   "Assembly": [
+      "assembly-language",
+      "assembler",
+      "asm",
+      "assembly"
    ],
-   "api": [
-      "apis",
-      "api"
+   "lorem": "lorem",
+   "ruby-gem": "ruby-gem",
+   "cdf": "cdf",
+   "magento-extension": "magento-extension",
+   "https-agents": "https-agents",
+   "notification-service": "notification-service",
+   "hl7-builder": "hl7-builder",
+   "bundle": "bundle",
+   "plaintext-accounting": "plaintext-accounting",
+   "Web Ontology Language": "web ontology language",
+   "minimalistic": "minimalistic",
+   "donations": "donations",
+   "tunnel": "tunnel",
+   "books": "books",
+   "Groovy": "groovy",
+   "i18n": "i18n",
+   "telekom": "telekom",
+   "environment": "environment",
+   "petition": "petition",
+   "binary": [
+      "binary-system",
+      "binary-number",
+      "binary"
    ],
-   "resources": [
-      "resource",
-      "resources"
+   "http": "http",
+   "power": "power",
+   "computational-linguistics": "computational-linguistics",
+   "windows": [
+      "windows-application",
+      "windows-programming",
+      "windows"
    ],
-   "reddit": [
-      "reddit-api",
-      "reddit"
-   ],
-   "textures": [
-      "texture",
-      "textures"
-   ],
-   "bots": [
-      "bot",
-      "bots"
-   ],
-   "cuda": [
-      "cudamalloc",
-      "cuda-kernel",
-      "cuda"
-   ],
-   "jmeter": [
-      "apache-jmeter",
-      "jmeter"
-   ],
-   "css3": [
-      "css-text-shadow",
-      "css-text-overflow",
-      "css-box-shadow",
-      "css-border-radius",
-      "css-border-image",
-      "css3"
-   ],
-   "go": [
-      "golang",
-      "go-language",
-      "go"
-   ],
-   "build": [
-      "builds",
-      "build"
-   ],
-   "learning": [
-      "learn",
-      "learning"
-   ],
-   "Processing": [
-      "processing.org",
-      "Processing"
-   ],
-   "Shell": [
-      "shellscript",
-      "shell-commands",
-      "shell-command",
-      "shell-scripting",
-      "shell-script",
-      "Shell"
+   "drone-ci": "drone-ci",
+   "NSIS": "nsis",
+   "toolbox": "toolbox",
+   "framer-prototype": "framer-prototype",
+   "dhamma": "dhamma",
+   "SourcePawn": "sourcepawn",
+   "laravel": "laravel",
+   "dask": "dask",
+   "jni": [
+      "java-native-interface",
+      "jni"
    ],
    "penetration-testing": [
       "pen-testing",
       "penetration-testing"
    ],
-   "audio": [
-      "sounds",
-      "sound-api",
-      "sound",
-      "audio"
+   "umbrella": "umbrella",
+   "icons": [
+      "icon",
+      "icons"
    ],
-   "questions": [
-      "question",
-      "questions"
+   "portfolio": "portfolio",
+   "icinga": "icinga",
+   "filesystem-api": "filesystem-api",
+   "threejs": "threejs",
+   "cd": "cd",
+   "pentaho": "pentaho",
+   "darkage": "darkage",
+   "emoji-searcher": "emoji-searcher",
+   "aviaryan": "aviaryan",
+   "speedport": "speedport",
+   "hash": [
+      "hashes",
+      "hashing",
+      "hash"
    ],
+   "deep-web": "deep-web",
+   "development-workflow": "development-workflow",
+   "sublime": "sublime",
+   "typo3": "typo3",
+   "SQLPL": "sqlpl",
+   "Go": [
+      "golang",
+      "go-language",
+      "go"
+   ],
+   "chromium": "chromium",
+   "smarttv": "smarttv",
+   "no-login": "no-login",
+   "bot": "bot",
+   "sexy-lists": "sexy-lists",
+   "ubuntu": [
+      "lubuntu",
+      "kubuntu",
+      "xubuntu",
+      "ubuntu"
+   ],
+   "passive-income": "passive-income",
+   "listener": "listener",
+   "es2015": "es2015",
+   "heartbeat": "heartbeat",
+   "algorithmen": "algorithmen",
+   "ant": [
+      "apache-ant",
+      "ant"
+   ],
+   "mocha": "mocha",
+   "GDB": "gdb",
+   "utilities": "utilities",
+   "hslu": "hslu",
+   "gnu": "gnu",
+   "gpgpu": "gpgpu",
+   "clipjump": "clipjump",
+   "open-content": "open-content",
+   "web-extension": "web-extension",
+   "web": [
+      "www",
+      "web"
+   ],
+   "magento2": "magento2",
+   "Logtalk": "logtalk",
+   "queue": "queue",
+   "yeoman-generator": "yeoman-generator",
+   "bots": [
+      "bot",
+      "bots"
+   ],
+   "npm-package": "npm-package",
+   "sideproject": "sideproject",
+   "Groff": "groff",
+   "filter": [
+      "filters",
+      "filter"
+   ],
+   "graphics-engine": "graphics-engine",
+   "magento-2": "magento-2",
+   "kanban": "kanban",
+   "Elixir": [
+      "elixir-lang",
+      "elixir"
+   ],
+   "bittorrent": "bittorrent",
+   "HCL": "hcl",
+   "prometheus": "prometheus",
+   "api-client": "api-client",
+   "swipe-gestures": "swipe-gestures",
+   "number": "number",
+   "javafx": "javafx",
+   "cdn": "cdn",
+   "webgl": "webgl",
+   "commonmark": "commonmark",
+   "atom-package": "atom-package",
+   "apollo": "apollo",
+   "Yacc": "yacc",
+   "cryptocurrency": "cryptocurrency",
+   "latex": "latex",
    "matlab": [
       "m-file",
       "mlint",
@@ -198,36 +584,16 @@
       "matlab-path",
       "matlab"
    ],
-   "generator": [
-      "generators",
-      "generator"
-   ],
-   "bookmarks": [
-      "bookmark",
-      "bookmarks"
-   ],
-   "testing": [
-      "test",
-      "tests",
-      "software-testing",
-      "testing"
-   ],
-   "database": [
-      "dbms",
-      "database-structure",
-      "db",
-      "databases",
-      "database"
-   ],
-   "Cuda": [
-      "cudamalloc",
-      "cuda-kernel",
-      "Cuda"
-   ],
-   "audio-player": [
-      "audio-playing",
-      "audio-player"
-   ],
+   "apollo-server": "apollo-server",
+   "fonsole": "fonsole",
+   "programming-erlang": "programming-erlang",
+   "parser": "parser",
+   "pure-css": "pure-css",
+   "datenstrukturen": "datenstrukturen",
+   "swift-framework": "swift-framework",
+   "tilt-sensor": "tilt-sensor",
+   "faenza": "faenza",
+   "ansible-demo": "ansible-demo",
    "css": [
       "css-font-weight",
       "dynamic-css",
@@ -260,120 +626,7 @@
       "cascading-style-sheet",
       "css"
    ],
-   "deployment": [
-      "deploy",
-      "deployment"
-   ],
-   "web-scraping": [
-      "webpagescraping",
-      "web-scraping"
-   ],
-   "slice": [
-      "string-slice",
-      "array-slice",
-      "slices",
-      "slicing",
-      "slice"
-   ],
-   "vim": [
-      "viml",
-      "vimscript",
-      "gvim",
-      "gvimrc",
-      "vimrc",
-      "vim"
-   ],
-   "string": [
-      "empty-string",
-      "str",
-      "string-manipulation",
-      "strings",
-      "string"
-   ],
-   "HTML": [
-      "span",
-      "html-comments",
-      "div-layouts",
-      "nested-divs",
-      "divs",
-      "div",
-      "html-attributes",
-      "html-tag",
-      "HTML"
-   ],
-   "minify": [
-      "minification",
-      "minifier",
-      "minify"
-   ],
-   "python": [
-      "python-shell",
-      "python-interpreter",
-      "pythonic",
-      "python"
-   ],
-   "Racket": [
-      "drracket",
-      "plt-scheme",
-      "drscheme",
-      "Racket"
-   ],
-   "jquery": [
-      "jquery-css",
-      "jquery-find",
-      "jquery-post",
-      "jquery-get",
-      "jquery-hasclass",
-      "jquery-after",
-      "jquery-callback",
-      "removeclass",
-      "toggleclass",
-      "addclass",
-      "jquery-live",
-      "jquery-core",
-      "jquery"
-   ],
-   "website": [
-      "websites",
-      "website"
-   ],
-   "dsl": [
-      "domain-specific-languages",
-      "dsl"
-   ],
-   "documentation": [
-      "docs",
-      "documentation"
-   ],
-   "prototype": [
-      "prototypes",
-      "prototype"
-   ],
-   "ansible": [
-      "ansible-playbook",
-      "ansible"
-   ],
-   "io": [
-      "input-output",
-      "io"
-   ],
-   "challenge": [
-      "code-challenge",
-      "challenge"
-   ],
-   "jobs": [
-      "job",
-      "jobs"
-   ],
-   "usb": [
-      "usbdevice",
-      "usb"
-   ],
-   "windows": [
-      "windows-application",
-      "windows-programming",
-      "windows"
-   ],
+   "zappa": "zappa",
    "math": [
       "arithmetic",
       "mathematical",
@@ -381,84 +634,80 @@
       "mathematics",
       "math"
    ],
-   "ubuntu": [
-      "lubuntu",
-      "kubuntu",
-      "xubuntu",
-      "ubuntu"
+   "faas": "faas",
+   "chrome-extension": "chrome-extension",
+   "xkcd": "xkcd",
+   "gpl": "gpl",
+   "stream": [
+      "streams",
+      "stream"
    ],
-   "C++": [
-      "cpp",
-      "C++"
-   ],
-   "graphics": [
-      "computer-graphics",
-      "graphics"
-   ],
-   "angular": [
-      "angular4.x",
-      "angular4",
-      "angular2",
-      "angular"
-   ],
+   "arpa": "arpa",
+   "bot-editor": "bot-editor",
+   "learning-java": "learning-java",
+   "webpack2": "webpack2",
+   "culture-libre": "culture-libre",
+   "rails": "rails",
+   "ios-ui": "ios-ui",
+   "otp": "otp",
+   "giphy": "giphy",
+   "homegear": "homegear",
+   "answers": "answers",
+   "eth": "eth",
+   "cli": "cli",
    "html5": [
       "time-tag",
       "xhtml5",
       "html5"
    ],
-   "fun": [
-      "humour",
-      "humor",
-      "fun"
+   "sublime-text-package": "sublime-text-package",
+   "bash": [
+      "bash-function",
+      ".bash-profile",
+      "bash-variables",
+      "bash-alias",
+      ".bashrc",
+      "bashrc",
+      "bash-script",
+      "bash"
    ],
-   "keyboard": [
-      "keyboards",
-      "keyboard"
+   "XSLT": [
+      "xml-transform",
+      "xslt-2.0-processors",
+      "xsltprocessor",
+      "xsltproc",
+      "xsltransform",
+      "xsl",
+      "xslt"
    ],
+   "tex": "tex",
+   "Elm": "elm",
+   "Scilab": "scilab",
+   "travis-torrent": "travis-torrent",
+   "Lua": "lua",
+   "plaintext": "plaintext",
+   "questions": [
+      "question",
+      "questions"
+   ],
+   "craft": "craft",
+   "beancount": "beancount",
+   "minetest-subgame": "minetest-subgame",
+   "golang": "golang",
    "load-testing": [
       "loadtest",
       "load-testing"
    ],
-   "list": [
-      "ilist",
-      "lists",
-      "list"
-   ],
-   "dictionary": [
-      "map",
-      "dictionaries",
-      "dict",
-      "dictionary"
-   ],
-   "PowerShell": [
-      "windows-powershell",
-      "PowerShell"
-   ],
-   "Java": [
-      "oraclejdk",
-      "java-libraries",
-      "jre",
-      "jdk",
-      "core-java",
-      "j2se",
-      ".java",
-      "java-se",
-      "Java"
-   ],
-   "terminal": [
-      "terminals",
-      "terminal"
-   ],
-   "data-structures": [
-      "data-structure",
-      "data-structures"
-   ],
-   "binary": [
-      "binary-system",
-      "binary-number",
-      "binary"
-   ],
-   "html": [
+   "bitcoin": "bitcoin",
+   "demo": "demo",
+   "mirror": "mirror",
+   "coin": "coin",
+   "workflow-management": "workflow-management",
+   "npm": "npm",
+   "rubocop": "rubocop",
+   "theme": "theme",
+   "c-language": "c-language",
+   "HTML": [
       "span",
       "html-comments",
       "div-layouts",
@@ -469,60 +718,161 @@
       "html-tag",
       "html"
    ],
-   "import": [
-      "imports",
-      "importing",
-      "import"
+   "pyrocms-extenstions": "pyrocms-extenstions",
+   "svelte": "svelte",
+   "golang-library": "golang-library",
+   "culfw": "culfw",
+   "Ruby": "ruby",
+   "rpc": "rpc",
+   "Augeas": "augeas",
+   "Agda": "agda",
+   "hl7-parsing": "hl7-parsing",
+   "Roff": "roff",
+   "Makefile": [
+      "make",
+      "makefiles",
+      "makefile"
    ],
-   "icons": [
-      "icon",
-      "icons"
+   "cards": "cards",
+   "css-minifier": "css-minifier",
+   "networking": [
+      "networks",
+      "network",
+      "networking"
    ],
-   "spring": [
-      "spring-framework",
-      "spring"
-   ],
-   "hash": [
-      "hashes",
-      "hashing",
-      "hash"
-   ],
-   "javascript": [
-      "javascript-module",
-      "vanilla-javascript",
-      "javascript-runtime",
-      "javascript-library",
-      "javascript-disabled",
-      "javascript-dom",
-      "javascript-alert",
-      "classic-javascript",
-      "javascript-execution",
-      ".js",
-      "ecmascript",
-      "js",
-      "javascript"
-   ],
+   "ask": "ask",
+   "Nim": "nim",
+   "apcupsd": "apcupsd",
+   "collection": "collection",
+   "game-engine": "game-engine",
+   "text-metric": "text-metric",
+   "background": "background",
+   "git": "git",
+   "tool": "tool",
+   "indie": "indie",
+   "package": "package",
    "ios": [
       "ios-sdk",
       "apple-ios",
       "iphone-os",
       "ios"
    ],
-   "mysql": [
-      "mysqldump",
-      "mysqlclient",
-      "mysqld",
-      "mysql-table",
-      "mysql-server",
-      "mysql-query",
-      "my-sql",
-      "mysql"
+   "ontouml": "ontouml",
+   "competitive": "competitive",
+   "m17n": "m17n",
+   "ibus": "ibus",
+   "light": "light",
+   "static-site-generator": "static-site-generator",
+   "rubynlp": "rubynlp",
+   "emr": "emr",
+   "ui-components": "ui-components",
+   "simple": "simple",
+   "keyboard": [
+      "keyboards",
+      "keyboard"
    ],
-   "svg": [
-      "svg-path",
-      "svgz",
-      "svg"
+   "TeX": "tex",
+   "css-selector": "css-selector",
+   "Julia": "julia",
+   "minetest-mod": "minetest-mod",
+   "h2oai": "h2oai",
+   "zesty": "zesty",
+   "minetest": "minetest",
+   "algo": "algo",
+   "webdesign": "webdesign",
+   "deep-neural-networks": "deep-neural-networks",
+   "coach-sheet": "coach-sheet",
+   "check": "check",
+   "clipboard-manager": "clipboard-manager",
+   "getting-started": "getting-started",
+   "farsi": "farsi",
+   "esoteric": "esoteric",
+   "esoteric-language": "esoteric-language",
+   "text-manipulation": "text-manipulation",
+   "usb": [
+      "usbdevice",
+      "usb"
    ],
+   "separator": "separator",
+   "codepen": "codepen",
+   "website-template": "website-template",
+   "engineering-management": "engineering-management",
+   "delimiter": "delimiter",
+   "placeholder": "placeholder",
+   "Isabelle": "isabelle",
+   "fun": [
+      "humour",
+      "humor",
+      "fun"
+   ],
+   "xBase": "xbase",
+   "rubydatascience": "rubydatascience",
+   "Rust": "rust",
+   "Eagle": "eagle",
+   "calculator": "calculator",
+   "electron": "electron",
+   "PowerShell": [
+      "windows-powershell",
+      "powershell"
+   ],
+   "tikz": "tikz",
+   "reddit": [
+      "reddit-api",
+      "reddit"
+   ],
+   "artisan-command": "artisan-command",
+   "hl7-message": "hl7-message",
+   "pwa-boilerplate": "pwa-boilerplate",
+   "template": "template",
+   "archi": "archi",
+   "django": "django",
+   "markdown": "markdown",
+   "competitive-programming-contests": "competitive-programming-contests",
+   "hacking": "hacking",
+   "dropbox": "dropbox",
+   "lorem-ipsum-generator": "lorem-ipsum-generator",
+   "engine": "engine",
+   "couchdb-wiki": "couchdb-wiki",
+   "codejam": "codejam",
+   "nextjs": "nextjs",
+   "video-course": "video-course",
+   "Emacs Lisp": "emacs lisp",
+   "config": "config",
+   "AutoHotkey": "autohotkey",
+   "jmeter-plugin": "jmeter-plugin",
+   "ooc": "ooc",
+   "graphql": "graphql",
+   "Vue": "vue",
+   "scim": "scim",
+   "postgresql": [
+      "sql-postgres",
+      "pgsql",
+      "postgres",
+      "postgresql"
+   ],
+   "ASP": "asp",
+   "java-scripts": "java-scripts",
+   "Kotlin": "kotlin",
+   "ctf": "ctf",
+   "mysql-ha": "mysql-ha",
+   "couchdb": "couchdb",
+   "react": "react",
+   "irc": "irc",
+   "potato": "potato",
+   "colors": [
+      "colours",
+      "colour",
+      "color",
+      "colors"
+   ],
+   "aws-lambda": [
+      "amazon-lambda",
+      "aws-lambda"
+   ],
+   "programming-style": "programming-style",
+   "C": "c",
+   "mobile-game": "mobile-game",
+   "freedom": "freedom",
    "PHP": [
       "php-include",
       "phtml",
@@ -540,161 +890,406 @@
       "php5",
       "php-date",
       "php-oop",
-      "PHP"
+      "php"
    ],
-   "full-text-search": [
-      "fulltext",
-      "fts",
-      "fulltext-searching",
-      "full-text-search"
+   "Inno Setup": "inno setup",
+   "anime": "anime",
+   "deprecated": [
+      "deprecation",
+      "deprecated"
    ],
-   "postgresql": [
-      "sql-postgres",
-      "pgsql",
-      "postgres",
-      "postgresql"
+   "public-domain": "public-domain",
+   "apns": "apns",
+   "terminal": [
+      "terminals",
+      "terminal"
    ],
-   "stream": [
-      "streams",
-      "stream"
+   "wikimedia": "wikimedia",
+   "Arduino": "arduino",
+   "formatter": "formatter",
+   "Perl6": "perl6",
+   "lisp": "lisp",
+   "exercise": "exercise",
+   "naughty-strings": "naughty-strings",
+   "glsl": "glsl",
+   "coreml-framework": "coreml-framework",
+   "linter": "linter",
+   "vape": "vape",
+   "mathematics": "mathematics",
+   "npm-scripts": "npm-scripts",
+   "Processing": [
+      "processing.org",
+      "processing"
    ],
-   "events": [
-      "event",
-      "events"
-   ],
-   "web": [
-      "www",
-      "web"
-   ],
-   "less": [
-      "lesscss",
-      "less"
-   ],
-   "colors": [
-      "colours",
-      "colour",
-      "color",
-      "colors"
-   ],
-   "Clojure": [
-      "cljx",
-      "cljc",
-      "clj",
-      "Clojure"
-   ],
-   "search": [
-      "searching",
-      "search"
-   ],
-   "Go": [
-      "golang",
-      "go-language",
-      "Go"
-   ],
+   "framer-studio": "framer-studio",
+   "best-practices": "best-practices",
+   "design": "design",
+   "puppeteer": "puppeteer",
+   "applications": "applications",
+   "community": "community",
+   "ios-swift": "ios-swift",
+   "x-window-manager": "x-window-manager",
+   "dictionary-based-attacks": "dictionary-based-attacks",
    "Swift": [
       "swift1.2",
       "swift-ios",
       "swift-language",
-      "Swift"
+      "swift"
    ],
-   "p2p": [
-      "peer-to-peer",
-      "p2p"
+   "internet-of-things": "internet-of-things",
+   "Objective-C++": "objective-c++",
+   "lock": "lock",
+   "Shell": [
+      "shellscript",
+      "shell-commands",
+      "shell-command",
+      "shell-scripting",
+      "shell-script",
+      "shell"
    ],
-   "jni": [
-      "java-native-interface",
-      "jni"
+   "bearss": "bearss",
+   "synonym": "synonym",
+   "activity": "activity",
+   "websites": "websites",
+   "lorem-ipsum": "lorem-ipsum",
+   "qt-applications": "qt-applications",
+   "minetest-engine": "minetest-engine",
+   "ad": "ad",
+   "KiCad": "kicad",
+   "ipsum": "ipsum",
+   "games-showcase": "games-showcase",
+   "tinkerpop": "tinkerpop",
+   "editor": "editor",
+   "practice": "practice",
+   "iot": "iot",
+   "treasure": "treasure",
+   "http2": "http2",
+   "numbertools": "numbertools",
+   "coreml-model": "coreml-model",
+   "Hack": "hack",
+   "indiedev": "indiedev",
+   "creative-coding": "creative-coding",
+   "Common Lisp": "common lisp",
+   "api": [
+      "apis",
+      "api"
    ],
-   "elixir": [
-      "elixir-lang",
-      "elixir"
+   "postcss": "postcss",
+   "tokenizer": "tokenizer",
+   "temperature-control": "temperature-control",
+   "workflow": "workflow",
+   "nodejs": "nodejs",
+   "chat": "chat",
+   "game-development": "game-development",
+   "calc": "calc",
+   "io": [
+      "input-output",
+      "io"
    ],
-   "Makefile": [
-      "make",
-      "makefiles",
-      "Makefile"
+   "craig-minetest-server": "craig-minetest-server",
+   "Tcl": "tcl",
+   "random-text": "random-text",
+   "shell": [
+      "shellscript",
+      "shell-commands",
+      "shell-command",
+      "shell-scripting",
+      "shell-script",
+      "shell"
    ],
-   "swift3": [
-      "swift3.1",
-      "swift3.0.2",
-      "swift3.0.1",
-      "swift3.0",
-      "swift3"
+   "Brainfuck": "brainfuck",
+   "competitive-programming": "competitive-programming",
+   "enzyme": "enzyme",
+   "guitar": "guitar",
+   "HLSL": "hlsl",
+   "heart": "heart",
+   "dojo": [
+      "dojo-store",
+      "dojo-layer",
+      "dojo.stateful",
+      "dojo-require",
+      "dojo.data",
+      "dijit",
+      "dojox",
+      "dojo"
    ],
+   "Gherkin": "gherkin",
+   "quotes": "quotes",
+   "nagios-plugin": "nagios-plugin",
+   "badges": "badges",
+   "hit": "hit",
+   "brightness": "brightness",
+   "CMake": "cmake",
+   "vim-configuration": "vim-configuration",
+   "craig": "craig",
+   "language-support": "language-support",
+   "database": [
+      "dbms",
+      "database-structure",
+      "db",
+      "databases",
+      "database"
+   ],
+   "hackerearth": "hackerearth",
+   "cloudant": "cloudant",
+   "alfred-workflow": "alfred-workflow",
+   "accounting": "accounting",
+   "ansible-role": "ansible-role",
+   "tor": "tor",
+   "github-pages": [
+      "gh-pages",
+      "github-pages"
+   ],
+   "subscription": "subscription",
+   "graphics": [
+      "computer-graphics",
+      "graphics"
+   ],
+   "qt": "qt",
+   "opensource": "opensource",
+   "preact": "preact",
+   "hapi": "hapi",
+   "cpp": "cpp",
+   "tizen": "tizen",
+   "cuda": [
+      "cudamalloc",
+      "cuda-kernel",
+      "cuda"
+   ],
+   "go-programming": "go-programming",
+   "Scala": "scala",
+   "ansible-roles": "ansible-roles",
+   "ios-lib": "ios-lib",
+   "ANTLR": "antlr",
+   "jsx": "jsx",
+   "R": [
+      "r-language",
+      "rstats",
+      "r"
+   ],
+   "Coq": "coq",
+   "beta": "beta",
+   "locksport": "locksport",
+   "Idris": "idris",
+   "gnome-shell-extension": "gnome-shell-extension",
+   "castra": "castra",
+   "dmx": "dmx",
+   "logiciels": "logiciels",
+   "textures": [
+      "texture",
+      "textures"
+   ],
+   "pixel-layout": "pixel-layout",
+   "bacon-mod": "bacon-mod",
+   "webgl-programming": "webgl-programming",
+   "programming-language": "programming-language",
+   "Cap'n Proto": "cap'n proto",
+   "tunneling-proxies": "tunneling-proxies",
+   "type-checking": "type-checking",
+   "text-analysis": "text-analysis",
+   "build": [
+      "builds",
+      "build"
+   ],
+   "mqtt": "mqtt",
+   "nextcloud": "nextcloud",
+   "C++": [
+      "cpp",
+      "c++"
+   ],
+   "instagram": "instagram",
+   "interoperability": "interoperability",
+   "fhem": "fhem",
+   "pixel": "pixel",
+   "react-toolbox": "react-toolbox",
+   "svg": [
+      "svg-path",
+      "svgz",
+      "svg"
+   ],
+   "java-8": [
+      "jdk1.8",
+      "jdk8",
+      "java-8"
+   ],
+   "gideros": "gideros",
+   "portfolio-website": "portfolio-website",
+   "data-analysis": "data-analysis",
+   "data-analytics": "data-analytics",
+   "macos": "macos",
+   "sublime-text-3": "sublime-text-3",
+   "wordpress-plugin": "wordpress-plugin",
+   "Mathematica": "mathematica",
+   "prototype": [
+      "prototypes",
+      "prototype"
+   ],
+   "encode": "encode",
+   "pm2": "pm2",
+   "headless-chrome": "headless-chrome",
+   "ux-design": "ux-design",
+   "intelligence": "intelligence",
+   "audio-player": [
+      "audio-playing",
+      "audio-player"
+   ],
+   "web-crawler": [
+      "spider",
+      "crawl",
+      "crawling",
+      "crawler",
+      "webcrawling",
+      "web-spider",
+      "webspiders",
+      "web-crawler"
+   ],
+   "serial": "serial",
+   "performance-measurement": "performance-measurement",
+   "canvas": "canvas",
+   "elixir-books": "elixir-books",
+   "buddypress-plugin": "buddypress-plugin",
+   "websecurity": "websecurity",
+   "python-asyncio": "python-asyncio",
+   "bookmarks": [
+      "bookmark",
+      "bookmarks"
+   ],
+   "resources": [
+      "resource",
+      "resources"
+   ],
+   "litecoin": "litecoin",
+   "codechef": "codechef",
+   "text-measuring": "text-measuring",
+   "configuration": "configuration",
+   "language-model": "language-model",
+   "reveal-js": "reveal-js",
+   "ledger": "ledger",
+   "construct": "construct",
+   "brightness-level": "brightness-level",
+   "E": "e",
+   "sublime-text-plugin": "sublime-text-plugin",
+   "docker-image": "docker-image",
+   "bears": "bears",
+   "framer": "framer",
+   "security": [
+      "web-security",
+      "vulnerabilities",
+      "vulnerability",
+      "secure",
+      "security"
+   ],
+   "softball": "softball",
+   "task-runner": "task-runner",
+   "ama": "ama",
+   "java-library": "java-library",
+   "type-hints": "type-hints",
+   "no-login-web-apps": "no-login-web-apps",
+   "art-net": "art-net",
+   "typo3-cms": "typo3-cms",
+   "game": "game",
+   "android-tv": "android-tv",
+   "rollup": "rollup",
+   "sensor": "sensor",
+   "LiveScript": "livescript",
+   "leightweight": "leightweight",
+   "transparency": "transparency",
+   "pyrocms3": "pyrocms3",
+   "standard": "standard",
+   "tmux": "tmux",
+   "nicehash": "nicehash",
+   "hackerrank": "hackerrank",
+   "chuck-norris": "chuck-norris",
+   "input-method": "input-method",
+   "vuejs": "vuejs",
+   "erlang": "erlang",
+   "cve": "cve",
+   "Cuda": [
+      "cudamalloc",
+      "cuda-kernel",
+      "cuda"
+   ],
+   "craftcms": "craftcms",
+   "fs20": "fs20",
+   "glsl-editors": "glsl-editors",
+   "asynctask": "asynctask",
+   "archimate": "archimate",
+   "dmx512": "dmx512",
+   "logger": "logger",
+   "jobs": [
+      "job",
+      "jobs"
+   ],
+   "monitoring": "monitoring",
+   "style-guide": "style-guide",
+   "COBOL": "cobol",
+   "wargame": "wargame",
+   "eslint": "eslint",
+   "pixels": "pixels",
+   "elixir-lang": "elixir-lang",
+   "uim": "uim",
+   "M": "m",
+   "runtime-code-analysis": "runtime-code-analysis",
+   "hl7": "hl7",
+   "plugin": "plugin",
+   "competitive-learning": "competitive-learning",
+   "lighting": "lighting",
+   "mp3": "mp3",
+   "ipython-notebook": "ipython-notebook",
+   "owl": "owl",
+   "gamedev": "gamedev",
    "shader": [
       "shaders",
       "shader"
    ],
-   "CoffeeScript": [
-      "coffee",
-      "CoffeeScript"
+   "ressources-educatives": "ressources-educatives",
+   "alfred3-workflow": "alfred3-workflow",
+   "mobile-development": "mobile-development",
+   "vuejs2": "vuejs2",
+   "test": "test",
+   "openthesaurus": "openthesaurus",
+   "locksmithing": "locksmithing",
+   "java-sample": "java-sample",
+   "samsung-smart-tv": "samsung-smart-tv",
+   "string": [
+      "empty-string",
+      "str",
+      "string-manipulation",
+      "strings",
+      "string"
    ],
-   "animation": [
-      "scaleanimation",
-      "rotateanimation",
-      "animated",
-      "animations",
-      "animation"
+   "webgl-articles": "webgl-articles",
+   "Alloy": "alloy",
+   "backup-script": "backup-script",
+   "chrome": "chrome",
+   "jvm": "jvm",
+   "lockpicking": "lockpicking",
+   "AppleScript": "applescript",
+   "ethereum": "ethereum",
+   "percent": "percent",
+   "boilerplate": "boilerplate",
+   "list": [
+      "ilist",
+      "lists",
+      "list"
    ],
-   "redirect": [
-      "redirecting",
-      "redirection",
-      "redirects",
-      "redirect"
+   "Nginx": "nginx",
+   "erlang-vm": "erlang-vm",
+   "pitches": "pitches",
+   "import": [
+      "imports",
+      "importing",
+      "import"
    ],
-   "F#": [
-      "fsharp",
-      "F#"
+   "personal": "personal",
+   "shell-extension": "shell-extension",
+   "video-game": "video-game",
+   "beanstalkd": "beanstalkd",
+   "jmeter": [
+      "apache-jmeter",
+      "jmeter"
    ],
-   "bash": [
-      "bash-function",
-      ".bash-profile",
-      "bash-variables",
-      "bash-alias",
-      ".bashrc",
-      "bashrc",
-      "bash-script",
-      "bash"
-   ],
-   "networking": [
-      "networks",
-      "network",
-      "networking"
-   ],
-   "twitter": [
-      "twitter-api",
-      "twitter"
-   ],
-   "java": [
-      "oraclejdk",
-      "java-libraries",
-      "jre",
-      "jdk",
-      "core-java",
-      "j2se",
-      ".java",
-      "java-se",
-      "java"
-   ],
-   "pipe": [
-      "pipes",
-      "pipe"
-   ],
-   "levenshtein-distance": [
-      "levenstein",
-      "levenshtein",
-      "levenshtein-distance"
-   ],
-   "Assembly": [
-      "assembly-language",
-      "assembler",
-      "asm",
-      "Assembly"
-   ],
-   "Elixir": [
-      "elixir-lang",
-      "Elixir"
-   ],
+   "ansi": "ansi",
    "CSS": [
       "css-font-weight",
       "dynamic-css",
@@ -725,56 +1320,243 @@
       "css-background-image",
       "css-layout",
       "cascading-style-sheet",
-      "CSS"
+      "css"
    ],
-   "deprecated": [
-      "deprecation",
-      "deprecated"
+   "artnet": "artnet",
+   "python-3": "python-3",
+   "nginx": "nginx",
+   "launcher": "launcher",
+   "awesome-list": "awesome-list",
+   "wtfpl": "wtfpl",
+   "blog": "blog",
+   "couchdb-chat": "couchdb-chat",
+   "language": "language",
+   "template-engine": "template-engine",
+   "vue": "vue",
+   "devops": "devops",
+   "algorithms": "algorithms",
+   "Erlang": "erlang",
+   "swift-library": "swift-library",
+   "infosec": "infosec",
+   "dotfiles": "dotfiles",
+   "persian": "persian",
+   "bootstrap3": "bootstrap3",
+   "retrospectives": "retrospectives",
+   "management": "management",
+   "mod": "mod",
+   "cdnjs": "cdnjs",
+   "ffi": "ffi",
+   "battery": "battery",
+   "lesscss": "lesscss",
+   "Gnuplot": "gnuplot",
+   "marklink": "marklink",
+   "java8": "java8",
+   "pydata": "pydata",
+   "baseball": "baseball",
+   "airbnb-javascript": "airbnb-javascript",
+   "firmware": "firmware",
+   "ml": "ml",
+   "ruby": "ruby",
+   "bbatsov": "bbatsov",
+   "tech-culture": "tech-culture",
+   "protocol": "protocol",
+   "go": [
+      "golang",
+      "go-language",
+      "go"
    ],
+   "armaldio": "armaldio",
+   "css3": [
+      "css-text-shadow",
+      "css-text-overflow",
+      "css-box-shadow",
+      "css-border-radius",
+      "css-border-image",
+      "css3"
+   ],
+   "java": [
+      "oraclejdk",
+      "java-libraries",
+      "jre",
+      "jdk",
+      "core-java",
+      "j2se",
+      ".java",
+      "java-se",
+      "java"
+   ],
+   "shell-scripts": "shell-scripts",
+   "question-answering": "question-answering",
+   "challenge": [
+      "code-challenge",
+      "challenge"
+   ],
+   "gif": "gif",
+   "ad-free": "ad-free",
+   "hstore": "hstore",
+   "locksmith": "locksmith",
+   "callbacks": "callbacks",
+   "bootstrap": "bootstrap",
+   "webos-tv": "webos-tv",
+   "ansible": [
+      "ansible-playbook",
+      "ansible"
+   ],
+   "Brightscript": "brightscript",
+   "voltage": "voltage",
+   "airplay": "airplay",
+   "console": "console",
+   "itch": "itch",
+   "Stata": "stata",
+   "style": "style",
+   "c-plus-plus": "c-plus-plus",
+   "babel-plugin": "babel-plugin",
+   "ripple": "ripple",
+   "mqtt-broker": "mqtt-broker",
+   "deployer": "deployer",
+   "elixir-programming-language": "elixir-programming-language",
+   "CoffeeScript": [
+      "coffee",
+      "coffeescript"
+   ],
+   "text": "text",
+   "r": [
+      "r-language",
+      "rstats",
+      "r"
+   ],
+   "math-toolbox": "math-toolbox",
+   "record": "record",
+   "numpy": "numpy",
+   "neuroscience": "neuroscience",
+   "dark-ages": "dark-ages",
+   "gui": "gui",
+   "linux-kernel-module": "linux-kernel-module",
+   "eventbus": "eventbus",
+   "images": "images",
+   "pipe": [
+      "pipes",
+      "pipe"
+   ],
+   "data-science": "data-science",
+   "nagios": "nagios",
+   "debian-jessie": "debian-jessie",
+   "ttr": "ttr",
    "visualization": [
       "visualisation",
       "visualization"
    ],
-   "github-pages": [
-      "gh-pages",
-      "github-pages"
+   "levenshtein-distance": [
+      "levenstein",
+      "levenshtein",
+      "levenshtein-distance"
    ],
-   "php": [
-      "php-include",
-      "phtml",
-      "php-fpm",
-      "php-session",
-      "php-readfile",
-      "php-functions",
-      "php-cgi",
-      "php-mail",
-      "php-errors",
-      "php-cli",
-      "php.ini",
-      "hypertext-preprocessor",
-      "php-frameworks",
-      "php5",
-      "php-date",
-      "php-oop",
-      "php"
+   "stories": "stories",
+   "frege": "frege",
+   "service-worker": "service-worker",
+   "arp-spoofing": "arp-spoofing",
+   "Python": [
+      "python-shell",
+      "python-interpreter",
+      "pythonic",
+      "python"
    ],
-   "web-crawler": [
-      "spider",
-      "crawl",
-      "crawling",
-      "crawler",
-      "webcrawling",
-      "web-spider",
-      "webspiders",
-      "web-crawler"
+   "geometry": "geometry",
+   "apollo-graphql-ecosystem": "apollo-graphql-ecosystem",
+   "php-api": "php-api",
+   "website": [
+      "websites",
+      "website"
    ],
-   "Objective-C": [
-      "objc",
-      "Objective-C"
+   "antonym": "antonym",
+   "box2d": "box2d",
+   "Logos": "logos",
+   "ask-me-anything": "ask-me-anything",
+   "device": "device",
+   "imagemagick": "imagemagick",
+   "mysql": [
+      "mysqldump",
+      "mysqlclient",
+      "mysqld",
+      "mysql-table",
+      "mysql-server",
+      "mysql-query",
+      "my-sql",
+      "mysql"
    ],
-   "ant": [
-      "apache-ant",
-      "ant"
+   "mit-license": "mit-license",
+   "ontologia": "ontologia",
+   "unlicense": "unlicense",
+   "spa": "spa",
+   "healthcare": "healthcare",
+   "texttools": "texttools",
+   "web-app": "web-app",
+   "angular": [
+      "angular4.x",
+      "angular4",
+      "angular2",
+      "angular"
+   ],
+   "learning": [
+      "learn",
+      "learning"
+   ],
+   "jquery": [
+      "jquery-css",
+      "jquery-find",
+      "jquery-post",
+      "jquery-get",
+      "jquery-hasclass",
+      "jquery-after",
+      "jquery-callback",
+      "removeclass",
+      "toggleclass",
+      "addclass",
+      "jquery-live",
+      "jquery-core",
+      "jquery"
+   ],
+   "atom": "atom",
+   "paper": "paper",
+   "babel": "babel",
+   "postgres": "postgres",
+   "styleguide": "styleguide",
+   "translation": [
+      "t9n",
+      "translation"
+   ],
+   "Haskell": "haskell",
+   "bad-code": "bad-code",
+   "packages": "packages",
+   "saltstack": "saltstack",
+   "js": "js",
+   "pos-tag": "pos-tag",
+   "simplepixels-texture-pack": "simplepixels-texture-pack",
+   "stage-lighting": "stage-lighting",
+   "QMake": "qmake",
+   "Lex": "lex",
+   "vimrc": "vimrc",
+   "russian": "russian",
+   "hypernym": "hypernym",
+   "apollo-client": "apollo-client",
+   "full-text-search": [
+      "fulltext",
+      "fts",
+      "fulltext-searching",
+      "full-text-search"
+   ],
+   "movies": "movies",
+   "Matlab": [
+      "m-file",
+      "mlint",
+      "matlab-toolbox",
+      "matlab-ide",
+      "matlab-path",
+      "matlab"
+   ],
+   "spring": [
+      "spring-framework",
+      "spring"
    ],
    "android": [
       "android-framework",
@@ -786,9 +1568,135 @@
       "android-mobile",
       "android"
    ],
-   "R": [
-      "r-language",
-      "rstats",
-      "R"
-   ]
+   "gaming": "gaming",
+   "libre": "libre",
+   "hyponym": "hyponym",
+   "autohotkey": "autohotkey",
+   "theravada": "theravada",
+   "cuda-by-example": "cuda-by-example",
+   "redirect": [
+      "redirecting",
+      "redirection",
+      "redirects",
+      "redirect"
+   ],
+   "for-humans": "for-humans",
+   "awesome": "awesome",
+   "Puppet": "puppet",
+   "airtunes": "airtunes",
+   "data-visualization": "data-visualization",
+   "multiple-clipboards": "multiple-clipboards",
+   "leadership": "leadership",
+   "information-visualization": "information-visualization",
+   "python": [
+      "python-shell",
+      "python-interpreter",
+      "pythonic",
+      "python"
+   ],
+   "executable": "executable",
+   "gaming-cms": "gaming-cms",
+   "automation": "automation",
+   "webgl-references": "webgl-references",
+   "examples": "examples",
+   "airbnb": "airbnb",
+   "Clean": "clean",
+   "Visual Basic": "visual basic",
+   "curated-list": "curated-list",
+   "library": "library",
+   "Racket": [
+      "drracket",
+      "plt-scheme",
+      "drscheme",
+      "racket"
+   ],
+   "coloured-stone-bricks": "coloured-stone-bricks",
+   "keypicking": "keypicking",
+   "started": "started",
+   "hiring": "hiring",
+   "module": [
+      "modules",
+      "module"
+   ],
+   "string-metrics": "string-metrics",
+   "Smalltalk": "smalltalk",
+   "graphics-programming": "graphics-programming",
+   "redux": "redux",
+   "Objective-C": [
+      "objc",
+      "objective-c"
+   ],
+   "starter-kit": "starter-kit",
+   "javascript": [
+      "javascript-module",
+      "vanilla-javascript",
+      "javascript-runtime",
+      "javascript-library",
+      "javascript-disabled",
+      "javascript-dom",
+      "javascript-alert",
+      "classic-javascript",
+      "javascript-execution",
+      ".js",
+      "ecmascript",
+      "js",
+      "javascript"
+   ],
+   "generative-art": "generative-art",
+   "settings": "settings",
+   "IDL": "idl",
+   "minetest-mods": "minetest-mods",
+   "VimL": "viml",
+   "ups": "ups",
+   "ai": "ai",
+   "documentation-tool": "documentation-tool",
+   "mode": "mode",
+   "poetry": "poetry",
+   "3d-graphics": "3d-graphics",
+   "general-tutorials": "general-tutorials",
+   "atom-plugin": "atom-plugin",
+   "string-distance": "string-distance",
+   "diversity": "diversity",
+   "Fortran": "fortran",
+   "csv": [
+      "tsv",
+      "comma-separated",
+      ".csv",
+      "csv"
+   ],
+   "proxy": "proxy",
+   "access": "access",
+   "german": "german",
+   "wallet": "wallet",
+   "bounty": "bounty",
+   "jupyter-notebook": "jupyter-notebook",
+   "velocity": "velocity",
+   "Dart": "dart",
+   "smart-tv": "smart-tv",
+   "router": "router",
+   "bacon": "bacon",
+   "hamming-distance": "hamming-distance",
+   "npms": "npms",
+   "emoji-picker": "emoji-picker",
+   "FreeMarker": "freemarker",
+   "favorite": "favorite",
+   "SystemVerilog": "systemverilog",
+   "government": "government",
+   "entrepreneurs": "entrepreneurs",
+   "elixir": [
+      "elixir-lang",
+      "elixir"
+   ],
+   "physec": "physec",
+   "social-network": "social-network",
+   "inter-process-communication": "inter-process-communication",
+   "prompt": "prompt",
+   "sentiment-analysis": "sentiment-analysis",
+   "serverless": "serverless",
+   "asyncio": "asyncio",
+   "autocode": "autocode",
+   "ansible-tutorial": "ansible-tutorial",
+   "tsv": "tsv",
+   "texture-pack": "texture-pack",
+   "bootstrapper": "bootstrapper"
 }

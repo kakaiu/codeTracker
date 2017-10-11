@@ -11,25 +11,18 @@ Info_path = sys.path[0] + "/Info"
 if not os.path.exists(Info_path):
     os.mkdir(Info_path)
 
-name_file = Info_path + '/login_list.json'
-name_list = open(name_file,encoding='utf-8')
-name_list = json.load(name_list)
-git_info = gt.search_info(name_list)
-
-git_api = 'https://api.github.com/repos/{}/commits'.format('sindresorhus/awesome')
-# git_info = gt.get_info(git_api)
+# name_file = Info_path + '/login_list.json'
+# name_list = open(name_file,encoding='utf-8')
+# name_list = json.load(name_list)
+# git_info = gt.search_info(name_list)
 
 info_file = Info_path + '/awesome_match_5.json'
 syn_file = Info_path + '/syn_list.json'
-cTime = time.time()
-print("Dumping the info...")
-with open(info_file, 'w') as ctfile:
-    json.dump(git_info, ctfile, indent=3)
-print(time.time() - cTime)
 
-# git_info = open(info_file,encoding='utf-8')
+
+git_info = open(info_file,encoding='utf-8')
 syn_list = open(syn_file,encoding='utf-8')
-# git_info = json.load(git_info)
+git_info = json.load(git_info)
 syn_list = json.load(syn_list)
 stk_count = total_count = 0
 
@@ -49,6 +42,7 @@ print("Ratio:{}".format(round(stk_count/total_count,4)))
 
 print("Saving the results of matching...")
 cTime = time.time()
+file = Info_path + '/awesome_info_1.json'
 with open(info_file, 'w') as ctfile:
     json.dump(match_info, ctfile, indent=3)
 print(time.time() - cTime)

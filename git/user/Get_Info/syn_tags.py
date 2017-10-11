@@ -13,15 +13,11 @@ def get_syn(git_info):
     tags_list = []
     for item in git_info:
         language = (item["github_language"] if not item["github_language"] == "null" else [])
-        tags = (item["github_tags"] if not item["github_tags"] == "null" else [])
-        print(language)
-        print(tags)
+        tags = (item["github_topics"] if not item["github_topics"] == "null" else [])
         tags_list.extend(language)
         tags_list.extend(tags)
 
-    print("Tags before: {}".format(tags_list))
     tags_list = gt.delete_duplicate(tags_list)
-    # The tags containing "#" should be removed or the query of api will be failed
     remove_list = []
     for item in tags_list:
         if "#" in item:
@@ -41,16 +37,20 @@ def get_syn(git_info):
         if not syn_info == []:
             for item in syn_info:
                 syn_tags.append(item["from_tag"])
+            # The query of synonymous tags can't return the input tag
+            syn_tags.append(tag.lower())
             syn_list[tag] = syn_tags
             print("The synonymous tags of tag {} are {}".format(tag,syn_tags))
         else:
+            # The tags of Stack overflow are lowercase
+            syn_list[tag] = tag.lower()
             print("The synonymous tags of tag {} not found".format(tag))
 
     return syn_list
 
 
 if __name__ == '__main__':
-    info_file = '/home/ace/zsj/Get_Info/Info/awesome_test.json'
+    info_file = '/home/ace/zsj/Get_Info/Info/awesome_info.json'
     f = open(info_file, encoding='utf-8')
     git_info = json.load(f)
 
