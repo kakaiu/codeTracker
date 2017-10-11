@@ -1,19 +1,10 @@
 [
    {
-      "github_language": [
-         "JavaScript",
-         "Objective-C",
-         "Shell",
-         "CSS",
-         "TypeScript",
-         "HTML",
-         "Swift"
-      ],
-      "location": "\u00b0 \u263e \u2606 \u00b8. \u00b8\u3000\u2605  :.\u3000 . \u2022 \u25cb \u00b0 \u2605",
-      "name": "Sindre Sorhus",
-      "company": "@avajs @chalk @yeoman",
       "github_login": "sindresorhus",
-      "github_tags": [
+      "email": "sindresorhus@gmail.com",
+      "stackoverflow_login": "Sindre Sorhus",
+      "company": "@avajs @chalk @yeoman",
+      "github_topics": [
          "alfred",
          "alfred-workflow",
          "macos",
@@ -58,10 +49,24 @@
          "electron",
          "electron-app"
       ],
-      "email": "sindresorhus@gmail.com",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "JavaScript",
+         "Objective-C",
+         "Shell",
+         "CSS",
+         "TypeScript",
+         "HTML",
+         "Swift"
+      ],
+      "name": "Sindre Sorhus",
+      "location": "\u00b0 \u263e \u2606 \u00b8. \u00b8\u3000\u2605  :.\u3000 . \u2022 \u25cb \u00b0 \u2605"
    },
    {
+      "github_login": "t27",
+      "email": null,
+      "stackoverflow_login": "Tarang Shah",
+      "company": "BITS Pilani",
+      "github_topics": "null",
       "github_language": [
          "PHP",
          "CSS",
@@ -86,15 +91,17 @@
          "C#",
          "QMake"
       ],
-      "location": "India",
       "name": "Tarang Shah",
-      "company": "BITS Pilani",
-      "github_login": "t27",
-      "github_tags": "null",
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": "India"
    },
    {
+      "github_login": "lmichelbacher",
+      "email": null,
+      "stackoverflow_login": [
+         "355274_1.0"
+      ],
+      "company": null,
+      "github_topics": "null",
       "github_language": [
          "Emacs Lisp",
          "Python",
@@ -107,32 +114,15 @@
          "C++",
          "PowerShell"
       ],
-      "location": "Edinburgh",
       "name": "Lukas Michelbacher",
-      "company": null,
-      "github_login": "lmichelbacher",
-      "github_tags": "null",
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": "Edinburgh"
    },
    {
-      "github_language": [
-         "JavaScript",
-         "Makefile",
-         "CSS",
-         "M4",
-         "Shell",
-         "HTML",
-         "Java",
-         "Ruby",
-         "PHP",
-         "Python"
-      ],
-      "location": null,
-      "name": "Kazhnuz",
-      "company": null,
       "github_login": "Kazhnuz",
-      "github_tags": [
+      "email": "kazhnuz@openmailbox.org",
+      "stackoverflow_login": "null",
+      "company": null,
+      "github_topics": [
          "awesome",
          "awesome-list",
          "gnome",
@@ -154,24 +144,31 @@
          "libre",
          "culture-libre"
       ],
-      "email": "kazhnuz@openmailbox.org",
-      "stackoverflow_login": "null"
-   },
-   {
       "github_language": [
-         "CoffeeScript",
+         "JavaScript",
+         "Makefile",
          "CSS",
-         "Python",
+         "M4",
          "Shell",
          "HTML",
-         "JavaScript",
-         "Ruby"
+         "Java",
+         "Ruby",
+         "PHP",
+         "Python"
       ],
-      "location": "Br\u010dko, Bosnia & Herzegovina",
-      "name": "Aleksandar Todorovi\u0107 (r3bl)",
-      "company": null,
+      "name": "Kazhnuz",
+      "location": null
+   },
+   {
       "github_login": "aleksandar-todorovic",
-      "github_tags": [
+      "email": "aleksandar@r3bl.me",
+      "stackoverflow_login": [
+         "8766_0.74",
+         "120206_0.78",
+         "3666431_0.93"
+      ],
+      "company": null,
+      "github_topics": [
          "automation",
          "home-automation",
          "web-scraping",
@@ -184,29 +181,24 @@
          "desktop-environment",
          "x-window-manager"
       ],
-      "email": "aleksandar@r3bl.me",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "CoffeeScript",
+         "CSS",
+         "Python",
+         "Shell",
+         "HTML",
+         "JavaScript",
+         "Ruby"
+      ],
+      "name": "Aleksandar Todorovi\u0107 (r3bl)",
+      "location": "Br\u010dko, Bosnia & Herzegovina"
    },
    {
-      "github_language": [
-         "Python",
-         "HTML",
-         "Objective-C",
-         "Makefile",
-         "Shell",
-         "Ruby",
-         "Swift",
-         "C",
-         "JavaScript",
-         "CSS",
-         "C++",
-         "Erlang"
-      ],
-      "location": null,
-      "name": "Kedan Li",
-      "company": null,
       "github_login": "likedan",
-      "github_tags": [
+      "email": null,
+      "stackoverflow_login": "null",
+      "company": null,
+      "github_topics": [
          "coreml",
          "coreml-model",
          "apple",
@@ -228,34 +220,41 @@
          "xib",
          "animation"
       ],
-      "email": null,
-      "stackoverflow_login": "null"
-   },
-   {
-      "github_language": [],
-      "location": null,
-      "name": "GitHub Web Flow",
-      "company": null,
-      "github_login": "web-flow",
-      "github_tags": "null",
-      "email": null,
-      "stackoverflow_login": "null"
-   },
-   {
       "github_language": [
          "Python",
+         "HTML",
+         "Objective-C",
          "Makefile",
          "Shell",
+         "Ruby",
+         "Swift",
+         "C",
          "JavaScript",
-         "HTML",
          "CSS",
-         "Smarty"
+         "C++",
+         "Erlang"
       ],
-      "location": "Winchester, VA",
-      "name": "Kenneth Reitz",
-      "company": "Heroku",
+      "name": "Kedan Li",
+      "location": null
+   },
+   {
+      "github_login": "web-flow",
+      "email": null,
+      "stackoverflow_login": "null",
+      "company": null,
+      "github_topics": "null",
+      "github_language": [],
+      "name": "GitHub Web Flow",
+      "location": null
+   },
+   {
       "github_login": "kennethreitz",
-      "github_tags": [
+      "email": "me@kennethreitz.org",
+      "stackoverflow_login": [
+         "120004_1.12"
+      ],
+      "company": "Heroku",
+      "github_topics": [
          "environment",
          "cd",
          "shell-extension",
@@ -291,22 +290,24 @@
          "for-humans",
          "kennethreitz"
       ],
-      "email": "me@kennethreitz.org",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "Python",
+         "Makefile",
+         "Shell",
+         "JavaScript",
+         "HTML",
+         "CSS",
+         "Smarty"
+      ],
+      "name": "Kenneth Reitz",
+      "location": "Winchester, VA"
    },
    {
-      "github_language": [
-         "Java",
-         "Protocol Buffer",
-         "CSS",
-         "JavaScript",
-         "HTML"
-      ],
-      "location": "United States",
-      "name": "John Jago",
-      "company": null,
       "github_login": "johnjago",
-      "github_tags": [
+      "email": null,
+      "stackoverflow_login": "John Jago",
+      "company": null,
+      "github_topics": [
          "awesome-list",
          "ad-free",
          "websites",
@@ -334,36 +335,22 @@
          "print",
          "cards"
       ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "github_language": [
+         "Java",
+         "Protocol Buffer",
+         "CSS",
+         "JavaScript",
+         "HTML"
+      ],
+      "name": "John Jago",
+      "location": "United States"
    },
    {
-      "github_language": [
-         "CoffeeScript",
-         "TeX",
-         "Makefile",
-         "HTML",
-         "JavaScript",
-         "CSS",
-         "Go",
-         "Shell",
-         "Common Lisp",
-         "Awk",
-         "Lua",
-         "Haskell",
-         "Roff",
-         "Perl",
-         "Batchfile",
-         "Smarty",
-         "Python",
-         "C++",
-         "Java"
-      ],
-      "location": "Germany",
-      "name": "Stefanus",
-      "company": null,
       "github_login": "sfischer13",
-      "github_tags": [
+      "email": null,
+      "stackoverflow_login": "Stefanus",
+      "company": null,
+      "github_topics": [
          "atom",
          "atom-package",
          "bundle",
@@ -474,10 +461,38 @@
          "mit-license",
          "workflow-management"
       ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "github_language": [
+         "CoffeeScript",
+         "TeX",
+         "Makefile",
+         "HTML",
+         "JavaScript",
+         "CSS",
+         "Go",
+         "Shell",
+         "Common Lisp",
+         "Awk",
+         "Lua",
+         "Haskell",
+         "Roff",
+         "Perl",
+         "Batchfile",
+         "Smarty",
+         "Python",
+         "C++",
+         "Java"
+      ],
+      "name": "Stefanus",
+      "location": "Germany"
    },
    {
+      "github_login": "ukstv",
+      "email": "sergey@ukstv.me",
+      "stackoverflow_login": [
+         "1682447_0.88"
+      ],
+      "company": "@machinomy ",
+      "github_topics": "null",
       "github_language": [
          "JavaScript",
          "Ruby",
@@ -507,15 +522,20 @@
          "ApacheConf",
          "TypeScript"
       ],
-      "location": "Volgograd, Russia",
       "name": "Sergey Ukustov",
-      "company": "@machinomy ",
-      "github_login": "ukstv",
-      "github_tags": "null",
-      "email": "sergey@ukstv.me",
-      "stackoverflow_login": "null"
+      "location": "Volgograd, Russia"
    },
    {
+      "github_login": "Siilwyn",
+      "email": null,
+      "stackoverflow_login": "null",
+      "company": null,
+      "github_topics": [
+         "awesome-list",
+         "awesome",
+         "list",
+         "pixel-art"
+      ],
       "github_language": [
          "CSS",
          "JavaScript",
@@ -525,35 +545,17 @@
          "Vim script",
          "TypeScript"
       ],
-      "location": null,
       "name": "Selwyn",
-      "company": null,
-      "github_login": "Siilwyn",
-      "github_tags": [
-         "awesome-list",
-         "awesome",
-         "list",
-         "pixel-art"
-      ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": null
    },
    {
-      "github_language": [
-         "JavaScript",
-         "Shell",
-         "HTML",
-         "CSS",
-         "Batchfile",
-         "Inno Setup",
-         "Arduino",
-         "Tcl"
-      ],
-      "location": "Stuttgart, Germany",
-      "name": "Sebastian Raff",
-      "company": null,
       "github_login": "hobbyquaker",
-      "github_tags": [
+      "email": "hq@ccu.io",
+      "stackoverflow_login": [
+         "1941282_0.83"
+      ],
+      "company": null,
+      "github_topics": [
          "airtunes",
          "airplay",
          "mqtt",
@@ -619,10 +621,37 @@
          "api",
          "serial"
       ],
-      "email": "hq@ccu.io",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "JavaScript",
+         "Shell",
+         "HTML",
+         "CSS",
+         "Batchfile",
+         "Inno Setup",
+         "Arduino",
+         "Tcl"
+      ],
+      "name": "Sebastian Raff",
+      "location": "Stuttgart, Germany"
    },
    {
+      "github_login": "stetso",
+      "email": null,
+      "stackoverflow_login": "null",
+      "company": null,
+      "github_topics": [
+         "lua",
+         "gamedev",
+         "mobile-game",
+         "mobile-development",
+         "game-engine",
+         "awesome",
+         "awesome-list",
+         "gideros",
+         "game-development",
+         "mobile",
+         "swipe-gestures"
+      ],
       "github_language": [
          "CMake",
          "Python",
@@ -648,27 +677,20 @@
          "Makefile",
          "TypeScript"
       ],
-      "location": null,
       "name": null,
-      "company": null,
-      "github_login": "stetso",
-      "github_tags": [
-         "lua",
-         "gamedev",
-         "mobile-game",
-         "mobile-development",
-         "game-engine",
-         "awesome",
-         "awesome-list",
-         "gideros",
-         "game-development",
-         "mobile",
-         "swipe-gestures"
-      ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": null
    },
    {
+      "github_login": "roaldnefs",
+      "email": "info@roaldnefs.com",
+      "stackoverflow_login": "Roald Nefs",
+      "company": "@Warpnet",
+      "github_topics": [
+         "prometheus",
+         "awesome-list",
+         "awesome",
+         "dotfiles"
+      ],
       "github_language": [
          "Python",
          "CSS",
@@ -677,20 +699,24 @@
          "Vim script",
          "Shell"
       ],
-      "location": "The Netherlands",
       "name": "Roald Nefs",
-      "company": "@Warpnet",
-      "github_login": "roaldnefs",
-      "github_tags": [
-         "prometheus",
-         "awesome-list",
-         "awesome",
-         "dotfiles"
-      ],
-      "email": "info@roaldnefs.com",
-      "stackoverflow_login": "null"
+      "location": "The Netherlands"
    },
    {
+      "github_login": "chasegiunta",
+      "email": null,
+      "stackoverflow_login": [
+         "75827_0.9"
+      ],
+      "company": "@simplygoodwork",
+      "github_topics": [
+         "craftcms",
+         "craft",
+         "awesome-list",
+         "awesome",
+         "craft-plugin",
+         "list"
+      ],
       "github_language": [
          "PHP",
          "HTML",
@@ -699,22 +725,30 @@
          "Nginx",
          "Shell"
       ],
-      "location": "Dallas, TX",
       "name": "Chase Giunta",
-      "company": "@simplygoodwork",
-      "github_login": "chasegiunta",
-      "github_tags": [
-         "craftcms",
-         "craft",
-         "awesome-list",
-         "awesome",
-         "craft-plugin",
-         "list"
-      ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": "Dallas, TX"
    },
    {
+      "github_login": "LappleApple",
+      "email": null,
+      "stackoverflow_login": [
+         "272692_0.83",
+         "314481_0.8",
+         "742907_0.87"
+      ],
+      "company": "Zalando",
+      "github_topics": [
+         "awesome-list",
+         "leadership",
+         "management",
+         "engineering-managers",
+         "hiring",
+         "diversity",
+         "engineering-management",
+         "awesome",
+         "tech-culture",
+         "retrospectives"
+      ],
       "github_language": [
          "Scala",
          "CSS",
@@ -734,41 +768,18 @@
          "PLpgSQL",
          "Erlang"
       ],
-      "location": "Berlin; Twitter @lauritaapplez",
       "name": "Lauri Apple",
-      "company": "Zalando",
-      "github_login": "LappleApple",
-      "github_tags": [
-         "awesome-list",
-         "leadership",
-         "management",
-         "engineering-managers",
-         "hiring",
-         "diversity",
-         "engineering-management",
-         "awesome",
-         "tech-culture",
-         "retrospectives"
-      ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": "Berlin; Twitter @lauritaapplez"
    },
    {
-      "github_language": [
-         "PHP",
-         "CSS",
-         "JavaScript",
-         "HTML",
-         "Python",
-         "Shell",
-         "Ruby",
-         "Perl"
-      ],
-      "location": "https://cyberbusking.org/",
-      "name": "Meitar M.",
-      "company": "Code signing GPG key: C42F 2F04 C42D 489E 23DD  71CE 07EF AA28 AB94 BC85",
       "github_login": "meitar",
-      "github_tags": [
+      "email": "meitarm+github@gmail.com",
+      "stackoverflow_login": [
+         "8124383_0.92",
+         "5301419_0.92"
+      ],
+      "company": "Code signing GPG key: C42F 2F04 C42D 489E 23DD  71CE 07EF AA28 AB94 BC85",
+      "github_topics": [
          "awesome-list",
          "lockpicking",
          "locksport",
@@ -795,31 +806,25 @@
          "chrome-extension",
          "web-extension"
       ],
-      "email": "meitarm+github@gmail.com",
-      "stackoverflow_login": "null"
-   },
-   {
       "github_language": [
-         "C#",
-         "XSLT",
-         "HTML",
-         "Java",
-         "Makefile",
-         "Shell",
+         "PHP",
          "CSS",
          "JavaScript",
-         "C++",
-         "C",
+         "HTML",
          "Python",
-         "TeX",
-         "GCC Machine Description",
-         "Gnuplot"
+         "Shell",
+         "Ruby",
+         "Perl"
       ],
-      "location": "Madrid & Granada, Spain",
-      "name": "Andr\u00e9s",
-      "company": null,
+      "name": "Meitar M.",
+      "location": "https://cyberbusking.org/"
+   },
+   {
       "github_login": "angrykoala",
-      "github_tags": [
+      "email": "angrykoala@outlook.es",
+      "stackoverflow_login": "angrykoala",
+      "company": null,
+      "github_topics": [
          "awesome",
          "list",
          "esoteric",
@@ -839,22 +844,31 @@
          "music",
          "tags"
       ],
-      "email": "angrykoala@outlook.es",
-      "stackoverflow_login": "null"
-   },
-   {
       "github_language": [
+         "C#",
+         "XSLT",
+         "HTML",
+         "Java",
+         "Makefile",
+         "Shell",
          "CSS",
          "JavaScript",
-         "Vue",
-         "HTML",
-         "Shell"
+         "C++",
+         "C",
+         "Python",
+         "TeX",
+         "GCC Machine Description",
+         "Gnuplot"
       ],
-      "location": "Lagos, Nigeria",
-      "name": "Ademola Adegbuyi",
-      "company": null,
+      "name": "Andr\u00e9s",
+      "location": "Madrid & Granada, Spain"
+   },
+   {
       "github_login": "ooade",
-      "github_tags": [
+      "email": "ooade96@gmail.com",
+      "stackoverflow_login": "Ademola Adegbuyi",
+      "company": null,
+      "github_topics": [
          "challenge",
          "code",
          "portfolio",
@@ -897,10 +911,34 @@
          "starter-kit",
          "pwa-boilerplate"
       ],
-      "email": "ooade96@gmail.com",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "CSS",
+         "JavaScript",
+         "Vue",
+         "HTML",
+         "Shell"
+      ],
+      "name": "Ademola Adegbuyi",
+      "location": "Lagos, Nigeria"
    },
    {
+      "github_login": "mezod",
+      "email": "mezood@gmail.com",
+      "stackoverflow_login": [
+         "2129043_1.0"
+      ],
+      "company": null,
+      "github_topics": [
+         "indie",
+         "indiedev",
+         "passive-income",
+         "financial-independence",
+         "bootstrapper",
+         "entrepreneurs",
+         "sideproject",
+         "awesome",
+         "awesome-list"
+      ],
       "github_language": [
          "Ruby",
          "Makefile",
@@ -913,25 +951,20 @@
          "PHP",
          "Shell"
       ],
-      "location": "Barcelona, Catalonia",
       "name": "Joan Boixad\u00f3s",
-      "company": null,
-      "github_login": "mezod",
-      "github_tags": [
-         "indie",
-         "indiedev",
-         "passive-income",
-         "financial-independence",
-         "bootstrapper",
-         "entrepreneurs",
-         "sideproject",
-         "awesome",
-         "awesome-list"
-      ],
-      "email": "mezood@gmail.com",
-      "stackoverflow_login": "null"
+      "location": "Barcelona, Catalonia"
    },
    {
+      "github_login": "sheonhan",
+      "email": "sheon.han@gmail.com",
+      "stackoverflow_login": "Sheon Han",
+      "company": "@PrincetonUniversity",
+      "github_topics": [
+         "awesome",
+         "awesome-list",
+         "effective-altruism",
+         "philanthropy"
+      ],
       "github_language": [
          "Java",
          "HTML",
@@ -944,38 +977,17 @@
          "Jupyter Notebook",
          "Go"
       ],
-      "location": null,
       "name": "Sheon Han",
-      "company": "@PrincetonUniversity",
-      "github_login": "sheonhan",
-      "github_tags": [
-         "awesome",
-         "awesome-list",
-         "effective-altruism",
-         "philanthropy"
-      ],
-      "email": "sheon.han@gmail.com",
-      "stackoverflow_login": "null"
+      "location": null
    },
    {
-      "github_language": [
-         "ApacheConf",
-         "PHP",
-         "Java",
-         "Shell",
-         "HTML",
-         "JavaScript",
-         "CSS",
-         "Vue",
-         "Ruby",
-         "CoffeeScript",
-         "Makefile"
-      ],
-      "location": "Spain",
-      "name": "Miguel Piedrafita",
-      "company": "@UnMarkDocs || @DependenCI || @OrgManager || Miguel Piedrafita",
       "github_login": "m1guelpf",
-      "github_tags": [
+      "email": "github@miguelpiedrafita.com",
+      "stackoverflow_login": [
+         "6386024_1.0"
+      ],
+      "company": "@UnMarkDocs || @DependenCI || @OrgManager || Miguel Piedrafita",
+      "github_topics": [
          "php",
          "curl",
          "php-api",
@@ -991,24 +1003,31 @@
          "deployment",
          "mode"
       ],
-      "email": "github@miguelpiedrafita.com",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "ApacheConf",
+         "PHP",
+         "Java",
+         "Shell",
+         "HTML",
+         "JavaScript",
+         "CSS",
+         "Vue",
+         "Ruby",
+         "CoffeeScript",
+         "Makefile"
+      ],
+      "name": "Miguel Piedrafita",
+      "location": "Spain"
    },
    {
-      "github_language": [
-         "Lua",
-         "Shell",
-         "CSS",
-         "JavaScript",
-         "HTML",
-         "Python",
-         "Java"
-      ],
-      "location": "Hampshire, UK",
-      "name": "Craig Davison",
-      "company": null,
       "github_login": "davisonio",
-      "github_tags": [
+      "email": "craig@davison.io",
+      "stackoverflow_login": [
+         "4034514_1.54",
+         "6248437_1.0"
+      ],
+      "company": null,
+      "github_topics": [
          "awesome-list",
          "awesome",
          "list",
@@ -1084,26 +1103,24 @@
          "text",
          "textures"
       ],
-      "email": "craig@davison.io",
-      "stackoverflow_login": "null"
-   },
-   {
       "github_language": [
-         "HTML",
-         "JavaScript",
-         "CSS",
-         "Ruby",
+         "Lua",
          "Shell",
-         "CoffeeScript",
-         "PHP",
-         "Perl",
+         "CSS",
+         "JavaScript",
+         "HTML",
+         "Python",
          "Java"
       ],
-      "location": "Moscow",
-      "name": "Vitaliy Potapov",
-      "company": "Yandex",
+      "name": "Craig Davison",
+      "location": "Hampshire, UK"
+   },
+   {
       "github_login": "vitalets",
-      "github_tags": [
+      "email": "noginsk@rambler.ru",
+      "stackoverflow_login": "vitalets",
+      "company": "Yandex",
+      "github_topics": [
          "smart-tv",
          "smarttv",
          "tizen",
@@ -1130,10 +1147,26 @@
          "eventbus",
          "listener"
       ],
-      "email": "noginsk@rambler.ru",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "HTML",
+         "JavaScript",
+         "CSS",
+         "Ruby",
+         "Shell",
+         "CoffeeScript",
+         "PHP",
+         "Perl",
+         "Java"
+      ],
+      "name": "Vitaliy Potapov",
+      "location": "Moscow"
    },
    {
+      "github_login": "mipmip",
+      "email": null,
+      "stackoverflow_login": "null",
+      "company": "Lingewoud B.V.",
+      "github_topics": "null",
       "github_language": [
          "Ruby",
          "Shell",
@@ -1148,36 +1181,15 @@
          "CSS",
          "AppleScript"
       ],
-      "location": null,
       "name": "Pim Snel",
-      "company": "Lingewoud B.V.",
-      "github_login": "mipmip",
-      "github_tags": "null",
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": null
    },
    {
-      "github_language": [
-         "Ruby",
-         "Common Lisp",
-         "Pascal",
-         "HTML",
-         "JavaScript",
-         "Python",
-         "CSS",
-         "Makefile",
-         "Emacs Lisp",
-         "R",
-         "Java",
-         "C",
-         "Shell",
-         "Forth"
-      ],
-      "location": "Germany",
-      "name": "Andrei Beliankou",
-      "company": null,
       "github_login": "arbox",
-      "github_tags": [
+      "email": "arbox@yandex.com",
+      "stackoverflow_login": "Andrei Beliankou",
+      "company": null,
+      "github_topics": [
          "ruby",
          "java",
          "interoperability",
@@ -1213,23 +1225,31 @@
          "style",
          "tokenizer"
       ],
-      "email": "arbox@yandex.com",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "Ruby",
+         "Common Lisp",
+         "Pascal",
+         "HTML",
+         "JavaScript",
+         "Python",
+         "CSS",
+         "Makefile",
+         "Emacs Lisp",
+         "R",
+         "Java",
+         "C",
+         "Shell",
+         "Forth"
+      ],
+      "name": "Andrei Beliankou",
+      "location": "Germany"
    },
    {
-      "github_language": [
-         "CSS",
-         "JavaScript",
-         "HTML",
-         "Python",
-         "Shell",
-         "Makefile"
-      ],
-      "location": "Athens, Greece",
-      "name": "Nikolaos Kamarinakis",
-      "company": null,
       "github_login": "k4m4",
-      "github_tags": [
+      "email": null,
+      "stackoverflow_login": "k4m4",
+      "company": null,
+      "github_topics": [
          "donations",
          "template",
          "website-template",
@@ -1255,29 +1275,26 @@
          "tor",
          "terminal"
       ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "github_language": [
+         "CSS",
+         "JavaScript",
+         "HTML",
+         "Python",
+         "Shell",
+         "Makefile"
+      ],
+      "name": "Nikolaos Kamarinakis",
+      "location": "Athens, Greece"
    },
    {
-      "github_language": [
-         "R",
-         "Jupyter Notebook",
-         "HTML",
-         "Ruby",
-         "CSS",
-         "Python",
-         "Batchfile",
-         "Shell",
-         "C",
-         "JavaScript",
-         "C++",
-         "PHP"
-      ],
-      "location": "India",
-      "name": "Akash Tandon",
-      "company": "@socialcopsdev",
       "github_login": "analyticalmonk",
-      "github_tags": [
+      "email": "akashtndn.acm@gmail.com",
+      "stackoverflow_login": [
+         "927837_1.6",
+         "1189078_1.07"
+      ],
+      "company": "@socialcopsdev",
+      "github_topics": [
          "data-science-competition",
          "data-science",
          "r",
@@ -1307,10 +1324,36 @@
          "castra",
          "ipython-notebook"
       ],
-      "email": "akashtndn.acm@gmail.com",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "R",
+         "Jupyter Notebook",
+         "HTML",
+         "Ruby",
+         "CSS",
+         "Python",
+         "Batchfile",
+         "Shell",
+         "C",
+         "JavaScript",
+         "C++",
+         "PHP"
+      ],
+      "name": "Akash Tandon",
+      "location": "India"
    },
    {
+      "github_login": "faroit",
+      "email": null,
+      "stackoverflow_login": "null",
+      "company": null,
+      "github_topics": [
+         "awesome-list",
+         "python",
+         "audio",
+         "audio-player",
+         "vuejs",
+         "electron"
+      ],
       "github_language": [
          "JavaScript",
          "Shell",
@@ -1331,32 +1374,15 @@
          "Vue",
          "Jupyter Notebook"
       ],
-      "location": "Europe",
       "name": "Fabian-Robert St\u00f6ter",
-      "company": null,
-      "github_login": "faroit",
-      "github_tags": [
-         "awesome-list",
-         "python",
-         "audio",
-         "audio-player",
-         "vuejs",
-         "electron"
-      ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": "Europe"
    },
    {
-      "github_language": [
-         "JavaScript",
-         "HTML",
-         "CSS"
-      ],
-      "location": "East Earl, PA",
-      "name": "Ryan Zimmerman",
-      "company": "@ExodusMovement ",
       "github_login": "RyanZim",
-      "github_tags": [
+      "email": null,
+      "stackoverflow_login": "RyanZim",
+      "company": "@ExodusMovement ",
+      "github_topics": [
          "npm",
          "awesome",
          "awesome-list",
@@ -1377,24 +1403,22 @@
          "nodejs",
          "js"
       ],
-      "email": null,
-      "stackoverflow_login": "null"
-   },
-   {
       "github_language": [
          "JavaScript",
-         "Ruby",
-         "Makefile",
-         "CSS",
          "HTML",
-         "Shell",
-         "Go"
+         "CSS"
       ],
-      "location": "Montr\u00e9al",
-      "name": "Richard Littauer",
-      "company": "@mntnr ",
+      "name": "Ryan Zimmerman",
+      "location": "East Earl, PA"
+   },
+   {
       "github_login": "RichardLitt",
-      "github_tags": [
+      "email": "richard.littauer@gmail.com",
+      "stackoverflow_login": [
+         "123048_2.38"
+      ],
+      "company": "@mntnr ",
+      "github_topics": [
          "bear",
          "bears",
          "bearss",
@@ -1404,35 +1428,27 @@
          "access",
          "poetry"
       ],
-      "email": "richard.littauer@gmail.com",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "JavaScript",
+         "Ruby",
+         "Makefile",
+         "CSS",
+         "HTML",
+         "Shell",
+         "Go"
+      ],
+      "name": "Richard Littauer",
+      "location": "Montr\u00e9al"
    },
    {
-      "github_language": [
-         "Java",
-         "HTML",
-         "JavaScript",
-         "CSS",
-         "CoffeeScript",
-         "Ruby",
-         "Cucumber",
-         "Objective-C++",
-         "Objective-C",
-         "C",
-         "Shell",
-         "C++",
-         "Makefile",
-         "Kotlin",
-         "Swift",
-         "Python",
-         "Gherkin",
-         "FreeMarker"
-      ],
-      "location": "Recife, Pernambuco - Brazil",
-      "name": "Victor Laerte Oliveira",
-      "company": "@liferay ",
       "github_login": "victorlaerte",
-      "github_tags": [
+      "email": "victorlaertedoliveira@gmail.com",
+      "stackoverflow_login": [
+         "1967345_1.23",
+         "5314295_0.85"
+      ],
+      "company": "@liferay ",
+      "github_topics": [
          "android",
          "android-seed",
          "template",
@@ -1460,10 +1476,44 @@
          "asynctask",
          "javafx"
       ],
-      "email": "victorlaertedoliveira@gmail.com",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "Java",
+         "HTML",
+         "JavaScript",
+         "CSS",
+         "CoffeeScript",
+         "Ruby",
+         "Cucumber",
+         "Objective-C++",
+         "Objective-C",
+         "C",
+         "Shell",
+         "C++",
+         "Makefile",
+         "Kotlin",
+         "Swift",
+         "Python",
+         "Gherkin",
+         "FreeMarker"
+      ],
+      "name": "Victor Laerte Oliveira",
+      "location": "Recife, Pernambuco - Brazil"
    },
    {
+      "github_login": "xiaohanyu",
+      "email": "xiaohanyu1988@gmail.com",
+      "stackoverflow_login": "Xiao Hanyu",
+      "company": null,
+      "github_topics": [
+         "awesome",
+         "awesome-list",
+         "tikz",
+         "latex",
+         "tex",
+         "shell",
+         "fun",
+         "imagemagick"
+      ],
       "github_language": [
          "Common Lisp",
          "Lua",
@@ -1542,24 +1592,30 @@
          "VimL",
          "CMake"
       ],
-      "location": "Singapore",
       "name": "Xiao Hanyu",
-      "company": null,
-      "github_login": "xiaohanyu",
-      "github_tags": [
-         "awesome",
-         "awesome-list",
-         "tikz",
-         "latex",
-         "tex",
-         "shell",
-         "fun",
-         "imagemagick"
-      ],
-      "email": "xiaohanyu1988@gmail.com",
-      "stackoverflow_login": "null"
+      "location": "Singapore"
    },
    {
+      "github_login": "DavidLambauer",
+      "email": "mail@davidlambauer.de",
+      "stackoverflow_login": [
+         "211772_3.71",
+         "1216625_1.91",
+         "1301510_2.14"
+      ],
+      "company": "@AOEpeople ",
+      "github_topics": [
+         "awesome",
+         "magento2",
+         "collection",
+         "magento-2",
+         "magento-extension",
+         "php",
+         "packages",
+         "awesome-list",
+         "documentation",
+         "documentation-tool"
+      ],
       "github_language": [
          "PHP",
          "HTML",
@@ -1574,34 +1630,18 @@
          "XSLT",
          "Perl"
       ],
-      "location": "Germany",
       "name": "DavidLamabuer",
-      "company": "@AOEpeople ",
-      "github_login": "DavidLambauer",
-      "github_tags": [
-         "awesome",
-         "magento2",
-         "collection",
-         "magento-2",
-         "magento-extension",
-         "php",
-         "packages",
-         "awesome-list",
-         "documentation",
-         "documentation-tool"
-      ],
-      "email": "mail@davidlambauer.de",
-      "stackoverflow_login": "null"
+      "location": "Germany"
    },
    {
-      "github_language": [
-         "JavaScript"
-      ],
-      "location": "Sweden",
-      "name": "Kevin M\u00e5rtensson",
-      "company": "@imagemin @yeoman",
       "github_login": "kevva",
-      "github_tags": [
+      "email": "kevinmartensson@gmail.com",
+      "stackoverflow_login": [
+         "43843_2.33",
+         "249862_3.33"
+      ],
+      "company": "@imagemin @yeoman",
+      "github_topics": [
          "binary",
          "check",
          "nodejs",
@@ -1620,10 +1660,27 @@
          "https",
          "tunnel"
       ],
-      "email": "kevinmartensson@gmail.com",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "JavaScript"
+      ],
+      "name": "Kevin M\u00e5rtensson",
+      "location": "Sweden"
    },
    {
+      "github_login": "MatthewVita",
+      "email": "matthewvita@live.com",
+      "stackoverflow_login": "Matthew Vita",
+      "company": null,
+      "github_topics": [
+         "hl7-parsing",
+         "hl7-message",
+         "hit",
+         "healthcare",
+         "hl7",
+         "hl7-builder",
+         "hapi",
+         "emr"
+      ],
       "github_language": [
          "Shell",
          "Python",
@@ -1644,24 +1701,27 @@
          "Smarty",
          "VimL"
       ],
-      "location": "Los Angeles, US",
       "name": "Matthew Vita",
-      "company": null,
-      "github_login": "MatthewVita",
-      "github_tags": [
-         "hl7-parsing",
-         "hl7-message",
-         "hit",
-         "healthcare",
-         "hl7",
-         "hl7-builder",
-         "hapi",
-         "emr"
-      ],
-      "email": "matthewvita@live.com",
-      "stackoverflow_login": "null"
+      "location": "Los Angeles, US"
    },
    {
+      "github_login": "kud1ing",
+      "email": null,
+      "stackoverflow_login": [
+         "3310503_0.87",
+         "6314864_0.74",
+         "2053774_0.91",
+         "984652_0.91",
+         "1566699_0.87"
+      ],
+      "company": null,
+      "github_topics": [
+         "rust",
+         "jni",
+         "java",
+         "ffi",
+         "tinkerpop"
+      ],
       "github_language": [
          "Vim script",
          "Shell",
@@ -1670,21 +1730,21 @@
          "Rust",
          "Java"
       ],
-      "location": "Germany, pretty central",
       "name": null,
-      "company": null,
-      "github_login": "kud1ing",
-      "github_tags": [
-         "rust",
-         "jni",
-         "java",
-         "ffi",
-         "tinkerpop"
-      ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": "Germany, pretty central"
    },
    {
+      "github_login": "jbmoelker",
+      "email": null,
+      "stackoverflow_login": "null",
+      "company": "De Voorhoede",
+      "github_topics": [
+         "svelte",
+         "demo",
+         "examples",
+         "rollup",
+         "postcss"
+      ],
       "github_language": [
          "CSS",
          "JavaScript",
@@ -1698,21 +1758,22 @@
          "Java",
          "ApacheConf"
       ],
-      "location": null,
       "name": "Jasper Moelker",
-      "company": "De Voorhoede",
-      "github_login": "jbmoelker",
-      "github_tags": [
-         "svelte",
-         "demo",
-         "examples",
-         "rollup",
-         "postcss"
-      ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": null
    },
    {
+      "github_login": "davidvanleeuwen",
+      "email": "david@madeawkward.com",
+      "stackoverflow_login": [
+         "1032656_0.93",
+         "1781906_0.8",
+         "2459318_0.8"
+      ],
+      "company": "Awkward",
+      "github_topics": [
+         "life",
+         "personal"
+      ],
       "github_language": [
          "CoffeeScript",
          "JavaScript",
@@ -1727,18 +1788,38 @@
          "Shell",
          "TypeScript"
       ],
-      "location": "The Netherlands",
       "name": "David van Leeuwen",
-      "company": "Awkward",
-      "github_login": "davidvanleeuwen",
-      "github_tags": [
-         "life",
-         "personal"
-      ],
-      "email": "david@madeawkward.com",
-      "stackoverflow_login": "null"
+      "location": "The Netherlands"
    },
    {
+      "github_login": "qazbnm456",
+      "email": "boik@tdohacker.org",
+      "stackoverflow_login": [
+         "1981340_1.33",
+         "7919645_1.67",
+         "2513085_2.0"
+      ],
+      "company": null,
+      "github_topics": [
+         "awesome",
+         "cve",
+         "poc",
+         "awesome-list",
+         "list",
+         "security",
+         "trivia",
+         "treasure",
+         "web",
+         "websecurity",
+         "penetration-testing",
+         "vuejs2",
+         "electron",
+         "prototype",
+         "docker",
+         "wargame",
+         "ctf",
+         "rails"
+      ],
       "github_language": [
          "Swift",
          "CSS",
@@ -1764,47 +1845,17 @@
          "Hack",
          "Nginx"
       ],
-      "location": "Taiwan",
       "name": "Boik",
-      "company": null,
-      "github_login": "qazbnm456",
-      "github_tags": [
-         "awesome",
-         "cve",
-         "poc",
-         "awesome-list",
-         "list",
-         "security",
-         "trivia",
-         "treasure",
-         "web",
-         "websecurity",
-         "penetration-testing",
-         "vuejs2",
-         "electron",
-         "prototype",
-         "docker",
-         "wargame",
-         "ctf",
-         "rails"
-      ],
-      "email": "boik@tdohacker.org",
-      "stackoverflow_login": "null"
+      "location": "Taiwan"
    },
    {
-      "github_language": [
-         "CSS",
-         "JavaScript",
-         "Batchfile",
-         "Shell",
-         "HTML",
-         "PHP"
-      ],
-      "location": "France",
-      "name": "Quentin Goinaud",
-      "company": null,
       "github_login": "armaldio",
-      "github_tags": [
+      "email": null,
+      "stackoverflow_login": [
+         "7536780_1.33"
+      ],
+      "company": null,
+      "github_topics": [
          "website",
          "armaldio",
          "blog",
@@ -1820,33 +1871,23 @@
          "construct2",
          "plugin"
       ],
-      "email": null,
-      "stackoverflow_login": "null"
-   },
-   {
       "github_language": [
-         "Python",
-         "CoffeeScript",
-         "HTML",
          "CSS",
          "JavaScript",
-         "Shell",
-         "Makefile",
-         "F#",
-         "PHP",
-         "Java",
-         "Groovy",
-         "TypeScript",
-         "Swift",
          "Batchfile",
-         "Scala",
-         "C#"
+         "Shell",
+         "HTML",
+         "PHP"
       ],
-      "location": "Zagreb, Croatia",
-      "name": "Mislav Cimper\u0161ak",
-      "company": null,
+      "name": "Quentin Goinaud",
+      "location": "France"
+   },
+   {
       "github_login": "mislavcimpersak",
-      "github_tags": [
+      "email": null,
+      "stackoverflow_login": "mislav",
+      "company": null,
+      "github_topics": [
          "awesome",
          "jokes",
          "fun",
@@ -1868,10 +1909,44 @@
          "xkcd",
          "excuses"
       ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "github_language": [
+         "Python",
+         "CoffeeScript",
+         "HTML",
+         "CSS",
+         "JavaScript",
+         "Shell",
+         "Makefile",
+         "F#",
+         "PHP",
+         "Java",
+         "Groovy",
+         "TypeScript",
+         "Swift",
+         "Batchfile",
+         "Scala",
+         "C#"
+      ],
+      "name": "Mislav Cimper\u0161ak",
+      "location": "Zagreb, Croatia"
    },
    {
+      "github_login": "sjfricke",
+      "email": "sjfricke@wisc.edu",
+      "stackoverflow_login": "null",
+      "company": null,
+      "github_topics": [
+         "webgl-programming",
+         "webgl-articles",
+         "glsl-editors",
+         "webgl-tutorials",
+         "webgl",
+         "learning-webgl",
+         "webgl-references",
+         "webgl-spec-sheet",
+         "awesome",
+         "awesome-list"
+      ],
       "github_language": [
          "HTML",
          "JavaScript",
@@ -1890,26 +1965,21 @@
          "Cuda",
          "Objective-C"
       ],
-      "location": null,
       "name": "Spencer",
-      "company": null,
-      "github_login": "sjfricke",
-      "github_tags": [
-         "webgl-programming",
-         "webgl-articles",
-         "glsl-editors",
-         "webgl-tutorials",
-         "webgl",
-         "learning-webgl",
-         "webgl-references",
-         "webgl-spec-sheet",
-         "awesome",
-         "awesome-list"
-      ],
-      "email": "sjfricke@wisc.edu",
-      "stackoverflow_login": "null"
+      "location": null
    },
    {
+      "github_login": "quangv",
+      "email": "quang@absentsoft.com",
+      "stackoverflow_login": "Quang Van",
+      "company": "Absent Software",
+      "github_topics": [
+         "couchdb",
+         "cloudant",
+         "couchdb-wiki",
+         "best-practices",
+         "couchdb-chat"
+      ],
       "github_language": [
          "HTML",
          "JavaScript",
@@ -1921,21 +1991,22 @@
          "VimL",
          "Python"
       ],
-      "location": "Central Mass.",
       "name": "Quang Van",
-      "company": "Absent Software",
-      "github_login": "quangv",
-      "github_tags": [
-         "couchdb",
-         "cloudant",
-         "couchdb-wiki",
-         "best-practices",
-         "couchdb-chat"
-      ],
-      "email": "quang@absentsoft.com",
-      "stackoverflow_login": "null"
+      "location": "Central Mass."
    },
    {
+      "github_login": "kminek",
+      "email": "kontakt@kminek.pl",
+      "stackoverflow_login": "null",
+      "company": null,
+      "github_topics": [
+         "markdown",
+         "parser",
+         "standard",
+         "marklink",
+         "sublime-text",
+         "php"
+      ],
       "github_language": [
          "JavaScript",
          "PHP",
@@ -1948,22 +2019,32 @@
          "Python",
          "Batchfile"
       ],
-      "location": null,
       "name": "Grzesiek W",
-      "company": null,
-      "github_login": "kminek",
-      "github_tags": [
-         "markdown",
-         "parser",
-         "standard",
-         "marklink",
-         "sublime-text",
-         "php"
-      ],
-      "email": "kontakt@kminek.pl",
-      "stackoverflow_login": "null"
+      "location": null
    },
    {
+      "github_login": "pmatseykanets",
+      "email": null,
+      "stackoverflow_login": [
+         "71470_1.58",
+         "133476_0.83",
+         "178910_0.75"
+      ],
+      "company": null,
+      "github_topics": [
+         "laravel",
+         "laravel-package",
+         "beanstalkd",
+         "artisan-command",
+         "import",
+         "database",
+         "eloquent",
+         "queue",
+         "laravel-scout",
+         "postgresql",
+         "postgres",
+         "full-text-search"
+      ],
       "github_language": [
          "PHP",
          "Makefile",
@@ -1978,28 +2059,15 @@
          "Roff",
          "ApacheConf"
       ],
-      "location": "Columbia, MD",
       "name": "Peter Matseykanets",
-      "company": null,
-      "github_login": "pmatseykanets",
-      "github_tags": [
-         "laravel",
-         "laravel-package",
-         "beanstalkd",
-         "artisan-command",
-         "import",
-         "database",
-         "eloquent",
-         "queue",
-         "laravel-scout",
-         "postgresql",
-         "postgres",
-         "full-text-search"
-      ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": "Columbia, MD"
    },
    {
+      "github_login": "gdi2290",
+      "email": "github@gdi2290.com",
+      "stackoverflow_login": "gdi2290",
+      "company": "@TipeIO",
+      "github_topics": "null",
       "github_language": [
          "CSS",
          "JavaScript",
@@ -2012,45 +2080,34 @@
          "Dart",
          "HTML"
       ],
-      "location": "San Francisco, CA",
       "name": "PatrickJS [tipe.io]",
-      "company": "@TipeIO",
-      "github_login": "gdi2290",
-      "github_tags": "null",
-      "email": "github@gdi2290.com",
-      "stackoverflow_login": "null"
+      "location": "San Francisco, CA"
    },
    {
+      "github_login": "bouzlibop",
+      "email": "bouzlibop@gmail.com",
+      "stackoverflow_login": [
+         "39182_1.67",
+         "420940_1.0",
+         "451116_3.33"
+      ],
+      "company": null,
+      "github_topics": "null",
       "github_language": [
          "CSS",
          "JavaScript",
          "HTML",
          "Ruby"
       ],
-      "location": "Krak\u00f3w",
       "name": "Adrian Baran",
-      "company": null,
-      "github_login": "bouzlibop",
-      "github_tags": "null",
-      "email": "bouzlibop@gmail.com",
-      "stackoverflow_login": "null"
+      "location": "Krak\u00f3w"
    },
    {
-      "github_language": [
-         "JavaScript",
-         "CSS",
-         "HTML",
-         "Python",
-         "Shell",
-         "Perl",
-         "ApacheConf",
-         "Makefile"
-      ],
-      "location": null,
-      "name": "Joaqu\u00edn Serna",
-      "company": null,
       "github_login": "BubuAnabelas",
-      "github_tags": [
+      "email": null,
+      "stackoverflow_login": "null",
+      "company": null,
+      "github_topics": [
          "awesome",
          "awesome-list",
          "list",
@@ -2063,20 +2120,27 @@
          "torrent",
          "p2p"
       ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "github_language": [
+         "JavaScript",
+         "CSS",
+         "HTML",
+         "Python",
+         "Shell",
+         "Perl",
+         "ApacheConf",
+         "Makefile"
+      ],
+      "name": "Joaqu\u00edn Serna",
+      "location": null
    },
    {
-      "github_language": [
-         "CSS",
-         "JavaScript",
-         "HTML"
-      ],
-      "location": "Vilnius, Lithuania",
-      "name": "Giedrius Jaloveckas",
-      "company": null,
       "github_login": "podo",
-      "github_tags": [
+      "email": "g.jaloveckas@gmail.com",
+      "stackoverflow_login": [
+         "775930_1.0"
+      ],
+      "company": null,
+      "github_topics": [
          "framer-prototype",
          "framer-studio",
          "framerjs",
@@ -2088,48 +2152,46 @@
          "autocode",
          "video-course"
       ],
-      "email": "g.jaloveckas@gmail.com",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "CSS",
+         "JavaScript",
+         "HTML"
+      ],
+      "name": "Giedrius Jaloveckas",
+      "location": "Vilnius, Lithuania"
    },
    {
+      "github_login": "terryum",
+      "email": "terry.t.um@gmail.com",
+      "stackoverflow_login": [
+         "705767_0.9",
+         "1061092_0.8"
+      ],
+      "company": "University of Waterloo",
+      "github_topics": [
+         "deep-learning",
+         "deep-neural-networks",
+         "machine-learning"
+      ],
       "github_language": [
          "Matlab",
          "Python",
          "TeX",
          "Jupyter Notebook"
       ],
-      "location": "Waterloo, ON, Canada",
       "name": "Terry Taewoong Um",
-      "company": "University of Waterloo",
-      "github_login": "terryum",
-      "github_tags": [
-         "deep-learning",
-         "deep-neural-networks",
-         "machine-learning"
-      ],
-      "email": "terry.t.um@gmail.com",
-      "stackoverflow_login": "null"
+      "location": "Waterloo, ON, Canada"
    },
    {
-      "github_language": [
-         "HTML",
-         "JavaScript",
-         "CSS",
-         "Java",
-         "Ruby",
-         "PHP",
-         "Makefile",
-         "Shell",
-         "Web Ontology Language",
-         "CoffeeScript",
-         "Batchfile",
-         "Cap'n Proto"
-      ],
-      "location": "Vit\u00f3ria - ES",
-      "name": "Lucas Bassetti",
-      "company": "@Integration-Alpha",
       "github_login": "LucasBassetti",
-      "github_tags": [
+      "email": "lucasbr.dafonseca@gmail.com",
+      "stackoverflow_login": [
+         "31172_1.0",
+         "53710_1.17",
+         "330171_0.92"
+      ],
+      "company": "@Integration-Alpha",
+      "github_topics": [
          "archimate",
          "java",
          "plugin",
@@ -2178,10 +2240,38 @@
          "spa",
          "documentation"
       ],
-      "email": "lucasbr.dafonseca@gmail.com",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "HTML",
+         "JavaScript",
+         "CSS",
+         "Java",
+         "Ruby",
+         "PHP",
+         "Makefile",
+         "Shell",
+         "Web Ontology Language",
+         "CoffeeScript",
+         "Batchfile",
+         "Cap'n Proto"
+      ],
+      "name": "Lucas Bassetti",
+      "location": "Vit\u00f3ria - ES"
    },
    {
+      "github_login": "TheJambo",
+      "email": "james@james.am",
+      "stackoverflow_login": [
+         "2536666_1.0"
+      ],
+      "company": null,
+      "github_topics": [
+         "testing",
+         "tester",
+         "naughty-strings",
+         "awesome-list",
+         "awesome",
+         "list"
+      ],
       "github_language": [
          "Python",
          "CMake",
@@ -2198,22 +2288,25 @@
          "HTML",
          "Shell"
       ],
-      "location": "Cambridge, United Kingdom",
       "name": "James Osborn",
-      "company": null,
-      "github_login": "TheJambo",
-      "github_tags": [
-         "testing",
-         "tester",
-         "naughty-strings",
-         "awesome-list",
-         "awesome",
-         "list"
-      ],
-      "email": "james@james.am",
-      "stackoverflow_login": "null"
+      "location": "Cambridge, United Kingdom"
    },
    {
+      "github_login": "dar5hak",
+      "email": null,
+      "stackoverflow_login": [
+         "1516870_1.0",
+         "6714539_1.55",
+         "7498139_1.73",
+         "8058836_1.18"
+      ],
+      "company": null,
+      "github_topics": [
+         "beautify",
+         "typography",
+         "yeoman-generator",
+         "awesome-list"
+      ],
       "github_language": [
          "Ruby",
          "CSS",
@@ -2257,43 +2350,17 @@
          "TypeScript",
          "Gherkin"
       ],
-      "location": "Pune, India",
       "name": "Darshak Parikh",
-      "company": null,
-      "github_login": "dar5hak",
-      "github_tags": [
-         "beautify",
-         "typography",
-         "yeoman-generator",
-         "awesome-list"
-      ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": "Pune, India"
    },
    {
-      "github_language": [
-         "PHP",
-         "CSS",
-         "JavaScript",
-         "HTML",
-         "Batchfile",
-         "AutoHotkey",
-         "Shell",
-         "Python",
-         "C++",
-         "Ruby",
-         "Java",
-         "Go",
-         "C",
-         "C#",
-         "Perl",
-         "SourcePawn"
-      ],
-      "location": "Gandhinagar, India",
-      "name": "Avi Aryan",
-      "company": "@iiitv @fossasia @appbaseio",
       "github_login": "aviaryan",
-      "github_tags": [
+      "email": null,
+      "stackoverflow_login": [
+         "614912_0.94"
+      ],
+      "company": "@iiitv @fossasia @appbaseio",
+      "github_topics": [
          "alfred",
          "alfred-workflow",
          "alfred3-workflow",
@@ -2343,10 +2410,45 @@
          "editor",
          "bot-editor"
       ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "github_language": [
+         "PHP",
+         "CSS",
+         "JavaScript",
+         "HTML",
+         "Batchfile",
+         "AutoHotkey",
+         "Shell",
+         "Python",
+         "C++",
+         "Ruby",
+         "Java",
+         "Go",
+         "C",
+         "C#",
+         "Perl",
+         "SourcePawn"
+      ],
+      "name": "Avi Aryan",
+      "location": "Gandhinagar, India"
    },
    {
+      "github_login": "petk",
+      "email": "peterkokot@gmail.com",
+      "stackoverflow_login": [
+         "1484994_1.14"
+      ],
+      "company": "@php-earth ",
+      "github_topics": [
+         "awesome",
+         "community",
+         "groups",
+         "dojo",
+         "javascript",
+         "awesome-list",
+         "jquery",
+         "php",
+         "benchmark"
+      ],
       "github_language": [
          "XSLT",
          "PHP",
@@ -2368,25 +2470,20 @@
          "ApacheConf",
          "Vue"
       ],
-      "location": "Area 51",
       "name": "Peter Kokot",
-      "company": "@php-earth ",
-      "github_login": "petk",
-      "github_tags": [
-         "awesome",
-         "community",
-         "groups",
-         "dojo",
-         "javascript",
-         "awesome-list",
-         "jquery",
-         "php",
-         "benchmark"
-      ],
-      "email": "peterkokot@gmail.com",
-      "stackoverflow_login": "null"
+      "location": "Area 51"
    },
    {
+      "github_login": "d3viant0ne",
+      "email": "wiens.joshua@gmail.com",
+      "stackoverflow_login": "d3viant0ne",
+      "company": null,
+      "github_topics": [
+         "docker",
+         "nodejs",
+         "circleci",
+         "debian-jessie"
+      ],
       "github_language": [
          "TypeScript",
          "CSS",
@@ -2399,37 +2496,15 @@
          "Python",
          "Smarty"
       ],
-      "location": "Twitter - @d3viant0ne ",
       "name": "Joshua Wiens",
-      "company": null,
-      "github_login": "d3viant0ne",
-      "github_tags": [
-         "docker",
-         "nodejs",
-         "circleci",
-         "debian-jessie"
-      ],
-      "email": "wiens.joshua@gmail.com",
-      "stackoverflow_login": "null"
+      "location": "Twitter - @d3viant0ne "
    },
    {
-      "github_language": [
-         "HTML",
-         "Lua",
-         "CSS",
-         "JavaScript",
-         "Vim script",
-         "Makefile",
-         "Shell",
-         "Python",
-         "GLSL",
-         "Vue"
-      ],
-      "location": "Los Angeles, CA",
-      "name": "Terkel",
-      "company": "@activetheory",
       "github_login": "terkelg",
-      "github_tags": [
+      "email": "terkel@terkel.com",
+      "stackoverflow_login": "Terkel Gjervig",
+      "company": "@activetheory",
+      "github_topics": [
          "awesome",
          "creative-coding",
          "interaction-design",
@@ -2486,10 +2561,29 @@
          "boilerplate",
          "starter-kit"
       ],
-      "email": "terkel@terkel.com",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "HTML",
+         "Lua",
+         "CSS",
+         "JavaScript",
+         "Vim script",
+         "Makefile",
+         "Shell",
+         "Python",
+         "GLSL",
+         "Vue"
+      ],
+      "name": "Terkel",
+      "location": "Los Angeles, CA"
    },
    {
+      "github_login": "mischah",
+      "email": "mail@michael-kuehnel.de",
+      "stackoverflow_login": [
+         "702783_1.0"
+      ],
+      "company": "Micromata GmbH",
+      "github_topics": "null",
       "github_language": [
          "HTML",
          "JavaScript",
@@ -2500,15 +2594,15 @@
          "Ruby",
          "Makefile"
       ],
-      "location": "Kassel, Germany",
       "name": "Michael K\u00fchnel",
-      "company": "Micromata GmbH",
-      "github_login": "mischah",
-      "github_tags": "null",
-      "email": "mail@michael-kuehnel.de",
-      "stackoverflow_login": "null"
+      "location": "Kassel, Germany"
    },
    {
+      "github_login": "kasbah",
+      "email": "kaspar.emanuel@gmail.com",
+      "stackoverflow_login": "null",
+      "company": null,
+      "github_topics": "null",
       "github_language": [
          "Python",
          "Makefile",
@@ -2553,44 +2647,15 @@
          "Arduino",
          "OpenSCAD"
       ],
-      "location": null,
       "name": "Kaspar Emanuel",
-      "company": null,
-      "github_login": "kasbah",
-      "github_tags": "null",
-      "email": "kaspar.emanuel@gmail.com",
-      "stackoverflow_login": "null"
+      "location": null
    },
    {
-      "github_language": [
-         "Java",
-         "Shell",
-         "FreeMarker",
-         "Objective-C",
-         "C",
-         "C++",
-         "Makefile",
-         "M4",
-         "CSS",
-         "JavaScript",
-         "GLSL",
-         "CMake",
-         "Lua",
-         "Objective-C++",
-         "Mathematica",
-         "C#",
-         "Haxe",
-         "TeX",
-         "Cuda",
-         "Processing",
-         "Ruby",
-         "QMake"
-      ],
-      "location": "New York, NY",
-      "name": "Jesse Talavera-Greenberg",
-      "company": null,
       "github_login": "JesseTG",
-      "github_tags": [
+      "email": "jessetalavera@aol.com",
+      "stackoverflow_login": "JesseTG",
+      "company": null,
+      "github_topics": [
          "awesome-list",
          "awesome",
          "qt-framework",
@@ -2621,33 +2686,44 @@
          "c",
          "gpgpu"
       ],
-      "email": "jessetalavera@aol.com",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "Java",
+         "Shell",
+         "FreeMarker",
+         "Objective-C",
+         "C",
+         "C++",
+         "Makefile",
+         "M4",
+         "CSS",
+         "JavaScript",
+         "GLSL",
+         "CMake",
+         "Lua",
+         "Objective-C++",
+         "Mathematica",
+         "C#",
+         "Haxe",
+         "TeX",
+         "Cuda",
+         "Processing",
+         "Ruby",
+         "QMake"
+      ],
+      "name": "Jesse Talavera-Greenberg",
+      "location": "New York, NY"
    },
    {
-      "github_language": [
-         "HTML",
-         "JavaScript",
-         "Elixir",
-         "Swift",
-         "Shell",
-         "Go",
-         "Brainfuck",
-         "C",
-         "ApacheConf",
-         "PHP",
-         "VimL",
-         "PowerShell",
-         "Batchfile",
-         "Makefile",
-         "Erlang",
-         "CSS"
-      ],
-      "location": "Athens",
-      "name": "Spiros Gerokostas",
-      "company": "Binary Level",
       "github_login": "sger",
-      "github_tags": [
+      "email": "spiros.gerokostas@gmail.com",
+      "stackoverflow_login": [
+         "798598_2.5",
+         "3273271_2.0",
+         "1058584_1.0",
+         "5155563_9.57"
+      ],
+      "company": "Binary Level",
+      "github_topics": [
          "programming-elixir",
          "elixir",
          "programming-erlang",
@@ -2678,31 +2754,36 @@
          "hash",
          "go-programming"
       ],
-      "email": "spiros.gerokostas@gmail.com",
-      "stackoverflow_login": "null"
-   },
-   {
       "github_language": [
-         "Shell",
-         "Vim script",
-         "Python",
-         "Java",
-         "Makefile",
-         "CSS",
-         "JavaScript",
          "HTML",
-         "Tcl",
+         "JavaScript",
+         "Elixir",
+         "Swift",
+         "Shell",
+         "Go",
+         "Brainfuck",
+         "C",
+         "ApacheConf",
+         "PHP",
+         "VimL",
          "PowerShell",
          "Batchfile",
-         "C",
-         "Assembly",
-         "C++"
+         "Makefile",
+         "Erlang",
+         "CSS"
       ],
-      "location": "__switzerland__",
-      "name": "Timo Furrer",
-      "company": null,
+      "name": "Spiros Gerokostas",
+      "location": "Athens"
+   },
+   {
       "github_login": "timofurrer",
-      "github_tags": [
+      "email": "tuxtimo@gmail.com",
+      "stackoverflow_login": [
+         "6855712_1.13",
+         "5361882_0.93"
+      ],
+      "company": null,
+      "github_topics": [
          "vimrc",
          "vim-configuration",
          "personal",
@@ -2734,10 +2815,31 @@
          "heartbeat",
          "device"
       ],
-      "email": "tuxtimo@gmail.com",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "Shell",
+         "Vim script",
+         "Python",
+         "Java",
+         "Makefile",
+         "CSS",
+         "JavaScript",
+         "HTML",
+         "Tcl",
+         "PowerShell",
+         "Batchfile",
+         "C",
+         "Assembly",
+         "C++"
+      ],
+      "name": "Timo Furrer",
+      "location": "__switzerland__"
    },
    {
+      "github_login": "harpribot",
+      "email": "harshal.priyadarshi@utexas.edu",
+      "stackoverflow_login": "harpribot",
+      "company": "University of Texas at Austin",
+      "github_topics": "null",
       "github_language": [
          "CMake",
          "C++",
@@ -2774,15 +2876,22 @@
          "Scheme",
          "Batchfile"
       ],
-      "location": "Austin, TX",
       "name": "Harshal Priyadarshi",
-      "company": "University of Texas at Austin",
-      "github_login": "harpribot",
-      "github_tags": "null",
-      "email": "harshal.priyadarshi@utexas.edu",
-      "stackoverflow_login": "null"
+      "location": "Austin, TX"
    },
    {
+      "github_login": "aliesbelik",
+      "email": null,
+      "stackoverflow_login": "Aliaksandr Belik",
+      "company": null,
+      "github_topics": [
+         "awesome-jmeter",
+         "awesome",
+         "jmeter",
+         "jmeter-plugin",
+         "load-testing",
+         "performance-measurement"
+      ],
       "github_language": [
          "XSLT",
          "Groovy",
@@ -2800,22 +2909,33 @@
          "M4",
          "Perl"
       ],
-      "location": "Belarus",
       "name": "Aliaksandr Belik",
-      "company": null,
-      "github_login": "aliesbelik",
-      "github_tags": [
-         "awesome-jmeter",
-         "awesome",
-         "jmeter",
-         "jmeter-plugin",
-         "load-testing",
-         "performance-measurement"
-      ],
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": "Belarus"
    },
    {
+      "github_login": "hbokh",
+      "email": "hbokhoven@gmail.com",
+      "stackoverflow_login": [
+         "2524858_0.81",
+         "3739287_0.81"
+      ],
+      "company": "@wearespindle ",
+      "github_topics": [
+         "saltstack",
+         "configuration-management",
+         "awesome-list",
+         "awesome",
+         "list",
+         "drone-ci",
+         "docker",
+         "getting-started",
+         "typo3",
+         "typo3-cms",
+         "nginx",
+         "vagrant",
+         "ansible-tutorial",
+         "mysql-ha"
+      ],
       "github_language": [
          "Python",
          "Shell",
@@ -2832,45 +2952,19 @@
          "Arduino",
          "SaltStack"
       ],
-      "location": "Groningen, the Netherlands",
       "name": "Henk",
-      "company": "@wearespindle ",
-      "github_login": "hbokh",
-      "github_tags": [
-         "saltstack",
-         "configuration-management",
-         "awesome-list",
-         "awesome",
-         "list",
-         "drone-ci",
-         "docker",
-         "getting-started",
-         "typo3",
-         "typo3-cms",
-         "nginx",
-         "vagrant",
-         "ansible-tutorial",
-         "mysql-ha"
-      ],
-      "email": "hbokhoven@gmail.com",
-      "stackoverflow_login": "null"
+      "location": "Groningen, the Netherlands"
    },
    {
-      "github_language": [
-         "HTML",
-         "JavaScript",
-         "Shell",
-         "Ruby",
-         "CSS",
-         "PHP",
-         "PowerShell",
-         "ApacheConf"
-      ],
-      "location": "Toronto, Canada",
-      "name": "Adnan M.Sagar, PhD",
-      "company": "Web Semantics, Inc.",
       "github_login": "websemantics",
-      "github_tags": [
+      "email": "adnan@websemantics.ca",
+      "stackoverflow_login": [
+         "407743_1.0",
+         "453026_0.87",
+         "631942_1.6"
+      ],
+      "company": "Web Semantics, Inc.",
+      "github_topics": [
          "atom",
          "styleguide",
          "ui",
@@ -2886,10 +2980,28 @@
          "web-scraping",
          "headless-chrome"
       ],
-      "email": "adnan@websemantics.ca",
-      "stackoverflow_login": "null"
+      "github_language": [
+         "HTML",
+         "JavaScript",
+         "Shell",
+         "Ruby",
+         "CSS",
+         "PHP",
+         "PowerShell",
+         "ApacheConf"
+      ],
+      "name": "Adnan M.Sagar, PhD",
+      "location": "Toronto, Canada"
    },
    {
+      "github_login": "vors",
+      "email": null,
+      "stackoverflow_login": [
+         "3629426_1.64",
+         "6668673_1.91"
+      ],
+      "company": "@Dropbox",
+      "github_topics": "null",
       "github_language": [
          "Arduino",
          "AutoHotkey",
@@ -2915,15 +3027,20 @@
          "PHP",
          "Perl"
       ],
-      "location": "Seattle, WA",
       "name": "Sergei Vorobev",
-      "company": "@Dropbox",
-      "github_login": "vors",
-      "github_tags": "null",
-      "email": null,
-      "stackoverflow_login": "null"
+      "location": "Seattle, WA"
    },
    {
+      "github_login": "nicolesaidy",
+      "email": "nicolesaidy@gmail.com",
+      "stackoverflow_login": "null",
+      "company": null,
+      "github_topics": [
+         "design",
+         "webdesign",
+         "ui-design",
+         "ux-design"
+      ],
       "github_language": [
          "VimL",
          "JavaScript",
@@ -2933,17 +3050,7 @@
          "ApacheConf",
          "PHP"
       ],
-      "location": null,
       "name": "Nicole Saidy",
-      "company": null,
-      "github_login": "nicolesaidy",
-      "github_tags": [
-         "design",
-         "webdesign",
-         "ui-design",
-         "ux-design"
-      ],
-      "email": "nicolesaidy@gmail.com",
-      "stackoverflow_login": "null"
+      "location": null
    }
 ]

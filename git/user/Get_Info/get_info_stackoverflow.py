@@ -5,9 +5,9 @@ import urllib.error
 
 import requests
 
-import Get_Info_previous.get_info_git as gt
-import Get_Info_previous.name_form as nf
-from Get_Info_previous import levenshtein as le
+import Get_Info.get_info_git as gt
+import Get_Info.name_form as nf
+from Get_Info import levenshtein as le
 
 
 def request_api(api):

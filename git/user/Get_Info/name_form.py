@@ -1,4 +1,4 @@
-from Get_Info_previous import get_info_git as gt
+from Get_Info import get_info_git as gt
 
 
 def name_form(name):

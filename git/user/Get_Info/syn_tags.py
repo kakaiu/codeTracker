@@ -1,9 +1,9 @@
 import json
 import time
-
 import requests
+import sys
 
-from Get_Info_previous import get_info_git as gt
+from Get_Info import get_info_git as gt
 
 
 def request_api(api):
@@ -53,7 +53,8 @@ def get_syn(git_info):
 
 
 if __name__ == '__main__':
-    info_file = '/home/ace/zsj/Get_Info_previous/Info/awesome_info.json'
+    Info_path = sys.path[0] + "/Info"
+    info_file = Info_path + '/awesome_info.json'
     f = open(info_file, encoding='utf-8')
     git_info = json.load(f)
 
