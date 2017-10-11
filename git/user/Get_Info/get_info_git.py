@@ -126,7 +126,7 @@ if __name__ == '__main__':
     git_api = 'https://api.github.com/repos/sindresorhus/awesome/commits'
     # git_api = 'https://api.github.com/repos/tensorflow/tensorflow/commits'
     git_info = get_info(git_api)
-    info_file = '/home/ace/zsj/Get_Info/Info/awesome_match_5.json'
+    info_file = '/home/ace/zsj/Get_Info_previous/Info/awesome_match_5.json'
     cTime = time.time()
     print("Dumping the info...")
     with open(info_file, 'w') as ctfile:

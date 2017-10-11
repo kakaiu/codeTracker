@@ -1,7 +1,10 @@
-import requests
 import json
-import Get_Info.get_info_git as gt
 import time
+
+import requests
+
+from Get_Info_previous import get_info_git as gt
+
 
 def request_api(api):
     app_key = '&key=ZEaUTt2btGSROV8q3NeOQg(('
@@ -50,7 +53,7 @@ def get_syn(git_info):
 
 
 if __name__ == '__main__':
-    info_file = '/home/ace/zsj/Get_Info/Info/awesome_info.json'
+    info_file = '/home/ace/zsj/Get_Info_previous/Info/awesome_info.json'
     f = open(info_file, encoding='utf-8')
     git_info = json.load(f)
 
@@ -61,7 +64,7 @@ if __name__ == '__main__':
 
     print("Dumping the syn_list...")
     cTime = time.time()
-    file = '/home/ace/zsj/Get_Info/Info/syn_list.json'
+    file = '/home/ace/zsj/Get_Info_previous/Info/syn_list.json'
     with open(file, 'w') as ctfile:
         json.dump(syn_list, ctfile, indent=3)
     print(time.time() - cTime)

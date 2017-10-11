@@ -1,11 +1,13 @@
-import Get_Info.get_info_git as gt
-import Get_Info.name_form as nf
-import Get_Info.levenshtein as le
 import re
-import requests
+import time
 import urllib
 import urllib.error
-import time
+
+import requests
+
+import Get_Info_previous.get_info_git as gt
+import Get_Info_previous.name_form as nf
+from Get_Info_previous import levenshtein as le
 
 
 def request_api(api):
