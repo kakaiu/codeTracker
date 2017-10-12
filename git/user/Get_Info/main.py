@@ -16,7 +16,7 @@ if sys.argv[1] == '--lt':
     output_file = Info_path + '/{}'.format(sys.argv[3])
     name_list = open(name_file, encoding='utf-8')
     name_list = json.load(name_list)
-    git_info = gt.search_info(name_list)
+    git_info = gt.multi_Prclist(name_list)
 
     cTime = time.time()
     print("Dumping the info...")
@@ -27,7 +27,7 @@ if sys.argv[1] == '--lt':
 elif sys.argv[1] == '--cm':
     # 'sindresorhus/awesome'
     git_api = 'https://api.github.com/repos/{}/commits'.format(sys.argv[2])
-    git_info = gt.get_info(git_api)
+    git_info = gt.multi_Prcapi(git_api)
     output_file = Info_path + '/{}'.format(sys.argv[3])
 
     cTime = time.time()
@@ -38,17 +38,14 @@ elif sys.argv[1] == '--cm':
 
 elif sys.argv[1] == '--mp':
     info_file = Info_path + '/{}'.format(sys.argv[2])
-    syn_file = Info_path + '/syn_list.json'
 
     git_info = open(info_file, encoding='utf-8')
-    syn_list = open(syn_file, encoding='utf-8')
     git_info = json.load(git_info)
-    syn_list = json.load(syn_list)
     stk_count = total_count = 0
 
     cTime = time.time()
     print("Matching developers between Github and Stack Overflow...")
-    match_info = st.match_account(git_info, syn_list)
+    match_info = st.multi_match(git_info)
     print(time.time() - cTime)
 
     for item in match_info:

@@ -2,9 +2,10 @@ import re
 import time
 import urllib
 import urllib.error
-
+import multiprocessing
 import requests
-
+import sys
+import json
 import Get_Info.get_info_git as gt
 import Get_Info.name_form as nf
 from Get_Info import levenshtein as le
@@ -162,62 +163,92 @@ def match_info(git_developer,stk_developer,syn_list,Threshold):
         return []
 
 
-def match_account(git_info,syn_list):
+def match_account(git_developer):
+    syn_file = sys.path[0] + "/Info/syn_list.json"
+    syn_list = open(syn_file, encoding='utf-8')
+
     default_info = []
-    new_info = []
+    # Merge the languages and topics to github_tags
+    git_developer = merge_langtopics(git_developer)
+    # print("Finding Github user {} on Stack Overflow...".format(git_developer["name"]))
+    possible_name = nf.possible_names(git_developer["name"], git_developer["github_login"])
+    print("Possible name of {}: {}".format(git_developer["name"],possible_name))
 
-    for git_developer in git_info:
-        # Merge the languages and topics to github_tags
-        git_developer = merge_langtopics(git_developer)
-        print("\n\nFinding Github user {} on Stack Overflow...".format(git_developer["name"]))
-        possible_name = nf.possible_names(git_developer["name"], git_developer["github_login"])
-        print("Possible name:{}".format(possible_name))
+    for name in possible_name:
+        # All info of developers whose username contains the input name
+        stk_info = InfoByName(name)
+        stk_info = gt.delete_duplicate(stk_info)
 
-        for name in possible_name:
-            #All info of developers whose username contains the input name
-            stk_info = InfoByName(name)
-            stk_info = gt.delete_duplicate(stk_info)
+        if not stk_info == default_info:
+            print("The possible info of Stack Overflow user {} is {}".format(name, stk_info))
+            cTime = time.time()
 
-            if not stk_info == default_info:
-                print("The possible info of Stack Overflow user {} is {}".format(name, stk_info))
-                cTime = time.time()
+            for stk_developer in stk_info:
+                user_id = stk_developer['user_id']
+                git_account = GetGitAccount(user_id)
 
-                for stk_developer in stk_info:
-                    user_id = stk_developer['user_id']
-                    git_account = GetGitAccount(user_id)
-
-                    if git_account == git_developer["github_login"]:
-                        git_developer["stackoverflow_login"] = stk_developer["display_name"]
-                        print(time.time() - cTime)
-                        break
-
-                # Continue to establish mapping if the possible match has been found?
-                if git_developer["stackoverflow_login"] == "null" or git_developer["stackoverflow_login"] == []:
-                    git_developer["stackoverflow_login"] = []
-                    print("\nNo linked account has been found. Mapping the users using tags and location...")
-                    print("{} tags: {}".format(git_developer["github_login"], git_developer["github_tags"]))
-
-                    cTime = time.time()
-                    for stk_developer in stk_info:
-                        developer_tags = get_tags(stk_developer)
-                        stk_developer["tags"] = developer_tags
-                        match_name = match_info(git_developer,stk_developer,syn_list,1)
-                        if not match_name == []:
-                            git_developer["stackoverflow_login"].append(match_name)
+                if git_account == git_developer["github_login"]:
+                    git_developer["stackoverflow_login"] = stk_developer["display_name"]
                     print(time.time() - cTime)
-                else:
                     break
 
-        if not git_developer["stackoverflow_login"] == "null" and not git_developer["stackoverflow_login"] == []:
-            print("The Stack Overflow display_name for github user {}: {}".format(git_developer["name"],git_developer['stackoverflow_login']))
-        else:
-            git_developer["stackoverflow_login"] = "null"
-            print("The Stack Overflow display_name for github user {} not found".format(git_developer["name"]))
+            # Continue to establish mapping if the possible match has been found?
+            if git_developer["stackoverflow_login"] == "null" or git_developer["stackoverflow_login"] == []:
+                git_developer["stackoverflow_login"] = []
+                print("\nNo linked account has been found. Mapping the users using tags and location...")
+                print("{} tags: {}".format(git_developer["github_login"], git_developer["github_tags"]))
 
-        new_info.append(git_developer)
-    return new_info
+                cTime = time.time()
+                for stk_developer in stk_info:
+                    developer_tags = get_tags(stk_developer)
+                    stk_developer["tags"] = developer_tags
+                    match_name = match_info(git_developer, stk_developer, syn_list, 1)
+                    if not match_name == []:
+                        git_developer["stackoverflow_login"].append(match_name)
+                print(time.time() - cTime)
+            else:
+                break
+
+    if not git_developer["stackoverflow_login"] == "null" and not git_developer["stackoverflow_login"] == []:
+        print("The Stack Overflow display_name for github user {}: {}".format(git_developer["name"],
+                                                                              git_developer['stackoverflow_login']))
+    else:
+        git_developer["stackoverflow_login"] = "null"
+        print("The Stack Overflow display_name for github user {} not found".format(git_developer["name"]))
+    return git_developer
 
 
+def multi_match(git_developers):
+    pool = multiprocessing.Pool(processes=10)
+    git_info = pool.map(match_account,git_developers)
+    pool.close()
+    pool.join()
+    return git_info
 
+if __name__ == '__main__':
+    Info_path = sys.path[0] + "/Info"
+    info_file = Info_path + '/login_try.json'
+    git_info = open(info_file, encoding='utf-8')
+    git_info = json.load(git_info)
+    stk_count = total_count = 0
 
+    cTime = time.time()
+    print("Matching developers between Github and Stack Overflow...")
+    match_info = multi_match(git_info)
+    print(time.time() - cTime)
 
+    for item in match_info:
+        if not item["stackoverflow_login"] == "null":
+            stk_count = stk_count + 1
+        total_count = total_count + 1
+
+    print("\n The number of developers with Stack Overflow account is {}".format(stk_count))
+    print("The number of developers is {}".format(total_count))
+    print("Ratio:{}".format(round(stk_count / total_count, 4)))
+
+    print("Saving the results of matching...")
+    cTime = time.time()
+    file = Info_path + '/awesome_info_1.json'
+    with open(info_file, 'w') as ctfile:
+        json.dump(match_info, ctfile, indent=3)
+    print(time.time() - cTime)
