@@ -2,6 +2,7 @@ import requests
 import time
 import json
 import multiprocessing
+import sys
 
 def delete_duplicate(dict):
     Info = []
@@ -93,23 +94,12 @@ def get_info(developer_info):
     return Info
 
 def search_info(developer_login):
-    Info = []
     print("Getting info of users in the name list...")
-    cTime = time.time()
-    for login in developer_login:
-        api = 'https://api.github.com/users/{}'.format(login)
-        developer_info = request_url(api,100)
-        developer_info = extract_dict(developer_info)
-        Info.append(developer_info)
-    print(time.time() - cTime)
+    api = 'https://api.github.com/users/{}'.format(developer_login)
+    developer_info = request_url(api, 100)
+    developer_info = extract_dict(developer_info)
 
-    git_info = []
-    cTime = time.time()
-    for git_developer in Info:
-        git_developer = get_langtopics(git_developer)
-        git_info.append(git_developer)
-    print(time.time() - cTime)
-    return git_info
+    return developer_info
 
 def multi_Prcapi(commit_api):
     developer_info = request_url(commit_api, 5)
@@ -142,10 +132,9 @@ def multi_Prclist(name_list):
     print(time.time() - cTime)
     pool.close()
     pool.join()
-    merge_info = []
-    for developer in git_info:
-        merge_info.extend(developer)
-
+    merge_info = git_info
+    # for developer in git_info:
+    #     merge_info.extend(developer)
     cTime = time.time()
     merge_info = delete_duplicate(merge_info)
     pool = multiprocessing.Pool(processes=10)
@@ -158,10 +147,14 @@ def multi_Prclist(name_list):
 
 
 if __name__ == '__main__':
-    git_api = 'https://api.github.com/repos/sindresorhus/awesome/commits'
+    Info_path = sys.path[0] + "/Info"
+    # git_api = 'https://api.github.com/repos/sindresorhus/awesome/commits'
     # git_api = 'https://api.github.com/repos/tensorflow/tensorflow/commits'
-
-    git_info = multi_Prcapi(git_api)
+    name_file = Info_path + '/login_list.json'
+    name_list = open(name_file, encoding='utf-8')
+    name_list = json.load(name_list)
+    # git_info = multi_Prcapi(git_api)
+    git_info = multi_Prclist(name_list)
     info_file = '/home/ace/zsj/GetInfo/Info/awesome_match_5.json'
     cTime = time.time()
     print("Dumping the info...")
