@@ -1,17 +1,31 @@
 # Fetch Other Websites Account via Git Account
-`Input`: The name of a github repo or a list of github developers' name.<br>
-`Output`: A json file including github users’ name, login, location, language, tags, email and Stack Overflow dispaly name or possible user id.
+
 
 ## Usage:<br>
-1 Find the information of github developers who committed to a certain project.<br>
-2 Find github developers’ Stack Overflow account. **(Identity Linkage)**  
+**1** Find the information of github developers who committed to a certain project.<br>
+**2** Find the information of github developers in a login list.<br>
+`Input`: The name of a github repo or a list of github developers' name.<br>
+`Output`: A json file including github users’ name, login, location, language, tags, email.<br><br>
+**3** Find github developers’ Stack Overflow account. **(Identity Linkage)**  <br>
+`Input`: A json file including github user's name, login, location, language and tags.<br>
+`Output`: A json file including the input information and the corresponding Stack Overflow account and possible ids.<br><br>
 
 ## Script Description<br>
 * `get_info_git.py` dumps the Github developers' name, login, company, location, e-mail, language and topics. <br>
 * `get_info_stackoverflow.py` dumps the Stack Overflow developers' display name, location, tags, github associated account and possible user id for identity linkage.<br>
 * `name_form.py` lists the possible Stack Overflow display name for a Github developer.<br>
 * `syn_tags.py` gets the synonymous tags for comparsion of tags between github and Stach Overflow users. <br>
-* Run the script `main.py` and you can get a json file containing developers' info of github and Stack Overflow display_name.
+* Run the script `main.py` according to the following instructions:<br><br>
+```
+--lt  : python main.py --lt [input file] [output file]
+        Dump the info of developers in the input name list
+
+--cm  : python main.py --cm 'repo name'('sindresorhus/awesome') [output file]
+        Dump the developers' info in the commit history of input repo
+
+--mp  : python main.py --mp [file]
+        Mapping between developers on github and Stack Overflow, but the info should be dumped first
+```
 
 ## Get the Information of Github Developers
 Using `get_info_git.py` to dump the developers' name, login, company, location, e-mail, languages and topics using github API.
