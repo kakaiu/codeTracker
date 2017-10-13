@@ -1,7 +1,53 @@
 [
    {
+      "name": "Sindre Sorhus",
+      "stackoverflow_login": "Sindre Sorhus",
       "company": "@avajs @chalk @yeoman",
-      "github_language": [
+      "email": "sindresorhus@gmail.com",
+      "github_tags": [
+         "alfred",
+         "alfred-workflow",
+         "macos",
+         "dark-mode",
+         "alfred3-workflow",
+         "applescript",
+         "alfy",
+         "npm-package",
+         "emoji",
+         "emoji-picker",
+         "emoji-searcher",
+         "nodejs",
+         "lock",
+         "c-language",
+         "npm",
+         "npms",
+         "search",
+         "search-engine",
+         "alfred-theme",
+         "theme",
+         "simple",
+         "minimalistic",
+         "light",
+         "framework",
+         "javascript",
+         "workflow",
+         "ama",
+         "ask-me-anything",
+         "question-answering",
+         "meta",
+         "personal",
+         "ask",
+         "open-content",
+         "questions",
+         "answers",
+         "questions-and-answers",
+         "list",
+         "awesome",
+         "awesome-list",
+         "deprecated",
+         "twitter",
+         "electron",
+         "electron-app",
          "JavaScript",
          "Objective-C",
          "Shell",
@@ -11,7 +57,6 @@
          "Swift"
       ],
       "github_login": "sindresorhus",
-      "location": "\u00b0 \u263e \u2606 \u00b8. \u00b8\u3000\u2605  :.\u3000 . \u2022 \u25cb \u00b0 \u2605",
       "github_topics": [
          "alfred",
          "alfred-workflow",
@@ -55,15 +100,32 @@
          "deprecated",
          "twitter",
          "electron",
-         "electron-app"
+         "electron-app",
+         "JavaScript",
+         "Objective-C",
+         "Shell",
+         "CSS",
+         "TypeScript",
+         "HTML",
+         "Swift"
       ],
-      "name": "Sindre Sorhus",
-      "stackoverflow_login": "null",
-      "email": "sindresorhus@gmail.com"
+      "location": "\u00b0 \u263e \u2606 \u00b8. \u00b8\u3000\u2605  :.\u3000 . \u2022 \u25cb \u00b0 \u2605",
+      "github_language": [
+         "JavaScript",
+         "Objective-C",
+         "Shell",
+         "CSS",
+         "TypeScript",
+         "HTML",
+         "Swift"
+      ]
    },
    {
+      "name": "Tarang Shah",
+      "stackoverflow_login": "Tarang Shah",
       "company": "BITS Pilani",
-      "github_language": [
+      "email": null,
+      "github_tags": [
          "CSS",
          "PHP",
          "JavaScript",
@@ -88,15 +150,41 @@
          "QMake"
       ],
       "github_login": "t27",
-      "location": "India",
       "github_topics": "null",
-      "name": "Tarang Shah",
-      "stackoverflow_login": "null",
-      "email": null
+      "location": "India",
+      "github_language": [
+         "CSS",
+         "PHP",
+         "JavaScript",
+         "HTML",
+         "Shell",
+         "Jupyter Notebook",
+         "Python",
+         "C++",
+         "IDL",
+         "Arduino",
+         "Java",
+         "Processing",
+         "C",
+         "Batchfile",
+         "CMake",
+         "Scheme",
+         "GLSL",
+         "Makefile",
+         "Prolog",
+         "C#",
+         "XSLT",
+         "QMake"
+      ]
    },
    {
+      "name": "Lukas Michelbacher",
+      "stackoverflow_login": [
+         "355274_1.0"
+      ],
       "company": null,
-      "github_language": [
+      "email": null,
+      "github_tags": [
          "Emacs Lisp",
          "CSS",
          "Python",
@@ -109,15 +197,47 @@
          "PowerShell"
       ],
       "github_login": "lmichelbacher",
-      "location": "Edinburgh",
       "github_topics": "null",
-      "name": "Lukas Michelbacher",
-      "stackoverflow_login": "null",
-      "email": null
+      "location": "Edinburgh",
+      "github_language": [
+         "Emacs Lisp",
+         "CSS",
+         "Python",
+         "Shell",
+         "PHP",
+         "JavaScript",
+         "C++",
+         "C",
+         "Makefile",
+         "PowerShell"
+      ]
    },
    {
+      "name": "Kazhnuz",
+      "stackoverflow_login": "null",
       "company": null,
-      "github_language": [
+      "email": "kazhnuz@openmailbox.org",
+      "github_tags": [
+         "awesome",
+         "awesome-list",
+         "gnome",
+         "applications",
+         "gnome-shell-extension",
+         "gtk-theme",
+         "css",
+         "html",
+         "bootstrap",
+         "icons",
+         "faenza",
+         "linux",
+         "bootstrap3",
+         "css3",
+         "html5",
+         "education",
+         "ressources-educatives",
+         "logiciels",
+         "libre",
+         "culture-libre",
          "CSS",
          "Shell",
          "M4",
@@ -130,7 +250,6 @@
          "Python"
       ],
       "github_login": "Kazhnuz",
-      "location": null,
       "github_topics": [
          "awesome",
          "awesome-list",
@@ -151,15 +270,49 @@
          "ressources-educatives",
          "logiciels",
          "libre",
-         "culture-libre"
+         "culture-libre",
+         "CSS",
+         "Shell",
+         "M4",
+         "JavaScript",
+         "Makefile",
+         "HTML",
+         "Java",
+         "Ruby",
+         "PHP",
+         "Python"
       ],
-      "name": "Kazhnuz",
-      "stackoverflow_login": "null",
-      "email": "kazhnuz@openmailbox.org"
+      "location": null,
+      "github_language": [
+         "CSS",
+         "Shell",
+         "M4",
+         "JavaScript",
+         "Makefile",
+         "HTML",
+         "Java",
+         "Ruby",
+         "PHP",
+         "Python"
+      ]
    },
    {
+      "name": "Aleksandar Todorovi\u0107 (r3bl)",
+      "stackoverflow_login": "null",
       "company": null,
-      "github_language": [
+      "email": "aleksandar@r3bl.me",
+      "github_tags": [
+         "automation",
+         "home-automation",
+         "web-scraping",
+         "awesome-list",
+         "awesome",
+         "list",
+         "c",
+         "linux",
+         "linux-distribution",
+         "desktop-environment",
+         "x-window-manager",
          "CoffeeScript",
          "CSS",
          "Shell",
@@ -169,7 +322,6 @@
          "Ruby"
       ],
       "github_login": "aleksandar-todorovic",
-      "location": "Br\u010dko, Bosnia & Herzegovina",
       "github_topics": [
          "automation",
          "home-automation",
@@ -181,15 +333,52 @@
          "linux",
          "linux-distribution",
          "desktop-environment",
-         "x-window-manager"
+         "x-window-manager",
+         "CoffeeScript",
+         "CSS",
+         "Shell",
+         "Python",
+         "HTML",
+         "JavaScript",
+         "Ruby"
       ],
-      "name": "Aleksandar Todorovi\u0107 (r3bl)",
-      "stackoverflow_login": "null",
-      "email": "aleksandar@r3bl.me"
+      "location": "Br\u010dko, Bosnia & Herzegovina",
+      "github_language": [
+         "CoffeeScript",
+         "CSS",
+         "Shell",
+         "Python",
+         "HTML",
+         "JavaScript",
+         "Ruby"
+      ]
    },
    {
+      "name": "Kedan Li",
+      "stackoverflow_login": "null",
       "company": null,
-      "github_language": [
+      "email": null,
+      "github_tags": [
+         "coreml",
+         "coreml-model",
+         "apple",
+         "machine-learning",
+         "curated-list",
+         "coreml-framework",
+         "coreml-models",
+         "coremltools",
+         "awesome-list",
+         "models",
+         "swift-framework",
+         "swift3",
+         "swift-library",
+         "ios",
+         "ios-swift",
+         "ios-ui",
+         "ios-animation",
+         "ios-lib",
+         "xib",
+         "animation",
          "Python",
          "HTML",
          "Objective-C",
@@ -204,7 +393,6 @@
          "Erlang"
       ],
       "github_login": "likedan",
-      "location": null,
       "github_topics": [
          "coreml",
          "coreml-model",
@@ -225,10 +413,34 @@
          "ios-animation",
          "ios-lib",
          "xib",
-         "animation"
+         "animation",
+         "Python",
+         "HTML",
+         "Objective-C",
+         "Shell",
+         "Makefile",
+         "Swift",
+         "Ruby",
+         "CSS",
+         "C",
+         "JavaScript",
+         "C++",
+         "Erlang"
       ],
-      "name": "Kedan Li",
-      "stackoverflow_login": "null",
-      "email": null
+      "location": null,
+      "github_language": [
+         "Python",
+         "HTML",
+         "Objective-C",
+         "Shell",
+         "Makefile",
+         "Swift",
+         "Ruby",
+         "CSS",
+         "C",
+         "JavaScript",
+         "C++",
+         "Erlang"
+      ]
    }
 ]

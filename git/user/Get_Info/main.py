@@ -11,7 +11,20 @@ Info_path = sys.path[0] + "/Info"
 if not os.path.exists(Info_path):
     os.mkdir(Info_path)
 
-if sys.argv[1] == '--lt':
+
+
+if len(sys.argv) == 1 or sys.argv[1] == '--help':
+    help = "--lt  : python main.py --lt [input file] [output file]\n" \
+           "        Dump the info of developers in the input name list\n" \
+           "\n" \
+           "--cm  : python main.py --cm 'repo name'('sindresorhus/awesome') [output file] \n" \
+           "        Dump the developers' info in the commit history of input repo\n" \
+           "\n" \
+           "--mp  : python main.py --mp [file]\n" \
+           "        Mapping between developers on github and Stack Overflow, but the info should be dumped first"
+    print(help)
+
+elif sys.argv[1] == '--lt':
     name_file = Info_path + '/{}'.format(sys.argv[2])
     output_file = Info_path + '/{}'.format(sys.argv[3])
     name_list = open(name_file, encoding='utf-8')
@@ -64,16 +77,7 @@ elif sys.argv[1] == '--mp':
         json.dump(match_info, ctfile, indent=3)
     print(time.time() - cTime)
 
-elif sys.argv[1] == '--help':
-    help = "--lt  : python main.py --lt [input file] [output file]\n" \
-           "        Dump the info of developers in the input name list\n" \
-           "\n" \
-           "--cm  : python main.py --cm 'repo name'('sindresorhus/awesome') [output file] \n" \
-           "        Dump the developers' info in the commit history of input repo\n" \
-           "\n" \
-           "--mp  : python main.py --mp [file]\n" \
-           "        Mapping between developers on github and Stack Overflow, but the info should be dumped first"
-    print(help)
+
 
 
 
