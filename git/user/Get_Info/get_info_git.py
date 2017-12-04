@@ -19,10 +19,8 @@ def request_url(url,pagesize):
           '&client_secret=08d4bfffacafb8274c3c1974ec63d5f57c9aa308'.format(pagesize)
     # cTime = time.time()
     res = requests.get(url+app)
-    print("Requesting...{}".format(url+app))
     res.encoding = 'utf-8'
     info = res.json()
-    # print("Requesting...:{}".format(time.time() - cTime))
     return info
 
 def extract_dict(res):
@@ -114,6 +112,7 @@ def get_info(developer_info):
     return Info
 
 def search_info(developer_login):
+    # Random delay
     time.sleep(random.randrange(1,10) * 0.1)
     print("Getting info of users in the name list...")
     api = 'https://api.github.com/users/{}'.format(developer_login)
