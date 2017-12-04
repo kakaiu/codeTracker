@@ -162,7 +162,7 @@ def match_info(git_developer,stk_developer,syn_list,Threshold):
             github_count = github_count + 1
 
             # Find the synonmous tags directly
-            if tag in tags_stk:
+            if tag.lower() in tags_stk:
                 match_count = match_count + 1
                 match_tags.append(tag)
                 continue
@@ -170,7 +170,7 @@ def match_info(git_developer,stk_developer,syn_list,Threshold):
             else:
                 # Can not find synonymous tags directly
                 # find it in the synonymous tags list
-                if tag in syn_list:
+                if tag in syn_list.keys():
                     stk_syn = syn_list[tag]
                     if type(stk_syn) == list:
                         for syn_tags in stk_syn:
