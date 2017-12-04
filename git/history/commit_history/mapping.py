@@ -14,9 +14,14 @@ from commit_history import get_info
 
 def get_code(inp):
     code_list = list()
-    command = "git log --pretty=format:'hash: %h ref: %d commit_title: %f date: %ci author: %aN email: %ae' " \
-              "--abbrev-commit -p " + inp\
-              # + " > " + outp + "/log.txt"
+    if os.path.isdir(inp):
+        os.chdir(os.path.abspath(inp))
+        command = "git log --pretty=format:'hash: %h ref: %d commit_title: %f date: %ci author: %aN email: %ae' " \
+                  "--abbrev-commit -p -100000 "
+    else:
+        command = "git log --pretty=format:'hash: %h ref: %d commit_title: %f date: %ci author: %aN email: %ae' " \
+                  "--abbrev-commit -p -100000 " + inp
+        # + " > " + outp + "/log.txt"
     input_data = os.popen(command)
     data = input_data.read()
     lines = data.split("\n")

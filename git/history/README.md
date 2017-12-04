@@ -1,6 +1,17 @@
 # Map Git Commit History to Authors
 
-Author: ch-chiu
+Author: Zimeng Qiu
+
+## Motivation
+
+To build a mapping relationship between code snippets in Github repositories and authors.
+
+## Method
+
+Text mining on Github log. 
+
+* Extract information using regular expression.
+* Store code snippets and authors in a tree structure, which can be easily indexed.
 
 ## Usage
 
@@ -10,7 +21,7 @@ cd a folder which is a git repository, then run like this:
 $ python your_dir_of_main.py input output_dir <--mapping|--fsearch|--search>
 ```
 
-## Mapping Mode
+### Mapping Mode
 
 This mode use command like this:
 
@@ -24,7 +35,7 @@ You can explore all time commit history by either scrolling screen or looking up
 
 ![img](http://oscaak8qx.bkt.clouddn.com/Screen%20Shot%202017-10-07%20at%209.32.12%20PM.png)
 
-## Code File Search Mode
+### Code File Search Mode
 
 Run like this:
 
@@ -38,7 +49,7 @@ Attention: The input code file of this mode is not a complete file from git repo
 
 ![img](http://oscaak8qx.bkt.clouddn.com/Screen%20Shot%202017-10-07%20at%209.31.14%20PM.png)
 
-## Code Search Mode
+### Code Search Mode
 
 Run like this:
 
