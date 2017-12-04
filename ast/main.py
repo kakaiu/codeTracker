@@ -76,12 +76,13 @@ if __name__ == '__main__':
                     code_path = args[1]
                     if '.c' in code_path or '.cpp' in code_path:
                         node_list = Node_extract(code_path, sel)
+                        print (node_list)
                         print ('The total amount of the nodes is {}'.format(len(node_list)))
                         json_files_dir = dir_path + '/jsons'
                         if not os.path.exists(json_files_dir):
                             os.mkdir(json_files_dir)
                         json_file = json_files_dir + '/output.json'
-                        to_json(node_list, json_file)
+                        to_json(node_list, json_file, False)
                         print ("The json file path: "+json_files_dir)
                     else:
                         code_path_list = []
@@ -95,20 +96,16 @@ if __name__ == '__main__':
                                     code_path_list.append(k)
                         for i in range(len(code_path_list)):
                             node_list = Node_extract(code_path_list[i], sel)
-                            node_len += len(node_list)
                             name = re.findall(RE_C, code_path_list[i])
-                            cfile_dict = dict()
-                            cfile_dict['__cfilename'] = name
-                            cfile_dict['__content'] = node_list
-                            json_list.append(cfile_dict)
+                            node_list.insert(0, name)
+                            json_list.append(node_list)
+                            node_len += len(node_list)
                         print ('The total amount of the nodes is {}'.format(node_len))
                         json_files_dir = dir_path + '/jsons'
                         if not os.path.exists(json_files_dir):
                             os.mkdir(json_files_dir)
                         json_file = json_files_dir + '/output.json'
-                        with open(json_file, 'w+') as f:
-                            json.dump(json_list, f, ensure_ascii=False, indent=4)
-                        f.close()
+                        to_json(json_list, json_file, True)
                         print ("The json file path: "+json_files_dir)
                 else:
                     raise SystemExit("Error: Could not find c/c++ file")

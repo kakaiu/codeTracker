@@ -42,10 +42,25 @@ def to_dict(node_list):
     AST_dict['_subnode'] = first_sublist
     return [AST_dict, cp_list, node_list]
 
-def to_json(node_list, json_name):
+def to_json(node_list, json_name, Tri=False):
     """Write into json format"""
-    node_list_new = node_list[:]
-    AST_dict = to_dict(node_list_new)
-    with open(json_name, 'w+') as f:
-        json.dump(AST_dict[0], f, ensure_ascii=False, indent=4)
-    f.close()
+    if Tri:
+        node_list_new = node_list[:]
+        final_list = []
+        for i in node_list_new:
+            name = i[0]
+            del i[0]
+            AST_dict = to_dict(i)
+            new_dict = dict()
+            new_dict['__filename'] = name
+            new_dict['__content'] = AST_dict[0]
+            final_list.append(new_dict)
+        with open(json_name, 'w+') as f:
+            json.dump(final_list, f, ensure_ascii=False, indent=4)
+        f.close()
+    else:
+        node_list_new = node_list[:]
+        AST_dict = to_dict(node_list_new)
+        with open(json_name, 'w+') as f:
+            json.dump(AST_dict[0], f, ensure_ascii=False, indent=4)
+        f.close()
