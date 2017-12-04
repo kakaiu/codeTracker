@@ -63,6 +63,7 @@ def InfoByName(name):
 
 def GetGitAccount(user_id):
     """"Get the associated github account from Stack Overflow users' profile"""
+    # time.sleep(random.randrange(1,10) * 0.5)
     default = "null"
     if not user_id == None:
         stk_url = 'https://stackoverflow.com/users/{}'.format(user_id)
@@ -71,7 +72,7 @@ def GetGitAccount(user_id):
             user_href = \
                 re.findall(r"<a.*?href=.*?<\/a>", user_source, re.I | re.S | re.M)
             # find it directly
-            git_account = None
+            git_account = []
             for href in user_href:
                 if 'https://github.com/' in href:
                     git_account = \
@@ -80,12 +81,15 @@ def GetGitAccount(user_id):
                           "! {} \n"
                           "! {} \n"
                           "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! \n".format(href,git_account))
+
                     if not git_account == []:
                         git_account = git_account[0]
                     else:
                         return default
+
             if not git_account == None:
                 return git_account
+
             else:
                 return default
         else:
@@ -97,15 +101,17 @@ def GetGitAccount(user_id):
 def get_tags(stk_developer):
     """"Get the tags of Stack Overflow developer through API"""
     tags = []
-    tags_api = 'https://api.stackexchange.com/2.2/users/{}/tags' \
-               '?pagesize=100&order=desc&sort=popular' \
-               '&site=stackoverflow'.format(stk_developer['user_id'])
-    tags_info = request_api(tags_api)
-    tags_info = tags_info["items"]
-    for tag in tags_info:
-        tag_name = tag["name"]
-        tags.append(tag_name)
+    if type(stk_developer) == dict and 'user_id' in stk_developer:
+        tags_api = 'https://api.stackexchange.com/2.2/users/{}/tags' \
+                   '?pagesize=100&order=desc&sort=popular' \
+                   '&site=stackoverflow'.format(stk_developer['user_id'])
+        tags_info = request_api(tags_api)
+        tags_info = tags_info["items"]
+        for tag in tags_info:
+            tag_name = tag["name"]
+            tags.append(tag_name)
     return tags
+
 
 
 def merge_langtopics(git_developer):
@@ -129,6 +135,9 @@ def match_info(git_developer,stk_developer,syn_list,Threshold):
 
     if not location_git == "null" and not location_stk == "null":
         try:
+            # If the github user's location contains
+            # the Stack Overflow user's location, or
+            # the
             if location_git in location_stk:
                 location_score = 1
             elif location_stk in location_git:
@@ -138,8 +147,10 @@ def match_info(git_developer,stk_developer,syn_list,Threshold):
                 distance = le.lev(location_stk, location_git)
                 len_git = max(len(location_git),len(location_stk))
                 location_score = distance / len_git
+
         except TypeError:
             location_score = 0
+
     else:
         location_score = 0
 
@@ -147,17 +158,16 @@ def match_info(git_developer,stk_developer,syn_list,Threshold):
     tags_stk = stk_developer["tags"]
 
     print("++++++++++++++++++++++++++++++++++++++++ \n"
-          "+ Stack Overflow user {}'s tags: {}\n"
+          "- Stack Overflow user {}'s tags: {}"
           "".format(stk_developer["user_id"],tags_stk))
 
-
     match_count = github_count = 0
+    match_tags = []
 
     if not tags_stk == [] \
             and not tags_git == "null" \
             and not tags_git == []:
 
-        match_tags = []
         for tag in tags_git:
             github_count = github_count + 1
 
@@ -182,21 +192,21 @@ def match_info(git_developer,stk_developer,syn_list,Threshold):
                     elif type(stk_syn) == str:
                         if stk_syn in tags_stk:
                             match_count = match_count + 1
-
-        print("----------------------------------- \n"
-              "- Match tag for {}: {} \n"
-              "----------------------------------- \n"
-              "".format(stk_developer["display_name"],match_tags))
     else:
         match_count = 0
         github_count = 1
 
     tag_score = match_count / github_count * 2
     final_score = round(location_score + tag_score, 2)
-    print("------------------------------------ \n"
+    print("---------------------------------------- \n"
+          "- Match tag for {}: {} \n"
+          "---------------------------------------- \n"
           "- Final score for {}: {} \n"
-          "++++++++++++++++++++++++++++++++++++ \n"
-          "".format(stk_developer["display_name"],final_score))
+          "++++++++++++++++++++++++++++++++++++++++ \n"
+          "".format(stk_developer["display_name"],
+                    match_tags,
+                    stk_developer["display_name"],
+                    final_score))
 
     if final_score >= Threshold:
         match_name = str(stk_developer["user_id"]) + "_" + str(final_score)
@@ -207,9 +217,10 @@ def match_info(git_developer,stk_developer,syn_list,Threshold):
 
 def match_account(git_developer):
 
-    time.sleep(random.randrange(1,10) * 0.1)
+    # time.sleep(random.randrange(1,10) * 0.1)
     syn_file = sys.path[0] + "/Info/syn_list.json"
     syn_list = open(syn_file, encoding='utf-8')
+    syn_list = json.load(syn_list)
 
     default_info = []
     error_info = ['display_name', 'location', 'user_id']
@@ -236,7 +247,7 @@ def match_account(git_developer):
             for stk_developer in stk_info:
                 print("\n-------------{}-------------\n".format(stk_developer))
 
-                if 'user_id' in stk_developer:
+                if type(stk_developer) == dict and 'user_id' in stk_developer.keys():
                     user_id = stk_developer['user_id']
                     git_account = GetGitAccount(user_id)
 
@@ -287,7 +298,7 @@ def match_account(git_developer):
 
 
 def multi_match(git_developers):
-    pool = multiprocessing.Pool(processes=5)
+    pool = multiprocessing.Pool(processes=1)
     git_info = pool.map(match_account,git_developers)
     pool.close()
     pool.join()

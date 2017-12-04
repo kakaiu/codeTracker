@@ -4,7 +4,7 @@ import time
 import sys
 
 
-sys.path.append('/Users/az/Downloads/project/user1')
+sys.path.append('/home/ace/zsj/codeTracker/git/user/')
 from Get_Info import get_info_git as gt
 from Get_Info import get_info_stackoverflow as st
 
