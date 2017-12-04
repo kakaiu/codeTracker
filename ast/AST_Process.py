@@ -29,10 +29,12 @@ def AST_generate(code_path, preprocess):
     """Print AST based on command line"""
     if preprocess == True:
         code_path = AST_preprocess(code_path)
+        # command = 'clang-check -ast-dump ' + code_path + ' --extra-arg="-ferror-limit=1" --extra-arg="-fno-color-diagnostics" --'
         command = 'clang-check -ast-dump ' + code_path + ' --extra-arg="-fno-color-diagnostics" --'
         F = os.popen(command)
         # (status, output) = commands.getstatusoutput('clang -Xclang -ast-dump -fsyntax-only ' + code_path)
     else:
+        # command = 'clang-check -ast-dump ' + code_path + ' --extra-arg="-ferror-limit=1" --extra-arg="-fno-color-diagnostics" --'
         command = 'clang-check -ast-dump ' + code_path + ' --extra-arg="-fno-color-diagnostics" --'
         F = os.popen(command)
         # (status, output) = commands.getstatusoutput('clang -Xclang -ast-dump -fsyntax-only ' + code_path)

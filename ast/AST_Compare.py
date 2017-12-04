@@ -63,7 +63,7 @@ def Sequence_compare(seq1, seq2):
             same_num2.insert(0, num2_cp[i])
         else:
             break
-    if len(same_num1) > 1:
+    if len(same_num1) > 3:
         same_num = [same_num1, same_num2]
     return same_num
 
