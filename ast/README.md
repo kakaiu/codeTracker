@@ -5,6 +5,7 @@ e-mail: kimwhu@outlook.com
 Clang is a useful tool to show complete information of the syntax tree of a program. This project intends to apply Clang to generating syntax tree of programs. By comparing different syntax trees, we can find the same nodes and parts of two programs so that we can detect which program is suspected of plagiarising. The same parts two syntax trees share will be distinguished by red nodes shown in graph. However, this project has just started for a short time and some functions haven't realized yet. 
 
 ## Usage
+Environment:Ubuntu 16.04</br>
 First install Clang and Graphviz with: 
 
     $ sudo apt-get install clang
