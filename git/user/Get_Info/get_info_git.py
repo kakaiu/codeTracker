@@ -54,14 +54,14 @@ def get_langtopics(user):
         if "names" in repo_topics.json().keys():
             repo_topics = repo_topics.json()["names"]
         else:
-            repo_topics = None
+            repo_topics = []
         topics.extend(repo_topics)
 
         if not item["languages_url"] == None:
             language_api = item["languages_url"]
             language_dict = request_url(language_api, 100)
         else:
-            language_dict = None
+            language_dict = []
         language.extend(language_dict)
 
     topics = delete_duplicate(topics)
