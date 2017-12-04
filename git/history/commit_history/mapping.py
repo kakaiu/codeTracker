@@ -17,10 +17,10 @@ def get_code(inp):
     if os.path.isdir(inp):
         os.chdir(os.path.abspath(inp))
         command = "git log --pretty=format:'hash: %h ref: %d commit_title: %f date: %ci author: %aN email: %ae' " \
-                  "--abbrev-commit -p -100000 "
+                  "--abbrev-commit -p -5000 "
     else:
         command = "git log --pretty=format:'hash: %h ref: %d commit_title: %f date: %ci author: %aN email: %ae' " \
-                  "--abbrev-commit -p -100000 " + inp
+                  "--abbrev-commit -p -5000 " + inp
         # + " > " + outp + "/log.txt"
     input_data = os.popen(command)
     data = input_data.read()
