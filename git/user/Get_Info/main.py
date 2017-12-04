@@ -1,13 +1,15 @@
 import json
 import os
-import sys
 import time
 import sys
+
+
+sys.path.append('/Users/az/Downloads/project/user1')
 from Get_Info import get_info_git as gt
 from Get_Info import get_info_stackoverflow as st
 
-sys.path.append('/home/ace/zsj/GetInfo')
 Info_path = sys.path[0] + "/Info"
+print(Info_path)
 if not os.path.exists(Info_path):
     os.mkdir(Info_path)
 
@@ -66,23 +68,12 @@ elif sys.argv[1] == '--mp':
             stk_count = stk_count + 1
         total_count = total_count + 1
 
-    print("\n The number of developers with Stack Overflow account is {}".format(stk_count))
+    print("\nThe number of developers with Stack Overflow account is {}".format(stk_count))
     print("The number of developers is {}".format(total_count))
     print("Ratio:{}".format(round(stk_count / total_count, 4)))
 
     print("Saving the results of matching...")
     cTime = time.time()
-    file = Info_path + '/awesome_info_1.json'
     with open(info_file, 'w') as ctfile:
         json.dump(match_info, ctfile, indent=3)
     print(time.time() - cTime)
-
-
-
-
-
-
-
-
-
-

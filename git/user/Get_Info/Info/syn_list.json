@@ -1698,5 +1698,20 @@
    "ansible-tutorial": "ansible-tutorial",
    "tsv": "tsv",
    "texture-pack": "texture-pack",
-   "bootstrapper": "bootstrapper"
+   "bootstrapper": "bootstrapper",
+   "UnrealScript": "unrealscript",
+   "Thrift": "thrift",
+   "Bison": "bison",
+   "PostScript": "postscript",
+   "NewLisp": "newlisp",
+   "Ada": "ada",
+   "Slash": "slash",
+   "Modula-2": "modula-2",
+   "Perl 6": "perl 6",
+   "Pure Data": "pure data",
+   "DIGITAL Command Language": "digital command language",
+   "PAWN": "pawn",
+   "POV-Ray SDL": "pov-ray sdl",
+   "SAS": "sas",
+   "Module Management System": "module management system"
 }

@@ -6,9 +6,10 @@ import multiprocessing
 import requests
 import sys
 import json
-import Get_Info.get_info_git as gt
-import Get_Info.name_form as nf
-from Get_Info import levenshtein as le
+import random
+from . import get_info_git as gt
+from . import name_form as nf
+from . import levenshtein as le
 
 
 def request_api(api):
@@ -27,7 +28,9 @@ def request_source(source_url):
         user_source = html2.decode("utf8")
         response2.close()
     except urllib.error.HTTPError:
-        print("Internal Server Error when requesting {}".format(source_url))
+        print("********** \n"
+              "Internal Server Error when requesting {}\n"
+              "********** \n ".format(source_url))
         return "null"
     return user_source
 
@@ -40,14 +43,18 @@ def InfoByName(name):
                '?pagesize=10&order=asc&min={}&sort=name&inname={}' \
                '&site=stackoverflow'.format(name,name)
     info = request_api(user_api)
+    if "items" in info:
+        user_info = info["items"]
+    else:
+        return default_info
 
-    user_info = info["items"]
     if not user_info == None:
         for item in user_info:
             dict_info = {"display_name": item['display_name'],
                          "location": (item["location"] if "location" in item.keys() else "null"),
                          "user_id": item["user_id"]}
             Info.append(dict_info)
+
         Info = gt.delete_duplicate(Info)
         return Info
     else:
@@ -61,13 +68,22 @@ def GetGitAccount(user_id):
         stk_url = 'https://stackoverflow.com/users/{}'.format(user_id)
         user_source = request_source(stk_url)
         if not user_source == "null":
-            user_href = re.findall(r"<a.*?href=.*?<\/a>", user_source, re.I | re.S | re.M)
+            user_href = \
+                re.findall(r"<a.*?href=.*?<\/a>", user_source, re.I | re.S | re.M)
             # find it directly
             git_account = None
             for href in user_href:
                 if 'https://github.com/' in href:
-                    git_account = re.findall('href\=\"https\:\/\/github\.com\/(.*?)\"', href, re.S)
-                    git_account = git_account[0]
+                    git_account = \
+                        re.findall('href\=\"https\:\/\/github\.com\/(.*?)\"', href, re.S)
+                    print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! \n"
+                          "! {} \n"
+                          "! {} \n"
+                          "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! \n".format(href,git_account))
+                    if not git_account == []:
+                        git_account = git_account[0]
+                    else:
+                        return default
             if not git_account == None:
                 return git_account
             else:
@@ -129,32 +145,58 @@ def match_info(git_developer,stk_developer,syn_list,Threshold):
 
     tags_git = git_developer["github_tags"]
     tags_stk = stk_developer["tags"]
-    print("\n{} tags: {}".format(stk_developer["user_id"],tags_stk))
+
+    print("++++++++++++++++++++++++++++++++++++++++ \n"
+          "+ Stack Overflow user {}'s tags: {}\n"
+          "".format(stk_developer["user_id"],tags_stk))
+
 
     match_count = github_count = 0
-    if not tags_stk == [] and not tags_git == "null":
+
+    if not tags_stk == [] \
+            and not tags_git == "null" \
+            and not tags_git == []:
+
         match_tags = []
         for tag in tags_git:
             github_count = github_count + 1
-            if tag in syn_list:
-                stk_syn = syn_list[tag]
-                if type(stk_syn) == list:
-                    for syn_tags in stk_syn:
-                        if syn_tags in tags_stk:
-                            match_tags.append(syn_tags)
+
+            # Find the synonmous tags directly
+            if tag in tags_stk:
+                match_count = match_count + 1
+                match_tags.append(tag)
+                continue
+
+            else:
+                # Can not find synonymous tags directly
+                # find it in the synonymous tags list
+                if tag in syn_list:
+                    stk_syn = syn_list[tag]
+                    if type(stk_syn) == list:
+                        for syn_tags in stk_syn:
+                            if syn_tags in tags_stk:
+                                match_tags.append(syn_tags)
+                                match_count = match_count + 1
+                                continue
+
+                    elif type(stk_syn) == str:
+                        if stk_syn in tags_stk:
                             match_count = match_count + 1
-                            break
-                elif type(stk_syn) == str:
-                    if stk_syn in tags_stk:
-                        match_count = match_count + 1
-        print("Match tag for {}: {}".format(stk_developer["display_name"],match_tags))
+
+        print("----------------------------------- \n"
+              "- Match tag for {}: {} \n"
+              "----------------------------------- \n"
+              "".format(stk_developer["display_name"],match_tags))
     else:
         match_count = 0
         github_count = 1
 
     tag_score = match_count / github_count * 2
     final_score = round(location_score + tag_score, 2)
-    print("Final score for {}: {}".format(stk_developer["display_name"],final_score))
+    print("------------------------------------ \n"
+          "- Final score for {}: {} \n"
+          "++++++++++++++++++++++++++++++++++++ \n"
+          "".format(stk_developer["display_name"],final_score))
 
     if final_score >= Threshold:
         match_name = str(stk_developer["user_id"]) + "_" + str(final_score)
@@ -164,62 +206,88 @@ def match_info(git_developer,stk_developer,syn_list,Threshold):
 
 
 def match_account(git_developer):
+
+    time.sleep(random.randrange(1,10) * 0.1)
     syn_file = sys.path[0] + "/Info/syn_list.json"
     syn_list = open(syn_file, encoding='utf-8')
 
     default_info = []
+    error_info = ['display_name', 'location', 'user_id']
     # Merge the languages and topics to github_tags
     git_developer = merge_langtopics(git_developer)
-    # print("Finding Github user {} on Stack Overflow...".format(git_developer["name"]))
     possible_name = nf.possible_names(git_developer["name"], git_developer["github_login"])
-    print("Possible name of {}: {}".format(git_developer["name"],possible_name))
+    print("############################### \n"
+          "# Possible name of {}: {} \n"
+          "############################### \n".format(git_developer["name"],possible_name))
 
     for name in possible_name:
         # All info of developers whose username contains the input name
         stk_info = InfoByName(name)
         stk_info = gt.delete_duplicate(stk_info)
 
-        if not stk_info == default_info:
-            print("The possible info of Stack Overflow user {} is {}".format(name, stk_info))
+        if not stk_info == default_info and not stk_info == error_info:
+            print("The possible info of Stack Overflow user {} is: \n"
+                  "------------------------------------- \n"
+                  " {} \n"
+                  "------------------------------------- \n".format(name, stk_info))
             cTime = time.time()
 
+            print("!!! Find associated Github account directly in the profile of Stack Overflow users: !!!")
             for stk_developer in stk_info:
-                user_id = stk_developer['user_id']
-                git_account = GetGitAccount(user_id)
+                print("\n-------------{}-------------\n".format(stk_developer))
 
-                if git_account == git_developer["github_login"]:
-                    git_developer["stackoverflow_login"] = stk_developer["display_name"]
-                    print(time.time() - cTime)
-                    break
+                if 'user_id' in stk_developer:
+                    user_id = stk_developer['user_id']
+                    git_account = GetGitAccount(user_id)
+
+                    if git_account == git_developer["github_login"]:
+                        git_developer["stackoverflow_login"] = stk_developer["display_name"]
+                        print("Time: {}".format(time.time() - cTime))
+                        break
+
+                    else:
+                        print("No associated Github account can be found "
+                              "in the profile of possible associated "
+                              "Stack Overflow user {}".format(stk_developer["display_name"]))
+                else:
+                    print("No user id has been found \n")
+                    continue
 
             # Continue to establish mapping if the possible match has been found?
             if git_developer["stackoverflow_login"] == "null" or git_developer["stackoverflow_login"] == []:
                 git_developer["stackoverflow_login"] = []
-                print("\nNo linked account has been found. Mapping the users using tags and location...")
-                print("{} tags: {}".format(git_developer["github_login"], git_developer["github_tags"]))
+                print("****************************** \n"
+                      "* No linked account has been found. Mapping the users using tags and location... \n"
+                      "****************************** \n")
+                print("Github user {}'s tags: \n"
+                      "------------------------------ \n"
+                      "{} \n"
+                      "------------------------------ \n".format(git_developer["github_login"], git_developer["github_tags"]))
 
                 cTime = time.time()
                 for stk_developer in stk_info:
-                    developer_tags = get_tags(stk_developer)
-                    stk_developer["tags"] = developer_tags
+                    stk_developer["tags"] = get_tags(stk_developer)
                     match_name = match_info(git_developer, stk_developer, syn_list, 1)
                     if not match_name == []:
                         git_developer["stackoverflow_login"].append(match_name)
-                print(time.time() - cTime)
+                print("Time: {}".format(time.time() - cTime))
             else:
                 break
 
     if not git_developer["stackoverflow_login"] == "null" and not git_developer["stackoverflow_login"] == []:
-        print("The Stack Overflow display_name for github user {}: {}".format(git_developer["name"],
-                                                                              git_developer['stackoverflow_login']))
+        print("============================== \n"
+              "= The Stack Overflow display_name for github user {}: {} \n"
+              "============================== \n".format(git_developer["name"],git_developer['stackoverflow_login']))
     else:
         git_developer["stackoverflow_login"] = "null"
-        print("The Stack Overflow display_name for github user {} not found".format(git_developer["name"]))
+        print("============================== \n"
+              "= The Stack Overflow display_name for github user {} not found \n"
+              "============================== \n".format(git_developer["name"]))
     return git_developer
 
 
 def multi_match(git_developers):
-    pool = multiprocessing.Pool(processes=10)
+    pool = multiprocessing.Pool(processes=5)
     git_info = pool.map(match_account,git_developers)
     pool.close()
     pool.join()
@@ -235,14 +303,14 @@ if __name__ == '__main__':
     cTime = time.time()
     print("Matching developers between Github and Stack Overflow...")
     match_info = multi_match(git_info)
-    print(time.time() - cTime)
+    print("Time: {}".format(time.time() - cTime))
 
     for item in match_info:
         if not item["stackoverflow_login"] == "null":
             stk_count = stk_count + 1
         total_count = total_count + 1
 
-    print("\n The number of developers with Stack Overflow account is {}".format(stk_count))
+    print("The number of developers with Stack Overflow account is {}".format(stk_count))
     print("The number of developers is {}".format(total_count))
     print("Ratio:{}".format(round(stk_count / total_count, 4)))
 
@@ -251,4 +319,4 @@ if __name__ == '__main__':
     file = Info_path + '/awesome_info_1.json'
     with open(info_file, 'w') as ctfile:
         json.dump(match_info, ctfile, indent=3)
-    print(time.time() - cTime)
+    print("Time: {}".format(time.time() - cTime))

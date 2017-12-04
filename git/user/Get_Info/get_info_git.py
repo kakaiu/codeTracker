@@ -3,8 +3,10 @@ import time
 import json
 import multiprocessing
 import sys
+import random
 
 def delete_duplicate(dict):
+    """delete the duplicated items in the list"""
     Info = []
     for item in dict:
         if not item in Info:
@@ -12,10 +14,12 @@ def delete_duplicate(dict):
     return Info
 
 def request_url(url,pagesize):
-    app = '?per_page={}&client_id=ff50be78bda6f9fd0f2f' \
-          '&client_secret=ef64972c0688bd6e7f9a15436e372053b95b44a0'.format(pagesize)
+    """"""
+    app = '?per_page={}&client_id=2ac0ae9b55d090f92fb3' \
+          '&client_secret=08d4bfffacafb8274c3c1974ec63d5f57c9aa308'.format(pagesize)
     # cTime = time.time()
     res = requests.get(url+app)
+    print("Requesting...{}".format(url+app))
     res.encoding = 'utf-8'
     info = res.json()
     # print("Requesting...:{}".format(time.time() - cTime))
@@ -23,9 +27,15 @@ def request_url(url,pagesize):
 
 def extract_dict(res):
     # The info for comparsion with that in other open source community
-    dict_info = {"name":res["name"],"github_login":res["login"],
-                 "company":res["company"],"location":res["location"],
-                 "email":res["email"],"stackoverflow_login":"null"}
+    try:
+        dict_info = {"name":res["name"],"github_login":res["login"],
+                    "company":res["company"],"location":res["location"],
+                    "email":res["email"],"stackoverflow_login":"null"}
+    except:
+        dict_info = {"name":"null","github_login":"null",
+                    "company":"null","location":"null",
+                    "email":"null","stackoverflow_login":"null"}
+        print(res)
     return dict_info
 
 def get_langtopics(user):
@@ -37,16 +47,16 @@ def get_langtopics(user):
     repos = request_url(repo_api, 30)
 
     for item in repos:
-        # can be  parallel topics & language
         repo_name = item["name"]
-        # cTime = time.time()
         repo_topics = requests.get('https://api.github.com/repos/{}/{}/topics?'
-                                   'per_page=10&client_id=ff50be78bda6f9fd0f2f'
-                                   '&client_secret=ef64972c0688bd6e7f9a15436e372053b95b44a0'
+                                   'per_page=10&client_id=2ac0ae9b55d090f92fb3'
+                                   '&client_secret=08d4bfffacafb8274c3c1974ec63d5f57c9aa308'
                                    .format(user["github_login"], repo_name),
                                    headers={"Accept": "application/vnd.github.mercy-preview+json"})
-        repo_topics = repo_topics.json()["names"]
-        # print("Requesting...:{}".format(time.time() - cTime))
+        if "names" in repo_topics.json().keys():
+            repo_topics = repo_topics.json()["names"]
+        else:
+            repo_topics = None
         topics.extend(repo_topics)
 
         if not item["languages_url"] == None:
@@ -70,14 +80,24 @@ def get_info(developer_info):
     Info = []
     # for item in developer_info:
         ### For a list of developers, find their url
-    item = developer_info
-    if not item["author"]["login"] in Info:
-        author_api = (item["author"]["url"] if not item["author"] == None else "null")
+    if type(developer_info) == dict:
+        item = developer_info
+    else:
+        item = "null"
+
+    if "author" in item.keys() and not item["author"] == None:
+        if not item["author"]["login"] in Info:
+            author_api = item["author"]["url"]
+        else:
+            author_api = "null"
     else:
         author_api = "null"
 
-    if not item["committer"]["login"] in Info:
-        committer_api = (item["committer"]["url"] if not item["committer"] == None else "null")
+    if "committer" in item.keys() and not item["committer"] == None:
+        if not item["committer"]["login"] in Info:
+            committer_api = item["committer"]["url"]
+        else:
+            committer_api = "null"
     else:
         committer_api = "null"
 
@@ -94,6 +114,7 @@ def get_info(developer_info):
     return Info
 
 def search_info(developer_login):
+    time.sleep(random.randrange(1,10) * 0.1)
     print("Getting info of users in the name list...")
     api = 'https://api.github.com/users/{}'.format(developer_login)
     developer_info = request_url(api, 100)
@@ -102,7 +123,7 @@ def search_info(developer_login):
     return developer_info
 
 def multi_Prcapi(commit_api):
-    developer_info = request_url(commit_api, 5)
+    developer_info = request_url(commit_api, 100)
     print("Getting info of user in the commit history...")
 
     cTime = time.time()
