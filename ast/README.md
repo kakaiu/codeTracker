@@ -14,18 +14,18 @@ First install Clang and Graphviz with:
 ## Write into json
 This project can convert syntax tree into json format
 
-    $ python main.py --tojson c_file_dir
+    $ python main.py --tojson c_file_dir True/False
 
 ![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast2json.png)
 
 ## Generate AST graph with Graphviz
 
-    $ python main.py --view c_file_dir
+    $ python main.py --view c_file_dir True/False
 
 ![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast3.png)
 ## Compare two ASTs
 
-    $ python main.py --compare c_file_dir1 c_file_dir2
+    $ python main.py --compare c_file_dir1 c_file_dir2 True/False
 
 The first AST is shown in pdf format:
 ![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast1.png)
@@ -33,7 +33,13 @@ The first AST is shown in pdf format:
 The second AST is also shown in pdf format as follows:
 ![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/ast2.png)
 
-The same part of two trees is labeled in red. 
+The same part of two trees is labeled in red.
+## Combine two ASTs into one
+
+    $ python main.py --combine c_file_dir1 c_file_dir2 True/False
+
+![Image text](https://github.com/king-jojo/Screenshots/blob/master/codetracker/Combined.png)
+(True or False is the choice that whether you need to remove the header files included in the C/C++ files. As the graph generated from some header files like <stdio.h> is too large for evince, this kind of choice is necessary)
 
 ## In future 
 There are so many things to do to complete this project in a perfect version. 
