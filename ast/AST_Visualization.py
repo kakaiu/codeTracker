@@ -13,13 +13,20 @@ RE_C = re.compile(r'/(.*).c')
 
 def node_graph(code_path, preprocess, same_list):
     """Show the syntax tree and display the same part of tow trees"""
-    if isinstance(code_path, list):
+    if '.c' not in code_path or '.cpp' not in code_path:
+        code_path_list = []
+        g = os.walk(code_path)
+        for path,di,filelist in g:
+            for filename in filelist:
+                k = os.path.join(path, filename)
+                if '.c' in k or '.cpp' in k:
+                    code_path_list.append(k)
         dot = Digraph("G", format="pdf")
         dot.node('Start', 'Start')
-        for i in range(len(code_path)):
-            node_list = Node_extract(code_path[i], preprocess)
+        for i in range(len(code_path_list)):
+            node_list = Node_extract(code_path_list[i], preprocess)
             num_list = []
-            name = re.findall(RE_C, code_path[i])
+            name = re.findall(RE_C, code_path_list[i])
             for x in range(1, len(node_list)):
                 num = node_list[x]['_nodetype'].find('-')
                 num_list.append(num)
