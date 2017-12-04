@@ -50,11 +50,11 @@ def get_syn(git_info,former_syn_list):
                  syn_tags.append(item["from_tag"])
              # The query of synonymous tags can't return the input tag
              syn_tags.append(tag.lower())
-             syn_list[tag] = syn_tags
+             syn_list[tag.lower()] = syn_tags
              print("The synonymous tags of tag {} are {}".format(tag,syn_tags))
          else:
              # The tags of Stack overflow are lowercase
-             syn_list[tag] = tag.lower()
+             syn_list[tag.lower()] = tag.lower()
              print("The synonymous tags of tag {} not found".format(tag))
 
      return syn_list
