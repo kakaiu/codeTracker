@@ -38,6 +38,7 @@ def to_dict(node_list, id):
     AST_dict = dict()
     AST_dict['_nodetype'] = node_list_cp[0]['_nodetype']
     AST_dict['coord'] = node_list_cp[0]['coord']
+    AST_dict['id'] = '00000' + str(id)
     first_sublist = []
     for x in range(1, len(node_list_cp)):
         num = node_list_cp[x]['_nodetype'].find('-')
@@ -47,7 +48,7 @@ def to_dict(node_list, id):
             node_list_cp[x]['_nodetype'] = cut[0]
         else:
             node_list_cp[x]['_nodetype'] = ''
-    node_list_cp2 = node_list_cp[:]
+        node_list_cp[x]['id'] = str(x) + '0000' + str(id)
     num_list = cp_list[:]
     for y in range(max(num_list) - 2, 0, -2):
         for x in range(len(num_list) - 1, -1, -1):
