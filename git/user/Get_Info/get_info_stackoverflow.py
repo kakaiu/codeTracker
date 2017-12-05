@@ -252,7 +252,7 @@ def match_account(git_developer):
                     git_account = GetGitAccount(user_id)
 
                     if git_account == git_developer["github_login"]:
-                        git_developer["stackoverflow_login"] = str(stk_developer["user_id"]) + '_REAL'
+                        git_developer["stackoverflow_login"] = [str(stk_developer["user_id"]) + '_REAL']
                         print("Time: {}".format(time.time() - cTime))
                         break
 
