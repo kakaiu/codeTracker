@@ -53,7 +53,7 @@ def get_tags_stk(user_id):
 
 if __name__ == '__main__':
     Info_path = sys.path[0] + '/Info'
-    info_file = Info_path + '/login_try.json'
+    info_file = Info_path + '/login_try_new.json'
     info_list = open(info_file, encoding='utf-8')
     info_list = json.load(info_list)
 
