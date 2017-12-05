@@ -147,7 +147,7 @@ def multi_Prcapi(commit_api):
 def multi_Prclist(name_list):
     print("Getting info of user in the commit history...")
     cTime = time.time()
-    pool = multiprocessing.Pool(processes=10)
+    pool = multiprocessing.Pool(processes=6)
     git_info = pool.map(search_info,name_list)
     print(time.time() - cTime)
     pool.close()
@@ -157,7 +157,7 @@ def multi_Prclist(name_list):
     #     merge_info.extend(developer)
     cTime = time.time()
     merge_info = delete_duplicate(merge_info)
-    pool = multiprocessing.Pool(processes=10)
+    pool = multiprocessing.Pool(processes=6)
     merge_info = pool.map(get_langtopics,merge_info)
     print(time.time() - cTime)
     pool.close()

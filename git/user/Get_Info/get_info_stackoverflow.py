@@ -209,8 +209,8 @@ def match_info(git_developer,stk_developer,syn_list,Threshold):
                     final_score))
 
     if final_score >= Threshold:
-        match_name = str(stk_developer["user_id"]) + "_" + str(final_score)
-        return match_name
+        match_id_score = str(stk_developer["user_id"]) + "_" + str(final_score)
+        return match_id_score
     else:
         return []
 
@@ -252,7 +252,7 @@ def match_account(git_developer):
                     git_account = GetGitAccount(user_id)
 
                     if git_account == git_developer["github_login"]:
-                        git_developer["stackoverflow_login"] = stk_developer["display_name"]
+                        git_developer["stackoverflow_login"] = stk_developer["user_id"] + '_REAL'
                         print("Time: {}".format(time.time() - cTime))
                         break
 
@@ -278,9 +278,9 @@ def match_account(git_developer):
                 cTime = time.time()
                 for stk_developer in stk_info:
                     stk_developer["tags"] = get_tags(stk_developer)
-                    match_name = match_info(git_developer, stk_developer, syn_list, 1)
-                    if not match_name == []:
-                        git_developer["stackoverflow_login"].append(match_name)
+                    match_id_score = match_info(git_developer, stk_developer, syn_list, 1)
+                    if not match_id_score == []:
+                        git_developer["stackoverflow_login"].append(match_id_score)
                 print("Time: {}".format(time.time() - cTime))
             else:
                 break

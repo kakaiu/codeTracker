@@ -1,12 +1,12 @@
 import sys
 import requests
 import json
+import time
 
 
 
 def request_api(api):
     app_key = '&key=ZEaUTt2btGSROV8q3NeOQg(('
-    print(api + app_key)
     user_info = requests.get(api + app_key)
     user_info = user_info.json()
     return user_info
@@ -21,13 +21,13 @@ def get_question_stk(user_id):
 
     default = []
     stk_questions = []
-    question = {}
     if type(question_info) == dict \
             and "items" in question_info.keys():
 
         question_info = question_info["items"]
         if type(question_info) == list:
             for info in question_info:
+                question ={}
                 question["link"] = info["link"]
                 question["title"] = info["title"]
                 stk_questions.append(question)
@@ -42,8 +42,7 @@ def get_tags_stk(user_id):
                '/{}/tags?pagesize=100&order=desc' \
                '&sort=popular&site=stackoverflow'.format(user_id)
     tags_info = request_api(tags_api)
-
-    if type(tags_info) == dict and "item" in tags_info.keys():
+    if type(tags_info) == dict and "items" in tags_info.keys():
         tags_info = tags_info["items"]
         for tag in tags_info:
             tag_name = tag["name"]
@@ -62,6 +61,9 @@ if __name__ == '__main__':
     stackoverflow_info = []
     each_info = {}
     real_list = []
+    stackoverflow_info = []
+    print("Getting the data of questions and tags...")
+    cTime = time.time()
     for developer in info_list:
         if type(developer["stackoverflow_login"]) == list:
             for user_id_score in developer["stackoverflow_login"]:
@@ -73,18 +75,25 @@ if __name__ == '__main__':
                              "questions":questions,
                              "user_score":user_score,
                              "tags":tags}
-                developer["stackoverflow_info"] = each_info
+                stackoverflow_info.append(each_info)
+            developer["stackoverflow_info"] = stackoverflow_info
+            stackoverflow_info = []
         elif type(developer["stackoverflow_login"]) == str \
                 and developer["stackoverflow_login"] != "null":
-            real_list.append(developer["stackoverflow_login"])
-            developer["stackoverflow_info"] = {}
+            real_list.append(developer["github_login"])
+            developer["stackoverflow_info"] = []
         else:
-            developer["stackoverflow_info"] = {}
+            developer["stackoverflow_info"] = []
 
         new_info_list.append(developer)
 
     new_info_file = Info_path + '/login_try_new.json'
+    new_list_file = Info_path + '/new_login_list.json'
+    print("Time: {}".format(time.time() - cTime))
+    print("Dumping the data...")
     with open(new_info_file, 'w') as ctfile:
         json.dump(new_info_list, ctfile, indent=3)
 
+    with open(new_list_file, 'w') as ctfile:
+        json.dump(real_list, ctfile, indent=3)
 
