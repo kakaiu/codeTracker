@@ -31,7 +31,7 @@ def Sequence_gene(node_list, num_list):
                 index_list.append(index)
     return [seque_list, index_list]
 
-def to_dict(node_list):
+def to_dict(node_list, id):
     """Transform the node list into nested dictionary"""
     node_list_cp = node_list[:]
     cp_list = []
@@ -76,12 +76,12 @@ def to_dict(node_list):
             else:
                 count_dict[str(num)] = 'True'
                 trace_dict = dict()
-                trace_dict['id'] = num
+                trace_dict['id'] = str(num) + '0000' + str(id)
                 trace_dict['_nodetype'] = node_list_cp[num]['_nodetype']
                 trace_dict['coord'] = node_list_cp[num]['coord']
                 short_list = []
                 for p in range(k, len(index_list[i]), 1):
-                    short_list.append(index_list[i][p])
+                    short_list.append(str(index_list[i][p]) + '0000' + str(id))
                 trace_dict['trace'] = short_list
                 trace_list.append(trace_dict)
             if len(count_dict) == len(node_list):
@@ -94,10 +94,10 @@ def to_json(node_list, json_name1, json_name2, Tri=False):
         node_list_new = node_list[:]
         final_list1 = []
         final_list2 = []
-        for i in node_list_new:
-            name = i[0]
-            del i[0]
-            AST_dict = to_dict(i)
+        for i in range(len(node_list_new)):
+            name = node_list_new[i][0]
+            del node_list_new[i][0]
+            AST_dict = to_dict(node_list_new[i], i)
             new_dict = dict()
             new_dict['__filename'] = name
             new_dict['__content'] = AST_dict[0]
@@ -114,7 +114,7 @@ def to_json(node_list, json_name1, json_name2, Tri=False):
         f2.close()
     else:
         node_list_new = node_list[:]
-        AST_dict = to_dict(node_list_new)
+        AST_dict = to_dict(node_list_new, 0)
         with open(json_name1, 'w+') as f1:
             json.dump(AST_dict[0], f1, ensure_ascii=False, indent=4)
         f1.close()
