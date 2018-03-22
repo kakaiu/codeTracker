@@ -167,19 +167,20 @@ if __name__ == '__main__':
                         print ("###############The Result################")
                         for i in range(1, len(node_list_new)):
                             line_range = node_list_new[i]['coord']
-                            if 'null' not in line_range :
-                                first_line = re.findall(RE_MODULE1, line_range)[0]
-                                last_line = re.findall(RE_MODULE2, line_range)[0]
-                                line_number1 = int(first_line[0:6])
-                                line_number2 = int(last_line[0:6])
-                                if line_number2 > max :
-                                    max = line_number2
-                                if line_number1 != line_number2:
-                                    if line_number1 <= Input_line and Input_line <= line_number2:
-                                        print ("This module's node type is: %s "%(node_list_new[i]['_nodetype']))
-                                        print ("This module's coordinate is: %s "%(node_list_new[i]['coord']))
-                                        print ("This module's name is: %s "%(node_list_new[i]['node_name']))
-                                        count = count + 1
+                            if line_range != 'null' :
+                                if line_range[0] != 'null' and line_range[1] != 'null' :
+                                    first_line = line_range[0]
+                                    last_line = line_range[1]
+                                    line_number1 = int(first_line[0:6])
+                                    line_number2 = int(last_line[0:6])
+                                    if line_number2 > max :
+                                        max = line_number2
+                                    if line_number1 != line_number2:
+                                        if line_number1 <= Input_line and Input_line <= line_number2:
+                                            print ("This module's node type is: %s "%(node_list_new[i]['_nodetype']))
+                                            print ("This module's coordinate is: %s "%(node_list_new[i]['coord']))
+                                            print ("This module's name is: %s "%(node_list_new[i]['node_name']))
+                                            count = count + 1
                         if count == 0:
                             print ("No module satisfied")
                         if Input_line > max:

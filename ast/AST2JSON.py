@@ -11,7 +11,6 @@ RE_AZ = re.compile(r'-(.*?) ')
 RE_LINENUM = re.compile(r'line:(.*?):')
 RE_FILE_C = re.compile(r'.c:(.*?):')
 RE_FILE_CPP = re.compile(r'.cpp:(.*?):')
-RE_FATHER = re.compile(r'from (.*?) to')
 
 def Sequence_gene(node_list, num_list):
     """From the root to the leaves, we traverse the tree to get all the sequences"""
@@ -145,7 +144,7 @@ def linenum_extract(node_list, num_list, id):
                     print (str(line_info1[0]))
                     line_begin = "%06d"%(int(line_info1[0])) + "%04d"%(id)
                     line_end = "%06d"%(int(line_info2[0])) + "%04d"%(id)
-                    node_list_new[i]['coord'] = "from " + line_begin + " to " + line_end
+                    node_list_new[i]['coord'] = [line_begin,line_end]
                 else:
                     node_list_new[i]['coord'] = 'null'
             else:
@@ -154,7 +153,7 @@ def linenum_extract(node_list, num_list, id):
                 if len(line_info1) > 0 and len(line_info2) > 0:
                     line_begin = "%06d" % (int(line_info1[0])) + "%04d" % (id)
                     line_end = "%06d" % (int(line_info2[0])) + "%04d" % (id)
-                    node_list_new[i]['coord'] = "from " + line_begin + " to " + line_end
+                    node_list_new[i]['coord'] = [line_begin,line_end]
                 else:
                     node_list_new[i]['coord'] = 'null'
         elif 'line' in coordinate:
@@ -164,7 +163,7 @@ def linenum_extract(node_list, num_list, id):
                     if len(line_info) > 0:
                         line_begin = "%06d" % (int(line_info[0])) + "%04d" % (id)
                         line_end = "%06d" % (int(line_info[0])) + "%04d" % (id)
-                        node_list_new[i]['coord'] = "from " + line_begin + " to " + line_end
+                        node_list_new[i]['coord'] = [line_begin,line_end]
                     else:
                         node_list_new[i]['coord'] = 'null'
                 elif ', line' in coordinate:
@@ -175,7 +174,7 @@ def linenum_extract(node_list, num_list, id):
                             for x in range(i - 2, -1, -1):
                                 if num_list[x] == num_list[i - 1] - step:
                                     if node_list_new[x + 1]['coord'] != 'null':
-                                        line_begin = re.findall(RE_FATHER, node_list_new[x + 1]['coord'])[0]
+                                        line_begin = node_list_new[x + 1]['coord'][0]
                                         break
                                     else:
                                         break
@@ -185,7 +184,7 @@ def linenum_extract(node_list, num_list, id):
                                 continue
                             break
                         line_end = "%06d" % (int(line_info[0])) + "%04d" % (id)
-                        node_list_new[i]['coord'] = "from " + line_begin + " to " + line_end
+                        node_list_new[i]['coord'] = [line_begin,line_end]
                     else:
                         node_list_new[i]['coord'] = 'null'
                 else:
@@ -194,11 +193,11 @@ def linenum_extract(node_list, num_list, id):
                 if len(line_info) == 2:
                     line_begin = "%06d" % (int(line_info[0])) + "%04d" % (id)
                     line_end = "%06d" % (int(line_info[1])) + "%04d" % (id)
-                    node_list_new[i]['coord'] = "from " + line_begin + " to " + line_end
+                    node_list_new[i]['coord'] = [line_begin,line_end]
                 elif len(line_info) > 0:
                     line_begin = "%06d" % (int(line_info[0])) + "%04d" % (id)
                     line_end = "%06d" % (int(line_info[0])) + "%04d" % (id)
-                    node_list_new[i]['coord'] = "from " + line_begin + " to " + line_end
+                    node_list_new[i]['coord'] = [line_begin,line_end]
                 else:
                     node_list_new[i]['coord'] = 'null'
         elif 'col' in coordinate:
@@ -207,9 +206,9 @@ def linenum_extract(node_list, num_list, id):
                 for x in range(i - 2, -1, -1):
                     if num_list[x] == num_list[i - 1] - step:
                         if node_list_new[x + 1]['coord'] != 'null':
-                            line_begin = re.findall(RE_FATHER, node_list_new[x + 1]['coord'])[0]
-                            line_end = re.findall(RE_FATHER, node_list_new[x + 1]['coord'])[0]
-                            node_list_new[i]['coord'] = "from " + line_begin + " to " + line_end
+                            line_begin = node_list_new[x + 1]['coord'][0]
+                            line_end = node_list_new[x + 1]['coord'][0]
+                            node_list_new[i]['coord'] = [line_begin,line_end]
                             break
                         else:
                             break
