@@ -6,15 +6,21 @@ __author__ = 'king-jojo'
 import AST_Compare
 from AST_Visualization import node_graph
 from AST2JSON import to_json
+from AST2JSON import to_dict
 from AST_Process import Node_extract
 import sys
 import os
 import re
+import json
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 RE_AZ = re.compile(r'-(.*?) ')
 RE_C = re.compile(r'/(.*?).c')
+
+RE_MODULE1 = re.compile(r'from (.*?) to')
+RE_MODULE2 = re.compile(r'to (.*)')
+
 sel = True
 
 if __name__ == '__main__':
@@ -73,7 +79,9 @@ if __name__ == '__main__':
                         sel = False
                 if os.path.exists(args[1]):
                     code_path = args[1]
+                    code_path_list = []
                     if '.c' in code_path or '.cpp' in code_path:
+                        code_path_list.append(code_path)
                         node_list = Node_extract(code_path, sel)
                         print ('The total amount of the nodes is {}'.format(len(node_list)))
                         json_files_dir = dir_path + '/jsons'
@@ -84,7 +92,6 @@ if __name__ == '__main__':
                         to_json(node_list, json_file1, json_file2, False)
                         print ("The json file path: "+json_files_dir)
                     else:
-                        code_path_list = []
                         json_list = []
                         node_len = 0
                         g = os.walk(code_path)
@@ -107,6 +114,10 @@ if __name__ == '__main__':
                         json_file2 = json_files_dir + '/trace.json'
                         to_json(json_list, json_file1, json_file2, True)
                         print ("The json file path: "+json_files_dir)
+                    code_path_file = dir_path + "/jsons/file_path.json"
+                    with open(code_path_file, 'w+') as f:
+                        json.dump(code_path_list, f, ensure_ascii=False, indent=4)
+                    f.close()
                 else:
                     raise SystemExit("Error: Could not find c/c++ file")
             else:
@@ -127,7 +138,58 @@ if __name__ == '__main__':
                     raise SystemExit("Error: Could not find the file")
             else:
                 raise SystemExit("Usage: python main.py --combine c_file_dir1 c_file_dir2 True/False ")
+        elif args[0] == '--find_module':
+            if len(args[1:]) == 2:
+                if args[2] != 'True' and args[2] != 'False':
+                    raise SystemExit("Please use 'True' or 'False' to choose whether you need to remove the headers")
+                else:
+                    if args[2] == 'True':
+                        sel = True
+                    else:
+                        sel = False
+                if len(args[1]) != 10:
+                    raise SystemExit("Please use the right LINE_ID like 0000010001, for the first 6 characters represent the line number and the last 4 characters represent the file number")
+                else:
+                    if os.path.exists(dir_path + '/jsons/AST.json') and os.path.exists(dir_path + '/jsons/file_path.json'):
+                        Input_id = args[1]
+                        Input_line = int(Input_id[0:6])
+                        Input_file = int(Input_id[6:10])
+                        max = 0
+                        count = 0
+                        with open(dir_path + '/jsons/file_path.json') as f1:
+                            file_path_list = json.load(f1)
+                        f1.close()
+                        if Input_file >= len(file_path_list):
+                            raise SystemExit("The file number is too large")
+                        file_name = file_path_list[Input_file]
+                        node_list = Node_extract(file_name,sel)
+                        node_list_new = to_dict(node_list, Input_file)[2]
+                        print ("###############The Result################")
+                        for i in range(1, len(node_list_new)):
+                            line_range = node_list_new[i]['coord']
+                            if 'null' not in line_range :
+                                first_line = re.findall(RE_MODULE1, line_range)[0]
+                                last_line = re.findall(RE_MODULE2, line_range)[0]
+                                line_number1 = int(first_line[0:6])
+                                line_number2 = int(last_line[0:6])
+                                if line_number2 > max :
+                                    max = line_number2
+                                if line_number1 != line_number2:
+                                    if line_number1 <= Input_line and Input_line <= line_number2:
+                                        print ("This module's node type is: %s "%(node_list_new[i]['_nodetype']))
+                                        print ("This module's coordinate is: %s "%(node_list_new[i]['coord']))
+                                        print ("This module's name is: %s "%(node_list_new[i]['node_name']))
+                                        count = count + 1
+                        if count == 0:
+                            print ("No module satisfied")
+                        if Input_line > max:
+                            raise SystemExit("The line number is too large \n#########################################")
+                        print ("#########################################")
+                    else:
+                        raise SystemExit("Please generate json files first with '--tojson' ")
+            else:
+                raise SystemExit("Usage: python main.py --find_module LINE_ID True/False")
         else:
-            raise SystemExit("Usage: python main.py --compare c_file_dir1 c_file_dir2 True/False \n       python main.py --view c_file_dir True/False \n       python main.py --tojson c_file_dir True/False \n       python main.py --combine c_file_dir1 c_file_dir2 True/False  ")
+            raise SystemExit("Usage: python main.py --compare c_file_dir1 c_file_dir2 True/False \n       python main.py --view c_file_dir True/False \n       python main.py --tojson c_file_dir True/False \n       python main.py --combine c_file_dir1 c_file_dir2 True/False \n       python main.py --find_module LINE_ID True/False  ")
     else:
-        raise SystemExit("Usage: python main.py --compare c_file_dir1 c_file_dir2 True/False \n       python main.py --view c_file_dir True/False \n       python main.py --tojson c_file_dir True/False \n       python main.py --combine c_file_dir1 c_file_dir2 True/False  ")
+        raise SystemExit("Usage: python main.py --compare c_file_dir1 c_file_dir2 True/False \n       python main.py --view c_file_dir True/False \n       python main.py --tojson c_file_dir True/False \n       python main.py --combine c_file_dir1 c_file_dir2 True/False \n       python main.py --find_module LINE_ID True/False  ")
