@@ -5,12 +5,16 @@ __author__  = 'king-jojo'
 
 import json
 import re
+import os
+from AST_Process import Node_extract
 
 RE_AZ = re.compile(r'-(.*?) ')
 
 RE_LINENUM = re.compile(r'line:(.*?):')
 RE_FILE_C = re.compile(r'.c:(.*?):')
 RE_FILE_CPP = re.compile(r'.cpp:(.*?):')
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 def Sequence_gene(node_list, num_list):
     """From the root to the leaves, we traverse the tree to get all the sequences"""
@@ -141,7 +145,6 @@ def linenum_extract(node_list, num_list, id):
                 line_info1 = re.findall(RE_FILE_C, coordinate)
                 line_info2 = re.findall(RE_LINENUM, coordinate)
                 if len(line_info1) > 0 and len(line_info2) > 0:
-                    print (str(line_info1[0]))
                     line_begin = "%06d"%(int(line_info1[0])) + "%04d"%(id)
                     line_end = "%06d"%(int(line_info2[0])) + "%04d"%(id)
                     node_list_new[i]['coord'] = [line_begin,line_end]
@@ -221,5 +224,51 @@ def linenum_extract(node_list, num_list, id):
                 node_list_new[i]['coord'] = 'null'
         else:
             node_list_new[i]['coord'] = 'null'
+        # print (node_list_new[i])
 
     return node_list_new
+
+def find_module(line_number):
+    if os.path.exists(dir_path + '/jsons/AST.json') and os.path.exists(dir_path + '/jsons/file_path.json'):
+        Input_id = line_number
+        Input_line = int(Input_id[0:6])
+        Input_file = int(Input_id[6:10])
+        max = 0
+        lines = 0
+        output_list = []
+        count = 0
+        with open(dir_path + '/jsons/file_path.json') as f1:
+            file_path_list = json.load(f1)
+        f1.close()
+        if Input_file >= len(file_path_list):
+            raise SystemExit("The file number is too large")
+        file_name = file_path_list[Input_file]
+        node_list = Node_extract(file_name,True)
+        node_list_new = to_dict(node_list, Input_file)[2]
+        print ("###############The Result################")
+        print (str(file_name) + ":" + str(Input_line))
+        for i in range(1, len(node_list_new)):
+            line_range = node_list_new[i]['coord']
+            if line_range != 'null' :
+                if line_range[0] != 'null' and line_range[1] != 'null' :
+                    first_line = line_range[0]
+                    last_line = line_range[1]
+                    line_number1 = int(first_line[0:6])
+                    line_number2 = int(last_line[0:6])
+                    if line_number2 > max :
+                        max = line_number2
+                    if line_number1 != line_number2:
+                        if line_number1 <= Input_line and Input_line <= line_number2:
+                            print ("This module's node type is: %s "%(node_list_new[i]['_nodetype']))
+                            print ("This module's coordinate is: %s "%(node_list_new[i]['coord']))
+                            print ("This module's name is: %s "%(node_list_new[i]['node_name']))
+                            count = count + 1
+                            if lines <= line_number2 - line_number1:
+                                lines = line_number2 - line_number1
+                                output_list = node_list_new[i]['coord']
+        if count == 0:
+            print ("No module satisfied")
+        if Input_line > max:
+            raise SystemExit("The line number is too large \n#########################################")
+        print ("#########################################")
+        return output_list
