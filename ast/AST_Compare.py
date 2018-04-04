@@ -92,7 +92,7 @@ def Seqlist_compare(seq_list1, seq_list2):
 
 def seq_process(code_path, preprocess):
     nodes = Node_extract(code_path, preprocess)
-    dd = to_dict(nodes, id)
+    dd = to_dict(nodes, 0)
     num_list = dd[1]
     node_list = dd[2]
     seq = Sequence_generate(node_list, num_list)
