@@ -80,15 +80,24 @@ if __name__ == '__main__':
                 if os.path.exists(args[1]):
                     code_path = args[1]
                     code_path_list = []
+                    names = []
                     if '.c' in code_path or '.cpp' in code_path:
                         code_path_list.append(code_path)
-                        node_list = Node_extract(code_path, sel)
+                        node_list = Node_extract(code_path, sel)[0]
+                        names.append(Node_extract(code_path, sel)[1])
                         print ('The total amount of the nodes is {}'.format(len(node_list)))
                         json_files_dir = dir_path + '/jsons'
                         if not os.path.exists(json_files_dir):
                             os.mkdir(json_files_dir)
+                        # json_file1 is a nested dict
                         json_file1 = json_files_dir + '/AST.json'
+                        # json file2 is the trace of each node
                         json_file2 = json_files_dir + '/trace.json'
+                        # json file3 restore the name of each module
+                        json_file3 = json_files_dir + '/Module_names.json'
+                        with open(json_file3, 'w+') as f:
+                            json.dump(names, f, ensure_ascii=False, indent=4)
+                        f.close()
                         to_json(node_list, json_file1, json_file2, False)
                         print ("The json file path: "+json_files_dir)
                     else:
@@ -101,7 +110,8 @@ if __name__ == '__main__':
                                 if '.c' in k or '.cpp' in k:
                                     code_path_list.append(k)
                         for i in range(len(code_path_list)):
-                            node_list = Node_extract(code_path_list[i], sel)
+                            node_list = Node_extract(code_path_list[i], sel)[0]
+                            names.append(Node_extract(code_path_list[i], sel)[1])
                             name = code_path_list[i]
                             node_list.insert(0, name)
                             json_list.append(node_list)
@@ -112,6 +122,10 @@ if __name__ == '__main__':
                             os.mkdir(json_files_dir)
                         json_file1 = json_files_dir + '/AST.json'
                         json_file2 = json_files_dir + '/trace.json'
+                        json_file3 = json_files_dir + '/Module_names.json'
+                        with open(json_file3, 'w+') as f:
+                            json.dump(names, f, ensure_ascii=False, indent=4)
+                        f.close()
                         to_json(json_list, json_file1, json_file2, True)
                         print ("The json file path: "+json_files_dir)
                     code_path_file = dir_path + "/jsons/file_path.json"
@@ -162,9 +176,10 @@ if __name__ == '__main__':
                         if Input_file >= len(file_path_list):
                             raise SystemExit("The file number is too large")
                         file_name = file_path_list[Input_file]
-                        node_list = Node_extract(file_name,sel)
+                        node_list = Node_extract(file_name,sel)[0]
                         node_list_new = to_dict(node_list, Input_file)[2]
                         print ("###############The Result################")
+                        print (str(file_name) + ":" + str(Input_line))
                         for i in range(1, len(node_list_new)):
                             line_range = node_list_new[i]['coord']
                             if line_range != 'null' :

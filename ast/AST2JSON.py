@@ -41,6 +41,7 @@ def Sequence_gene(node_list, num_list):
 
 def to_dict(node_list, id):
     """Transform the node list into nested dictionary"""
+    print (id)
     node_list_cp = node_list[:]
     cp_list = []
     AST_dict = dict()
@@ -243,7 +244,7 @@ def find_module(line_number):
         if Input_file >= len(file_path_list):
             raise SystemExit("The file number is too large")
         file_name = file_path_list[Input_file]
-        node_list = Node_extract(file_name,True)
+        node_list = Node_extract(file_name,True)[0]
         node_list_new = to_dict(node_list, Input_file)[2]
         print ("###############The Result################")
         print (str(file_name) + ":" + str(Input_line))
@@ -272,3 +273,9 @@ def find_module(line_number):
             raise SystemExit("The line number is too large \n#########################################")
         print ("#########################################")
         return output_list
+
+#if __name__ == "__main__":
+#    code_path = dir_path + '/example/test.cpp'
+#    node_list = Node_extract(code_path, True)
+#    node_list_new = to_dict(node_list[0],0)[2]
+#    print (node_list_new)
