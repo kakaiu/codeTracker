@@ -15,17 +15,30 @@ RE_SUB = re.compile(r'@@(.*?)@@')
 
 def AST_preprocess(code_path):
     """Preprocess of the code. Remove the head files and standard libraries"""
-    path_new = './example/test_new.c'
-    with open(code_path , 'r') as f:
-        lines = f.readlines()
-    f.close()
+    if '.c' in code_path and '.cpp' not in code_path:
+        path_new = './example/test_new.c'
+        with open(code_path , 'r') as f:
+            lines = f.readlines()
+        f.close()
 
-    with open(path_new , 'w') as f_new:
-        for line in lines:
-            if '#include' in line:
-                line = '\n'
-            f_new.write(line)
-    f_new.close()
+        with open(path_new , 'w') as f_new:
+            for line in lines:
+                if '#include' in line:
+                    line = '\n'
+                f_new.write(line)
+        f_new.close()
+    elif '.cpp' in code_path:
+        path_new = './example/test_new.cpp'
+        with open(code_path , 'r') as f:
+            lines = f.readlines()
+        f.close()
+
+        with open(path_new , 'w') as f_new:
+            for line in lines:
+                if '#include' in line:
+                    line = '\n'
+                f_new.write(line)
+        f_new.close()
     return path_new
 
 def AST_generate(code_path, preprocess):
