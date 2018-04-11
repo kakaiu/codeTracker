@@ -9,7 +9,10 @@ import re
 RE_NODE = re.compile(r'(.*?)0x')
 RE_LINE = re.compile(r'<(.*?)>')
 
-RE_CLASS = re.compile(r'class (.*?) definition')
+RE_CLASS1 = re.compile(r'class (.*?) definition')
+RE_CLASS2 = re.compile(r'class (.*)')
+RE_STRUCT1 = re.compile(r'struct (.*?) definition')
+RE_STRUCT2 = re.compile(r'struct (.*)')
 RE_FUNC = re.compile(r' (.+?) ')
 RE_SUB = re.compile(r'@@(.*?)@@')
 
@@ -60,7 +63,8 @@ def Node_extract(code_path, preprocess):
     """Extract the nodes"""
     AST = AST_generate(code_path, preprocess)
     node_list = []
-    name_list = []
+    class_name_list = []
+    func_name_list = []
     for lines in AST:
         Node_dict = dict()
         if len(re.findall(RE_NODE, lines)) > 0:
@@ -81,19 +85,43 @@ def Node_extract(code_path, preprocess):
             new_sentence2 = re.sub(r'@@(.*?)@@', "", new_sentence1)
             if re.findall(RE_FUNC, new_sentence2)[-1] != ' ':
                 name = re.findall(RE_FUNC, new_sentence2)[-1]
-                name_list.append(name)
             else:
                 name = re.findall(RE_FUNC, new_sentence2)[-2]
-                name_list.append(name)
+            func_name_list.append(name)
         elif "CXXRecordDecl" in new_line:
-            name = re.findall(RE_CLASS, lines)
-            name_list.append(name)
+            if 'class' in lines:
+                if 'definition' in lines:
+                    class_name = re.findall(RE_CLASS1, lines)
+                else:
+                    class_name = re.findall(RE_CLASS2, lines)
+                if len(class_name):
+                    name = class_name[0]
+                else:
+                    name = 'null'
+                class_name_list.append(name)
+            elif 'struct' in lines:
+                if 'definition' in lines:
+                    struct_name = re.findall(RE_STRUCT1, lines)
+                else:
+                    struct_name = re.findall(RE_STRUCT2, lines)
+                if len(struct_name):
+                    name = struct_name[0]
+                else:
+                    name = 'null'
+                class_name_list.append(name)
+        elif "RecordDecl" in new_line:
+            if 'definition' in lines:
+                struct_name = re.findall(RE_STRUCT1, lines)
+            else:
+                struct_name = re.findall(RE_STRUCT2, lines)
+            if len(struct_name):
+                name = struct_name[0]
+            else:
+                name = 'null'
+            class_name_list.append(name)
+
         else:
             name = 'null'
         Node_dict['node_name'] = name
+    name_list = [func_name_list,class_name_list]
     return [node_list,name_list]
-
-
-
-
-
