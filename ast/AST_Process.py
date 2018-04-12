@@ -9,10 +9,8 @@ import re
 RE_NODE = re.compile(r'(.*?)0x')
 RE_LINE = re.compile(r'<(.*?)>')
 
-RE_CLASS1 = re.compile(r'class (.*?) definition')
-RE_CLASS2 = re.compile(r'class (.*)')
-RE_STRUCT1 = re.compile(r'struct (.*?) definition')
-RE_STRUCT2 = re.compile(r'struct (.*)')
+RE_CLASS = re.compile(r'class (.*)')
+RE_STRUCT = re.compile(r'struct (.*)')
 RE_FUNC = re.compile(r' (.+?) ')
 RE_SUB = re.compile(r'@@(.*?)@@')
 
@@ -90,30 +88,21 @@ def Node_extract(code_path, preprocess):
             func_name_list.append(name)
         elif "CXXRecordDecl" in new_line:
             if 'class' in lines:
-                if 'definition' in lines:
-                    class_name = re.findall(RE_CLASS1, lines)
-                else:
-                    class_name = re.findall(RE_CLASS2, lines)
+                class_name = re.findall(RE_CLASS, lines)
                 if len(class_name):
                     name = class_name[0]
                 else:
                     name = 'null'
                 class_name_list.append(name)
             elif 'struct' in lines:
-                if 'definition' in lines:
-                    struct_name = re.findall(RE_STRUCT1, lines)
-                else:
-                    struct_name = re.findall(RE_STRUCT2, lines)
+                struct_name = re.findall(RE_STRUCT, lines)
                 if len(struct_name):
                     name = struct_name[0]
                 else:
                     name = 'null'
                 class_name_list.append(name)
         elif "RecordDecl" in new_line:
-            if 'definition' in lines:
-                struct_name = re.findall(RE_STRUCT1, lines)
-            else:
-                struct_name = re.findall(RE_STRUCT2, lines)
+            struct_name = re.findall(RE_STRUCT, lines)
             if len(struct_name):
                 name = struct_name[0]
             else:
