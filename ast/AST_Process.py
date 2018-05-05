@@ -8,9 +8,11 @@ import re
 
 RE_NODE = re.compile(r'(.*?)0x')
 RE_LINE = re.compile(r'<(.*?)>')
+RE_SLOC_LINE = re.compile(r'line:(.*?) ')
+RE_SLOC_COL = re.compile(r'col:(.*?) ')
 
-RE_CLASS = re.compile(r'class (.*)')
-RE_STRUCT = re.compile(r'struct (.*)')
+RE_CLASS = re.compile(r'class (.*) ')
+RE_STRUCT = re.compile(r'struct (.*) ')
 RE_FUNC = re.compile(r' (.+?) ')
 RE_SUB = re.compile(r'@@(.*?)@@')
 
@@ -73,7 +75,18 @@ def Node_extract(code_path, preprocess):
         line_info = re.findall(RE_LINE, lines)
         if len(line_info) > 0:
             line_info_new = line_info[0].replace("<", "")
-            Node_dict['coord'] = line_info_new
+            if line_info_new == "invalid sloc":
+                sloc_info_line = re.findall(RE_SLOC_LINE, lines)
+                if sloc_info_line != []:
+                    Node_dict['coord'] = 'line:' + sloc_info_line[0]
+                else:
+                    sloc_info_col = re.findall(RE_SLOC_COL, lines)
+                    if sloc_info_col != []:
+                        Node_dict['coord'] = 'col:' + sloc_info_col[0]
+                    else:
+                        Node_dict['coord'] = 'null'
+            else:
+                Node_dict['coord'] = line_info_new
         else:
             Node_dict['coord'] = 'null'
         node_list.append(Node_dict)
